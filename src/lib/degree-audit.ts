@@ -144,16 +144,16 @@ function createCourseAudits(
   courseMap: Map<string, Course>
 ): CourseAudit[] {
   return plan.courses.map((course) => {
-    const missingPrerequisites = [
-      ...getMissingPrerequisites(course, selected, courseMap),
-      ...getConflictingSelections(course, selected, plan.rules),
-    ];
+    const prerequisiteGaps = getMissingPrerequisites(course, selected, courseMap);
+    const conflicts = getConflictingSelections(course, selected, plan.rules);
+    const missingPrerequisites = [...prerequisiteGaps, ...conflicts];
 
     return {
       course,
       completed: selected.has(course.id),
       available: missingPrerequisites.length === 0,
       missingPrerequisites,
+      blockedByPrerequisite: prerequisiteGaps.length > 0 && conflicts.length === 0,
     };
   });
 }
@@ -321,7 +321,7 @@ export function createDegreeAudit(selectedCourseIds: string[], plan: DegreePlan)
   const blockedCourses = courseAudits.filter(
     (audit) =>
       !audit.completed &&
-      audit.missingPrerequisites.length > 0 &&
+      audit.blockedByPrerequisite &&
       ["required", "elective", "english"].includes(audit.course.type)
   );
   const availableCourses = courseAudits.filter(

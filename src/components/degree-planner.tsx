@@ -555,7 +555,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
       }
 
       if (activeTab === "blocked") {
-        return courseAudit ? !courseAudit.completed && courseAudit.missingPrerequisites.length > 0 : false;
+        return courseAudit ? !courseAudit.completed && courseAudit.blockedByPrerequisite : false;
       }
 
       if (activeTab.startsWith("type:")) {

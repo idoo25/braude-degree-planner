@@ -99,6 +99,8 @@ export type CourseAudit = {
   completed: boolean;
   available: boolean;
   missingPrerequisites: MissingPrerequisite[];
+  /** True only when the course is blocked purely by an unmet prerequisite - false whenever a mutual-exclusion conflict is also present, since a chosen equivalent/alternative supersedes the course regardless of its own prerequisite state. */
+  blockedByPrerequisite: boolean;
 };
 
 export type ClusterAudit = {
