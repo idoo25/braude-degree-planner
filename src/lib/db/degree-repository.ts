@@ -270,20 +270,26 @@ function readCourses(programId: string): Course[] {
     )
     .all(programId) as Row[];
 
-  return rows.map((row) => ({
-    id: String(row.id),
-    name: String(row.name),
-    credits: toNumber(row.credits),
-    type: String(row.type) as CourseType,
-    required: row.is_required === 1,
-    semester: toOptionalNumber(row.semester),
-    clusterId: typeof row.cluster_id === "string" ? row.cluster_id : undefined,
-    requirementGroup:
-      typeof row.requirement_group_code === "string" ? row.requirement_group_code : undefined,
-    prerequisites: prerequisitesByCourse.get(String(row.id)),
-    coRequisites: corequisitesByCourse.get(String(row.id)),
-    notes: notesByCourse.get(String(row.id)),
-  }));
+  return rows.map((row) => {
+    const metadata = parseJson<Record<string, unknown>>(row.metadata_json, {});
+
+    return {
+      id: String(row.id),
+      name: String(row.name),
+      credits: toNumber(row.credits),
+      type: String(row.type) as CourseType,
+      required: row.is_required === 1,
+      semester: toOptionalNumber(row.semester),
+      clusterId: typeof row.cluster_id === "string" ? row.cluster_id : undefined,
+      requirementGroup:
+        typeof row.requirement_group_code === "string" ? row.requirement_group_code : undefined,
+      prerequisites: prerequisitesByCourse.get(String(row.id)),
+      coRequisites: corequisitesByCourse.get(String(row.id)),
+      notes: notesByCourse.get(String(row.id)),
+      satisfiesCourseId:
+        typeof metadata.satisfiesCourseId === "string" ? metadata.satisfiesCourseId : undefined,
+    };
+  });
 }
 
 function readProgramNotes(programId: string) {

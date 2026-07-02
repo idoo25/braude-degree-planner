@@ -158,13 +158,28 @@ function createCourseAudits(
   });
 }
 
+function getExemptionSatisfiedCourseIds(selectedCourses: Course[]) {
+  return new Set(
+    selectedCourses
+      .map((course) => course.satisfiesCourseId)
+      .filter((id): id is string => typeof id === "string")
+  );
+}
+
 function createRequiredGaps(
   selected: Set<string>,
   plan: DegreePlan,
-  courseMap: Map<string, Course>
+  courseMap: Map<string, Course>,
+  exemptionSatisfiedCourseIds: Set<string>
 ): RequirementGap[] {
   const gaps: RequirementGap[] = plan.courses
-    .filter((course) => course.required && !course.requirementGroup && !selected.has(course.id))
+    .filter(
+      (course) =>
+        course.required &&
+        !course.requirementGroup &&
+        !selected.has(course.id) &&
+        !exemptionSatisfiedCourseIds.has(course.id)
+    )
     .map((course) => ({
       id: course.id,
       label: `${course.id} ${course.name}`,
@@ -246,6 +261,12 @@ export function createDegreeAudit(selectedCourseIds: string[], plan: DegreePlan)
   const selected = new Set(selectedCourseIds.filter((id) => courseMap.has(id)));
   const selectedCourses = [...selected].map((id) => courseMap.get(id)).filter(Boolean) as Course[];
   const courseAudits = createCourseAudits(selected, plan, courseMap);
+  const exemptionSatisfiedCourseIds = getExemptionSatisfiedCourseIds(selectedCourses);
+  const exemptionCreditBonus = [...exemptionSatisfiedCourseIds].reduce((sum, id) => {
+    const target = courseMap.get(id);
+
+    return target && target.required && !target.requirementGroup ? sum + target.credits : sum;
+  }, 0);
   const generalCreditsFromCourses = selectedCourses
     .filter((course) => course.type === "general")
     .reduce((sum, course) => sum + course.credits, 0);
@@ -264,9 +285,10 @@ export function createDegreeAudit(selectedCourseIds: string[], plan: DegreePlan)
   const electiveCreditsCompleted = selectedCourses
     .filter((course) => course.type === "elective")
     .reduce((sum, course) => sum + course.credits, electiveConversionCredits);
-  const fixedMandatoryCredits = selectedCourses
-    .filter((course) => course.required && !course.requirementGroup)
-    .reduce((sum, course) => sum + course.credits, 0);
+  const fixedMandatoryCredits =
+    selectedCourses
+      .filter((course) => course.required && !course.requirementGroup)
+      .reduce((sum, course) => sum + course.credits, 0) + exemptionCreditBonus;
   const requirementGroupCredits = plan.requirementGroups.reduce(
     (sum, group) => sum + getRequirementGroupCredits(group, selected, plan),
     0
@@ -276,7 +298,7 @@ export function createDegreeAudit(selectedCourseIds: string[], plan: DegreePlan)
     fixedMandatoryCredits + requirementGroupCredits + conversionCreditsAppliedToGeneral
   );
   const totalCreditsCompleted = roundCredit(
-    selectedCourses.reduce((sum, course) => sum + course.credits, 0)
+    selectedCourses.reduce((sum, course) => sum + course.credits, 0) + exemptionCreditBonus
   );
   const totalCreditsRemaining = roundCredit(
     Math.max(0, plan.requirements.totalCredits - totalCreditsCompleted)
@@ -333,7 +355,7 @@ export function createDegreeAudit(selectedCourseIds: string[], plan: DegreePlan)
       Math.max(0, plan.requirements.generalCredits - generalCreditsCompleted)
     ),
     conversionCreditsAppliedToGeneral: roundCredit(conversionCreditsAppliedToGeneral),
-    requiredRemaining: createRequiredGaps(selected, plan, courseMap),
+    requiredRemaining: createRequiredGaps(selected, plan, courseMap, exemptionSatisfiedCourseIds),
     clusterAudits,
     missingClusters: clusterAudits.filter((cluster) => !cluster.satisfied),
     blockedCourses,

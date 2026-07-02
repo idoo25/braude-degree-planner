@@ -45,6 +45,7 @@ const courses: Course[] = [
     name: "פטור/סיווג מאנגלית מתקדמים ב",
     credits: 0,
     type: "placement",
+    satisfiesCourseId: "11060",
     notes: ["מיועד לסטודנטים הפטורים מכל חובות האנגלית עד רמת מתקדמים ב (כולל)."],
   },
   {

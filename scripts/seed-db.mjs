@@ -327,7 +327,7 @@ function seed(db, plan) {
         course.semester ?? null,
         course.clusterId ?? null,
         course.requirementGroup ?? null,
-        stringify({}),
+        stringify({ satisfiesCourseId: course.satisfiesCourseId ?? null }),
         index
       );
 

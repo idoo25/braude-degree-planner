@@ -732,7 +732,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
                   setActiveSubTab("all");
                 }}
               >
-                <TabsList className="flex h-auto w-full flex-wrap justify-start">
+                <TabsList className="flex h-auto w-full flex-wrap justify-start gap-1.5">
                   {filterTabs.map((tab) => (
                     <TabsTrigger key={tab.value} value={tab.value} className="flex-none">
                       {tab.label}
@@ -741,7 +741,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
                 </TabsList>
                 <div className="rounded-lg border bg-muted/25 p-2">
                   <Tabs value={effectiveSubTab} onValueChange={setActiveSubTab}>
-                    <TabsList className="flex h-auto w-full flex-wrap justify-start bg-transparent p-0">
+                    <TabsList className="flex h-auto w-full flex-wrap justify-start gap-1.5 bg-transparent p-0">
                       {subTabs.map((tab) => (
                         <TabsTrigger
                           key={tab.value}

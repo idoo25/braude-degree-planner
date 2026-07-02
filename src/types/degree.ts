@@ -27,6 +27,8 @@ export type Course = {
   prerequisites?: PrerequisiteGroup[];
   coRequisites?: string[];
   notes?: string[];
+  /** When selected, this course (e.g. a placement/exemption) satisfies the credit and required-course requirement of the referenced course id instead of the student taking it. */
+  satisfiesCourseId?: string;
 };
 
 export type ElectiveCluster = {
