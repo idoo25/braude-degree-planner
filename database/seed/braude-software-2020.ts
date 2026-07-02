@@ -41,6 +41,13 @@ const courses: Course[] = [
     notes: ["מיועד לסטודנטים שמתחילים מאנגלית מתקדמים ב או מעליה."],
   },
   {
+    id: "ENG_ADV_B_OK",
+    name: "פטור/סיווג מאנגלית מתקדמים ב",
+    credits: 0,
+    type: "placement",
+    notes: ["מיועד לסטודנטים הפטורים מכל חובות האנגלית עד רמת מתקדמים ב (כולל)."],
+  },
+  {
     id: "11063",
     name: "אנגלית בסיסי",
     credits: 0,
@@ -185,7 +192,10 @@ const courses: Course[] = [
     required: true,
     semester: 3,
     prerequisites: [
-      any(["11063", "ENG_BASIC_OK"], "אנגלית בסיסית או פטור/סיווג"),
+      any(
+        ["11063", "ENG_BASIC_OK", "ENG_ADV_A_OK", "ENG_ADV_B_OK"],
+        "אנגלית בסיסית או פטור/סיווג מתאים"
+      ),
       p(["61743", "61745"]),
     ],
     notes: ["קורס קדם 11063 חל על סטודנטים שהחלו בתשפ\"ג ואילך."],
@@ -286,7 +296,7 @@ const courses: Course[] = [
     type: "english",
     required: true,
     semester: 5,
-    prerequisites: [p(["11060"])],
+    prerequisites: [any(["11060", "ENG_ADV_B_OK"], "אנגלית מתקדמים ב או פטור/סיווג")],
     notes: ["אחד משני קורסי האנגלית הנדרשים בתוכנית."],
   },
   {
@@ -296,7 +306,10 @@ const courses: Course[] = [
     type: "required",
     required: true,
     semester: 5,
-    prerequisites: [p(["11060", "61751", "61755", "61762"])],
+    prerequisites: [
+      any(["11060", "ENG_ADV_B_OK"], "אנגלית מתקדמים ב או פטור/סיווג"),
+      p(["61751", "61755", "61762"]),
+    ],
     coRequisites: ["61757", "61769"],
     notes: ["יש ללמוד בצמוד את 61757 ואת 61769."],
   },
@@ -307,7 +320,10 @@ const courses: Course[] = [
     type: "required",
     required: true,
     semester: 5,
-    prerequisites: [p(["11060", "61751", "61755", "61762"])],
+    prerequisites: [
+      any(["11060", "ENG_ADV_B_OK"], "אנגלית מתקדמים ב או פטור/סיווג"),
+      p(["61751", "61755", "61762"]),
+    ],
     coRequisites: ["61756", "61769"],
   },
   {
@@ -335,7 +351,10 @@ const courses: Course[] = [
     type: "required",
     required: true,
     semester: 5,
-    prerequisites: [p(["11060", "61751", "61755", "61762"])],
+    prerequisites: [
+      any(["11060", "ENG_ADV_B_OK"], "אנגלית מתקדמים ב או פטור/סיווג"),
+      p(["61751", "61755", "61762"]),
+    ],
     coRequisites: ["61756", "61757"],
   },
   {
@@ -982,6 +1001,55 @@ export const degreePlan: DegreePlan = {
       type: "mutual_exclusion",
       message: "לא ניתן לסמן גם אנגלית מתקדמים א וגם פטור/סיווג מאנגלית מתקדמים א.",
       payload: { courseIds: ["11064", "ENG_ADV_A_OK"], maxSelected: 1 },
+      enabled: true,
+    },
+    {
+      id: "english-advanced-a-blocks-basic",
+      type: "mutual_exclusion",
+      message: "פטור/סיווג מאנגלית מתקדמים א חוסם גם את אנגלית בסיסי.",
+      payload: { courseIds: ["11063", "ENG_ADV_A_OK"], maxSelected: 1 },
+      enabled: true,
+    },
+    {
+      id: "english-advanced-b-placement-mutual-exclusion",
+      type: "mutual_exclusion",
+      message: "לא ניתן לסמן גם אנגלית מתקדמים ב וגם פטור/סיווג מאנגלית מתקדמים ב.",
+      payload: { courseIds: ["11060", "ENG_ADV_B_OK"], maxSelected: 1 },
+      enabled: true,
+    },
+    {
+      id: "english-advanced-b-blocks-basic",
+      type: "mutual_exclusion",
+      message: "פטור/סיווג מאנגלית מתקדמים ב חוסם גם את אנגלית בסיסי.",
+      payload: { courseIds: ["11063", "ENG_ADV_B_OK"], maxSelected: 1 },
+      enabled: true,
+    },
+    {
+      id: "english-advanced-b-blocks-advanced-a",
+      type: "mutual_exclusion",
+      message: "פטור/סיווג מאנגלית מתקדמים ב חוסם גם את אנגלית מתקדמים א.",
+      payload: { courseIds: ["11064", "ENG_ADV_B_OK"], maxSelected: 1 },
+      enabled: true,
+    },
+    {
+      id: "english-exemptions-single-choice",
+      type: "mutual_exclusion",
+      message: "ניתן לבחור פטור/סיווג אנגלית אחד בלבד: בסיסי, מתקדמים א או מתקדמים ב.",
+      payload: { courseIds: ["ENG_BASIC_OK", "ENG_ADV_A_OK", "ENG_ADV_B_OK"], maxSelected: 1 },
+      enabled: true,
+    },
+    {
+      id: "physics-alternative-mutual-exclusion",
+      type: "mutual_exclusion",
+      message: "ניתן לבחור חלופת פיזיקה אחת בלבד: 61180 (בצמוד ל-61179), 61181 או 11158.",
+      payload: { courseIds: ["61180", "61181", "11158"], maxSelected: 1 },
+      enabled: true,
+    },
+    {
+      id: "physics-intro-lab-mutual-exclusion",
+      type: "mutual_exclusion",
+      message: "קורס 61179 נלמד רק בצמוד ל-61180; אינו תואם לחלופות 61181 או 11158.",
+      payload: { courseIds: ["61179", "61181", "11158"], maxSelected: 1 },
       enabled: true,
     },
     {

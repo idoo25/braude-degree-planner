@@ -9,12 +9,14 @@ import { cn } from "@/lib/utils"
 function Tabs({
   className,
   orientation = "horizontal",
+  dir = "rtl",
   ...props
 }: React.ComponentProps<typeof TabsPrimitive.Root>) {
   return (
     <TabsPrimitive.Root
       data-slot="tabs"
       data-orientation={orientation}
+      dir={dir}
       className={cn(
         "group/tabs flex gap-2 data-horizontal:flex-col",
         className

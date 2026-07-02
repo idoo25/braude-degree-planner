@@ -113,13 +113,41 @@ function getRequirementGroupCredits(group: RequirementGroup, selected: Set<strin
   );
 }
 
+function getConflictingSelections(
+  course: Course,
+  selected: Set<string>,
+  rules: DegreeRule[]
+): MissingPrerequisite[] {
+  return rules
+    .filter((rule) => rule.enabled && rule.type === "mutual_exclusion")
+    .flatMap((rule) => {
+      const courseIds = getStringArray(rule.payload.courseIds);
+      const maxSelected = typeof rule.payload.maxSelected === "number" ? rule.payload.maxSelected : 1;
+
+      if (maxSelected !== 1 || !courseIds.includes(course.id)) {
+        return [];
+      }
+
+      const conflictingIds = courseIds.filter((id) => id !== course.id && selected.has(id));
+
+      if (!conflictingIds.length) {
+        return [];
+      }
+
+      return [{ ids: conflictingIds, label: rule.message }];
+    });
+}
+
 function createCourseAudits(
   selected: Set<string>,
   plan: DegreePlan,
   courseMap: Map<string, Course>
 ): CourseAudit[] {
   return plan.courses.map((course) => {
-    const missingPrerequisites = getMissingPrerequisites(course, selected, courseMap);
+    const missingPrerequisites = [
+      ...getMissingPrerequisites(course, selected, courseMap),
+      ...getConflictingSelections(course, selected, plan.rules),
+    ];
 
     return {
       course,

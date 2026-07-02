@@ -48,8 +48,38 @@ function getClusterName(plan: DegreePlan, clusterId?: string) {
   return plan.clusters.find((cluster) => cluster.id === clusterId)?.name;
 }
 
+const ROMAN_NUMERALS: [number, string][] = [
+  [1000, "M"],
+  [900, "CM"],
+  [500, "D"],
+  [400, "CD"],
+  [100, "C"],
+  [90, "XC"],
+  [50, "L"],
+  [40, "XL"],
+  [10, "X"],
+  [9, "IX"],
+  [5, "V"],
+  [4, "IV"],
+  [1, "I"],
+];
+
+function toRoman(value: number) {
+  let remaining = value;
+  let result = "";
+
+  for (const [amount, symbol] of ROMAN_NUMERALS) {
+    while (remaining >= amount) {
+      result += symbol;
+      remaining -= amount;
+    }
+  }
+
+  return result;
+}
+
 function getCourseSemesterLabel(course: Course) {
-  return course.semester ? `סמסטר ${course.semester}` : "ללא סמסטר מומלץ";
+  return course.semester ? `סמסטר ${toRoman(course.semester)}` : "ללא סמסטר מומלץ";
 }
 
 function createSemesterSubTabs(courses: Course[]) {
@@ -62,7 +92,7 @@ function createSemesterSubTabs(courses: Course[]) {
     { value: "all", label: "כל הסמסטרים", count: courses.length },
     ...semesters.map((semester) => ({
       value: `semester:${semester}`,
-      label: `סמסטר ${semester}`,
+      label: `סמסטר ${toRoman(semester)}`,
       count: courses.filter((course) => course.semester === semester).length,
     })),
     ...(withoutSemesterCount
@@ -284,6 +314,7 @@ function CourseRow({
 }) {
   const { course } = audit;
   const clusterName = getClusterName(plan, course.clusterId);
+  const locked = !selected && !audit.available;
 
   return (
     <div
@@ -291,11 +322,12 @@ function CourseRow({
       className={cn(
         "grid grid-cols-[auto_minmax(0,1fr)_minmax(4.5rem,auto)] items-start gap-3 border-b px-4 py-3 text-right last:border-b-0",
         selected && "bg-emerald-50/60",
-        !selected && !audit.available && "bg-destructive/5"
+        locked && "bg-destructive/5"
       )}
     >
       <Checkbox
         checked={selected}
+        disabled={locked}
         className="mt-1 size-5"
         aria-label={`סמן את ${course.name}`}
         onCheckedChange={(checked) => onToggle(course.id, checked === true)}
@@ -702,7 +734,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
               >
                 <TabsList className="flex h-auto w-full flex-wrap justify-start">
                   {filterTabs.map((tab) => (
-                    <TabsTrigger key={tab.value} value={tab.value}>
+                    <TabsTrigger key={tab.value} value={tab.value} className="flex-none">
                       {tab.label}
                     </TabsTrigger>
                   ))}
@@ -714,9 +746,9 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
                         <TabsTrigger
                           key={tab.value}
                           value={tab.value}
-                          className="h-8 gap-1.5 px-2.5"
+                          className="h-8 flex-none gap-1 px-2.5"
                         >
-                          <span>{tab.label}</span>
+                          <span>{tab.label}:</span>
                           <span className="font-mono text-[0.7rem] text-muted-foreground">{tab.count}</span>
                         </TabsTrigger>
                       ))}
