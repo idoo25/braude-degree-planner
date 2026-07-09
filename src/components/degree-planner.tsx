@@ -241,11 +241,22 @@ type SemesterStats = {
   completedCredits: number;
 };
 
-function getSemesterStats(plan: DegreePlan, selectedSet: Set<string>) {
+function getSemesterStats(plan: DegreePlan, auditByCourseId: Map<string, CourseAudit>) {
   const bySemester = new Map<number, SemesterStats>();
 
   plan.courses.forEach((course) => {
     if (!course.semester) {
+      return;
+    }
+
+    const courseAudit = auditByCourseId.get(course.id);
+    // A course superseded by a chosen alternative/exemption (e.g. the physics
+    // option not taken) can never be selected - it isn't part of the real
+    // slate for this semester, so it shouldn't count against completion.
+    const supersededByAlternative =
+      courseAudit && !courseAudit.completed && !courseAudit.available && !courseAudit.blockedByPrerequisite;
+
+    if (supersededByAlternative) {
       return;
     }
 
@@ -259,7 +270,7 @@ function getSemesterStats(plan: DegreePlan, selectedSet: Set<string>) {
     entry.totalCourses += 1;
     entry.totalCredits += course.credits;
 
-    if (selectedSet.has(course.id)) {
+    if (courseAudit?.completed) {
       entry.completedCourses += 1;
       entry.completedCredits += course.credits;
     }
@@ -283,9 +294,9 @@ function SemesterStation({
   index: number;
   onSelect: () => void;
 }) {
-  const percent = stats.totalCourses ? Math.round((stats.completedCourses / stats.totalCourses) * 100) : 0;
-  const isComplete = stats.totalCourses > 0 && stats.completedCourses === stats.totalCourses;
-  const isEmpty = stats.completedCourses === 0;
+  const percent = stats.totalCredits ? Math.round((stats.completedCredits / stats.totalCredits) * 100) : 0;
+  const isComplete = stats.totalCredits > 0 && stats.completedCredits === stats.totalCredits;
+  const isEmpty = stats.completedCredits === 0;
 
   return (
     <button
@@ -327,18 +338,18 @@ function SemesterStation({
 
 function SemesterRail({
   plan,
-  selectedSet,
+  auditByCourseId,
   activeTab,
   effectiveSubTab,
   onSelectSemester,
 }: {
   plan: DegreePlan;
-  selectedSet: Set<string>;
+  auditByCourseId: Map<string, CourseAudit>;
   activeTab: string;
   effectiveSubTab: string;
   onSelectSemester: (semester: number) => void;
 }) {
-  const bySemester = useMemo(() => getSemesterStats(plan, selectedSet), [plan, selectedSet]);
+  const bySemester = useMemo(() => getSemesterStats(plan, auditByCourseId), [plan, auditByCourseId]);
   const semesters = useMemo(() => [...bySemester.keys()].sort((a, b) => a - b), [bySemester]);
 
   if (!semesters.length) {
@@ -847,7 +858,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
 
           <SemesterRail
             plan={plan}
-            selectedSet={selectedSet}
+            auditByCourseId={auditByCourseId}
             activeTab={activeTab}
             effectiveSubTab={effectiveSubTab}
             onSelectSemester={selectSemester}
