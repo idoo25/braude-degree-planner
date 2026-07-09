@@ -1015,6 +1015,22 @@ const courses: Course[] = [
     prerequisites: [p(["61751"])],
   },
   {
+    id: "62010",
+    name: "מעבדה בניתוח נתונים",
+    credits: 2.5,
+    type: "elective",
+    clusterId: "labs",
+    prerequisites: [p(["61760"])],
+  },
+  {
+    id: "62012",
+    name: "מעבדה בדבאופס",
+    credits: 2.5,
+    type: "elective",
+    clusterId: "labs",
+    prerequisites: [p(["61751"])],
+  },
+  {
     id: "61990",
     name: "מעבדה בטכנולוגיות תכנות צד לקוח ושרת",
     credits: 2.5,

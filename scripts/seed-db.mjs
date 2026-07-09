@@ -40,6 +40,18 @@ function stringify(value) {
   return JSON.stringify(value ?? {});
 }
 
+const scheduleSectionsPath = path.join(rootDir, "database", "seed", "schedule-sections.json");
+
+function readScheduleSections() {
+  if (!fs.existsSync(scheduleSectionsPath)) {
+    return [];
+  }
+
+  const raw = JSON.parse(fs.readFileSync(scheduleSectionsPath, "utf8"));
+
+  return Array.isArray(raw) ? raw : [];
+}
+
 function execSchema(db) {
   db.exec(`
     PRAGMA foreign_keys = ON;
@@ -196,6 +208,28 @@ function execSchema(db) {
       cluster_name,
       tokenize = 'unicode61'
     );
+
+    CREATE TABLE IF NOT EXISTS course_sections (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      program_id TEXT NOT NULL,
+      course_id TEXT NOT NULL,
+      academic_year TEXT NOT NULL,
+      semester_period TEXT NOT NULL,
+      section_type TEXT NOT NULL,
+      group_code TEXT NOT NULL,
+      track_note TEXT,
+      lecturer_name TEXT,
+      is_full INTEGER NOT NULL DEFAULT 0,
+      teaching_language TEXT,
+      day_of_week TEXT NOT NULL,
+      start_time TEXT NOT NULL,
+      end_time TEXT NOT NULL,
+      room TEXT,
+      sort_order INTEGER NOT NULL DEFAULT 0
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_sections_program_course ON course_sections(program_id, course_id);
+    CREATE INDEX IF NOT EXISTS idx_sections_program_semester ON course_sections(program_id, semester_period);
   `);
 }
 
@@ -258,11 +292,19 @@ function seed(db, plan) {
     INSERT INTO course_search (program_id, course_id, name, type, cluster_name)
     VALUES (?, ?, ?, ?, ?)
   `);
+  const insertSection = db.prepare(`
+    INSERT INTO course_sections (
+      program_id, course_id, academic_year, semester_period, section_type, group_code,
+      track_note, lecturer_name, is_full, teaching_language, day_of_week, start_time, end_time,
+      room, sort_order
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
 
   db.exec("BEGIN IMMEDIATE");
 
   try {
     db.prepare("DELETE FROM course_search WHERE program_id = ?").run(programId);
+    db.prepare("DELETE FROM course_sections WHERE program_id = ?").run(programId);
     db.prepare("DELETE FROM programs WHERE id = ?").run(programId);
 
     insertProgram.run(
@@ -375,6 +417,26 @@ function seed(db, plan) {
         rule.message,
         stringify(rule.payload),
         rule.enabled ? 1 : 0,
+        index
+      );
+    });
+
+    readScheduleSections().forEach((section, index) => {
+      insertSection.run(
+        programId,
+        section.courseId,
+        section.academicYear,
+        section.semesterPeriod,
+        section.sectionType,
+        section.groupCode,
+        section.trackNote ?? null,
+        section.lecturerName ?? null,
+        section.isFull ? 1 : 0,
+        section.teachingLanguage ?? null,
+        section.dayOfWeek,
+        section.startTime,
+        section.endTime,
+        section.room ?? null,
         index
       );
     });
