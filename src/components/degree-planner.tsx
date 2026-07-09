@@ -3,12 +3,11 @@
 import {
   AlertTriangle,
   BookOpen,
+  Check,
   CheckCircle2,
-  Circle,
   Download,
   Filter,
   GraduationCap,
-  LockKeyhole,
   RotateCcw,
   Search,
   Upload,
@@ -235,66 +234,207 @@ function useAudit(selectedCourseIds: string[], initialAudit: DegreeAudit, hydrat
   return { audit, pending };
 }
 
-function MetricCard({
+type SemesterStats = {
+  totalCourses: number;
+  completedCourses: number;
+  totalCredits: number;
+  completedCredits: number;
+};
+
+function getSemesterStats(plan: DegreePlan, selectedSet: Set<string>) {
+  const bySemester = new Map<number, SemesterStats>();
+
+  plan.courses.forEach((course) => {
+    if (!course.semester) {
+      return;
+    }
+
+    const entry = bySemester.get(course.semester) ?? {
+      totalCourses: 0,
+      completedCourses: 0,
+      totalCredits: 0,
+      completedCredits: 0,
+    };
+
+    entry.totalCourses += 1;
+    entry.totalCredits += course.credits;
+
+    if (selectedSet.has(course.id)) {
+      entry.completedCourses += 1;
+      entry.completedCredits += course.credits;
+    }
+
+    bySemester.set(course.semester, entry);
+  });
+
+  return bySemester;
+}
+
+function SemesterStation({
+  semester,
+  stats,
+  active,
+  index,
+  onSelect,
+}: {
+  semester: number;
+  stats: SemesterStats;
+  active: boolean;
+  index: number;
+  onSelect: () => void;
+}) {
+  const percent = stats.totalCourses ? Math.round((stats.completedCourses / stats.totalCourses) * 100) : 0;
+  const isComplete = stats.totalCourses > 0 && stats.completedCourses === stats.totalCourses;
+  const isEmpty = stats.completedCourses === 0;
+
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      style={{ animationDelay: `${index * 60}ms` }}
+      className="motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95 group/station relative flex shrink-0 flex-col items-center gap-1.5 rounded-2xl px-1.5 py-1 outline-none motion-safe:fill-mode-backwards focus-visible:ring-2 focus-visible:ring-ring"
+      aria-label={`עבור לסמסטר ${toRoman(semester)}`}
+      aria-pressed={active}
+    >
+      <span
+        className={cn(
+          "flex size-11 items-center justify-center rounded-full transition-transform group-hover/station:scale-105",
+          isComplete && "bg-success shadow-[0_0_0_4px_color-mix(in_oklch,var(--success)_16%,transparent)]",
+          isEmpty && !isComplete && "bg-border"
+        )}
+        style={
+          !isComplete && !isEmpty
+            ? { background: `conic-gradient(var(--warning) ${percent}%, var(--border) ${percent}%)` }
+            : undefined
+        }
+      >
+        <span
+          className={cn(
+            "flex size-8 items-center justify-center rounded-full bg-card font-mono text-[0.8rem] font-semibold",
+            active && "ring-2 ring-primary ring-offset-2 ring-offset-card",
+            isComplete ? "text-success" : isEmpty ? "text-muted-foreground" : "text-warning"
+          )}
+        >
+          {isComplete ? <Check className="size-4" /> : toRoman(semester)}
+        </span>
+      </span>
+      <span className="font-mono text-[0.65rem] text-muted-foreground">
+        {formatCredits(stats.completedCredits)}/{formatCredits(stats.totalCredits)}
+      </span>
+    </button>
+  );
+}
+
+function SemesterRail({
+  plan,
+  selectedSet,
+  activeTab,
+  effectiveSubTab,
+  onSelectSemester,
+}: {
+  plan: DegreePlan;
+  selectedSet: Set<string>;
+  activeTab: string;
+  effectiveSubTab: string;
+  onSelectSemester: (semester: number) => void;
+}) {
+  const bySemester = useMemo(() => getSemesterStats(plan, selectedSet), [plan, selectedSet]);
+  const semesters = useMemo(() => [...bySemester.keys()].sort((a, b) => a - b), [bySemester]);
+
+  if (!semesters.length) {
+    return null;
+  }
+
+  return (
+    <div className="rounded-2xl border bg-card px-4 py-4 sm:px-6">
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <h2 className="text-xs font-semibold tracking-wide text-muted-foreground">מסלול הסמסטרים</h2>
+        <span className="font-mono text-[0.65rem] text-muted-foreground">I ← VIII</span>
+      </div>
+      <div className="relative">
+        <div
+          aria-hidden
+          className="absolute inset-x-3 top-[22px] h-0.5 rounded-full bg-gradient-to-l from-success via-warning to-border"
+        />
+        <div className="relative flex items-start justify-between gap-1 overflow-x-auto pb-1">
+          {semesters.map((semester, index) => (
+            <SemesterStation
+              key={semester}
+              semester={semester}
+              index={index}
+              stats={bySemester.get(semester) as SemesterStats}
+              active={activeTab === "all" && effectiveSubTab === `semester:${semester}`}
+              onSelect={() => onSelectSemester(semester)}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function StatTile({
   icon: Icon,
   label,
   value,
   detail,
   progress,
-  tone = "default",
+  tone,
 }: {
   icon: typeof GraduationCap;
   label: string;
   value: string;
   detail: string;
   progress?: number;
-  tone?: "default" | "success" | "warning";
+  tone: "primary" | "warning" | "success";
 }) {
+  const toneClasses = {
+    primary: { bar: "border-t-primary", icon: "text-primary", indicator: "bg-primary" },
+    warning: { bar: "border-t-warning", icon: "text-warning", indicator: "bg-warning" },
+    success: { bar: "border-t-success", icon: "text-success", indicator: "bg-success" },
+  }[tone];
+
   return (
-    <Card
-      className={cn(
-        "rounded-lg",
-        tone === "success" && "ring-emerald-200",
-        tone === "warning" && "ring-amber-200"
-      )}
-    >
+    <Card className={cn("rounded-2xl border-t-4", toneClasses.bar)}>
       <CardHeader>
-        <CardTitle className="text-sm text-muted-foreground">{label}</CardTitle>
+        <CardTitle className="text-xs font-medium tracking-wide text-muted-foreground">{label}</CardTitle>
         <CardAction>
-          <Icon className="size-4 text-muted-foreground" />
+          <Icon className={cn("size-4", toneClasses.icon)} />
         </CardAction>
       </CardHeader>
       <CardContent className="space-y-3">
         <div className="flex items-end gap-2">
-          <span className="font-mono text-3xl font-semibold tracking-normal">{value}</span>
+          <span className="font-mono text-3xl font-semibold tracking-normal font-tabular">{value}</span>
         </div>
         <p className="min-h-5 text-xs leading-5 text-muted-foreground">{detail}</p>
-        {typeof progress === "number" ? <Progress value={progress} className="h-2" /> : null}
+        {typeof progress === "number" ? (
+          <Progress value={progress} className="h-1.5" indicatorClassName={toneClasses.indicator} />
+        ) : null}
       </CardContent>
     </Card>
   );
 }
 
-function StatusBadge({ audit }: { audit: CourseAudit }) {
+function SignalChip({ audit }: { audit: CourseAudit }) {
   if (audit.completed) {
     return (
-      <Badge variant="secondary" className="bg-emerald-50 text-emerald-700">
-        <CheckCircle2 /> סומן
+      <Badge className="border border-success/25 bg-success/10 text-success">
+        <span className="size-1.5 rounded-full bg-success" /> סומן
       </Badge>
     );
   }
 
   if (audit.available) {
     return (
-      <Badge variant="outline" className="border-emerald-200 text-emerald-700">
-        <Circle /> זמין
+      <Badge className="border border-warning/30 bg-warning/10 text-warning">
+        <span className="size-1.5 rounded-full bg-warning" /> זמין
       </Badge>
     );
   }
 
   return (
-    <Badge variant="destructive">
-      <LockKeyhole /> חסום
+    <Badge className="border border-destructive/25 bg-destructive/10 text-destructive">
+      <span className="size-1.5 rounded-full bg-destructive" /> חסום
     </Badge>
   );
 }
@@ -320,9 +460,10 @@ function CourseRow({
     <div
       dir="rtl"
       className={cn(
-        "grid grid-cols-[auto_minmax(0,1fr)_minmax(4.5rem,auto)] items-start gap-3 border-b px-4 py-3 text-right last:border-b-0",
-        selected && "bg-emerald-50/60",
-        locked && "bg-destructive/5"
+        "grid grid-cols-[auto_minmax(0,1fr)_minmax(4.5rem,auto)] items-start gap-3 border-b border-s-[3px] px-4 py-3 text-right last:border-b-0",
+        selected && "border-s-success bg-success/[0.06]",
+        locked && "border-s-destructive/40 bg-destructive/[0.04]",
+        !selected && !locked && "border-s-transparent"
       )}
     >
       <Checkbox
@@ -335,8 +476,10 @@ function CourseRow({
       <div className="min-w-0 space-y-2">
         <div className="flex flex-wrap items-center justify-start gap-2">
           <h3 className="break-words text-sm font-medium leading-6">{course.name}</h3>
-          <span className="font-mono text-xs text-muted-foreground">{course.id}</span>
-          <StatusBadge audit={audit} />
+          <span className="rounded border border-border bg-muted px-1.5 py-0.5 font-mono text-[0.7rem] tracking-wide text-muted-foreground">
+            {course.id}
+          </span>
+          <SignalChip audit={audit} />
         </div>
         <div className="flex flex-wrap justify-start gap-1.5">
           <Badge variant="outline">{courseTypeLabel}</Badge>
@@ -363,9 +506,40 @@ function CourseRow({
           <p className="text-xs leading-5 text-muted-foreground">{course.notes.join(" ")}</p>
         ) : null}
       </div>
-      <div dir="ltr" className="justify-self-start whitespace-nowrap text-left font-mono text-sm font-medium">
+      <div
+        dir="ltr"
+        className="justify-self-start whitespace-nowrap rounded-md border border-border bg-muted px-2 py-1 text-left font-mono text-sm font-medium font-tabular"
+      >
         {formatCredits(course.credits)} {'נ"ז'}
       </div>
+    </div>
+  );
+}
+
+function SectionHeading({
+  title,
+  count,
+  tone,
+}: {
+  title: string;
+  count: number;
+  tone: "primary" | "warning" | "destructive";
+}) {
+  const dotClass = {
+    primary: "bg-primary",
+    warning: "bg-warning",
+    destructive: count ? "bg-destructive" : "bg-success",
+  }[tone];
+
+  return (
+    <div className="flex items-center justify-between gap-3">
+      <h3 className="flex items-center gap-2 text-sm font-medium">
+        <span className={cn("size-2 rounded-full", dotClass)} />
+        {title}
+      </h3>
+      <Badge variant="outline" className="font-mono font-tabular">
+        {count}
+      </Badge>
     </div>
   );
 }
@@ -375,19 +549,14 @@ function RequirementList({ audit }: { audit: DegreeAudit }) {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-between gap-3">
-        <h3 className="text-sm font-medium">חובה שנשארה</h3>
-        <Badge variant={audit.requiredRemaining.length ? "outline" : "secondary"}>
-          {audit.requiredRemaining.length}
-        </Badge>
-      </div>
+      <SectionHeading title="חובה שנשארה" count={audit.requiredRemaining.length} tone="primary" />
       {topRemaining.length ? (
         <div className="space-y-2">
           {topRemaining.map((gap) => (
             <div key={gap.id} className="flex items-start justify-between gap-3 text-sm">
               <span className="leading-5">{gap.label}</span>
               {gap.credits ? (
-                <span className="whitespace-nowrap font-mono text-xs text-muted-foreground">
+                <span className="whitespace-nowrap font-mono text-xs text-muted-foreground font-tabular">
                   {formatCredits(gap.credits)} {'נ"ז'}
                 </span>
               ) : null}
@@ -404,20 +573,22 @@ function RequirementList({ audit }: { audit: DegreeAudit }) {
 function ClusterList({ audit }: { audit: DegreeAudit }) {
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-between gap-3">
-        <h3 className="text-sm font-medium">אשכולות בחירה</h3>
-        <Badge variant={audit.missingClusters.length ? "outline" : "secondary"}>
-          {audit.clusterAudits.length - audit.missingClusters.length}/{audit.clusterAudits.length}
-        </Badge>
-      </div>
+      <SectionHeading
+        title="אשכולות בחירה"
+        count={audit.clusterAudits.length - audit.missingClusters.length}
+        tone="warning"
+      />
       <div className="space-y-2">
         {audit.clusterAudits.map((cluster) => (
           <div key={cluster.id} className="space-y-1.5">
             <div className="flex items-center justify-between gap-3 text-sm">
               <span className="leading-5">{cluster.name}</span>
               <Badge
-                variant={cluster.satisfied ? "secondary" : "outline"}
-                className={cluster.satisfied ? "bg-emerald-50 text-emerald-700" : undefined}
+                variant="outline"
+                className={cn(
+                  "font-mono font-tabular",
+                  cluster.satisfied && "border-success/25 bg-success/10 text-success"
+                )}
               >
                 {cluster.selectedCourseIds.length}/{cluster.minCourses}
               </Badge>
@@ -437,12 +608,7 @@ function BlockedList({ audit }: { audit: DegreeAudit }) {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-between gap-3">
-        <h3 className="text-sm font-medium">חסומים כרגע</h3>
-        <Badge variant={audit.blockedCourses.length ? "destructive" : "secondary"}>
-          {audit.blockedCourses.length}
-        </Badge>
-      </div>
+      <SectionHeading title="חסומים כרגע" count={audit.blockedCourses.length} tone="destructive" />
       {blocked.length ? (
         <div className="space-y-2">
           {blocked.map((item) => (
@@ -590,6 +756,11 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
     });
   }
 
+  function selectSemester(semester: number) {
+    setActiveTab("all");
+    setActiveSubTab(`semester:${semester}`);
+  }
+
   function resetSelection() {
     if (window.confirm("לנקות את כל הקורסים שסומנו?")) {
       setSelectedCourseIds([]);
@@ -638,14 +809,16 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b bg-card">
+      <header className="border-b bg-card/60">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <div className="space-y-2">
               <div className="flex flex-wrap items-center gap-2">
-                <Badge variant="secondary">B.Sc.</Badge>
+                <Badge className="border border-primary/25 bg-primary/10 text-primary">B.Sc.</Badge>
                 <Badge variant="outline">עמודים {plan.source.pages}</Badge>
-                <Badge variant="outline">160 {'נ"ז'}</Badge>
+                <Badge variant="outline" className="font-mono font-tabular">
+                  160 {'נ"ז'}
+                </Badge>
               </div>
               <div>
                 <h1 className="text-3xl font-semibold tracking-normal sm:text-4xl">{plan.title}</h1>
@@ -671,35 +844,39 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
               />
             </div>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <MetricCard
+
+          <SemesterRail
+            plan={plan}
+            selectedSet={selectedSet}
+            activeTab={activeTab}
+            effectiveSubTab={effectiveSubTab}
+            onSelectSemester={selectSemester}
+          />
+
+          <div className="grid gap-3 sm:grid-cols-3">
+            <StatTile
               icon={GraduationCap}
               label={'נק"ז שסומנו'}
               value={`${formatCredits(audit.totalCreditsCompleted)}/${plan.requirements.totalCredits}`}
               detail={`${audit.totalCreditsRemaining} נ"ז עד המינימום לתואר`}
               progress={audit.completionPercent}
-              tone={audit.totalCreditsRemaining === 0 ? "success" : "default"}
+              tone="primary"
             />
-            <MetricCard
+            <StatTile
               icon={BookOpen}
               label="חובה וליבה"
               value={`${formatCredits(audit.fixedCreditsCompleted)}/${plan.requirements.fixedDegreeCredits}`}
               detail={`${formatCredits(audit.fixedCreditsRemaining)} נ"ז חובה/כללי/פיזיקה נשארו`}
               progress={(audit.fixedCreditsCompleted / plan.requirements.fixedDegreeCredits) * 100}
+              tone="warning"
             />
-            <MetricCard
+            <StatTile
               icon={Filter}
               label="בחירה והשלמה"
               value={`${formatCredits(audit.electiveCreditsCompleted)}/${plan.requirements.electiveCreditsNeeded}`}
               detail={`${formatCredits(audit.electiveCreditsRemaining)} נ"ז בחירה להשלמה`}
               progress={(audit.electiveCreditsCompleted / plan.requirements.electiveCreditsNeeded) * 100}
-            />
-            <MetricCard
-              icon={LockKeyhole}
-              label="חסימות"
-              value={audit.blockedCourses.length.toString()}
-              detail={`${audit.availableCourses.length} קורסים זמינים לפי תנאי קדם`}
-              tone={audit.blockedCourses.length ? "warning" : "success"}
+              tone="success"
             />
           </div>
         </div>
@@ -707,7 +884,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
 
       <main className="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_380px] lg:px-8">
         <section className="space-y-4">
-          <Card className="rounded-lg">
+          <Card className="rounded-2xl">
             <CardHeader>
               <CardTitle>קורסים</CardTitle>
               <CardDescription>
@@ -752,7 +929,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
                   </Tabs>
                 </div>
                 <TabsContent value={activeTab} className="mt-4">
-                  <div className="overflow-hidden rounded-lg border">
+                  <div className="overflow-hidden rounded-2xl border">
                     {visibleCourses.length ? (
                       visibleCourses.map((course) => {
                         const courseAudit = auditByCourseId.get(course.id);
@@ -785,7 +962,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
         </section>
 
         <aside className="space-y-4 lg:sticky lg:top-4 lg:self-start">
-          <Card className="rounded-lg">
+          <Card className="rounded-2xl">
             <CardHeader>
               <CardTitle>תמונת מצב</CardTitle>
               <CardDescription>
@@ -794,10 +971,10 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
             </CardHeader>
             <CardContent className="space-y-5">
               {audit.warnings.length ? (
-                <div className="space-y-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+                <div className="space-y-2 rounded-lg border border-warning/30 bg-warning/10 px-3 py-2 text-sm">
                   {audit.warnings.map((warning) => (
                     <div key={warning} className="flex gap-2">
-                      <AlertTriangle className="mt-0.5 size-4 shrink-0" />
+                      <AlertTriangle className="mt-0.5 size-4 shrink-0 text-warning" />
                       <span className="leading-5">{warning}</span>
                     </div>
                   ))}
@@ -811,7 +988,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
             </CardContent>
           </Card>
 
-          <Card className="rounded-lg">
+          <Card className="rounded-2xl">
             <CardHeader>
               <CardTitle>מקור וכללים</CardTitle>
               <CardDescription>{plan.source.fileName}</CardDescription>
@@ -819,7 +996,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
             <CardContent className="space-y-2">
               {plan.notes.map((note) => (
                 <div key={note} className="flex gap-2 text-sm leading-6 text-muted-foreground">
-                  <CheckCircle2 className="mt-1 size-4 shrink-0 text-emerald-600" />
+                  <CheckCircle2 className="mt-1 size-4 shrink-0 text-success" />
                   <span>{note}</span>
                 </div>
               ))}

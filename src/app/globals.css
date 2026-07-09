@@ -7,9 +7,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
-  --font-heading: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans Hebrew", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+  --font-heading: "IBM Plex Sans Hebrew", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -39,6 +39,10 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -48,73 +52,85 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/*
+  Engineering Schematic palette
+  paper #F2F5F3  ink #142430  blueprint #0E5C7D  copper #B8791F  circuit #1F7A50  rust #A6402E
+*/
 :root {
-  --background: oklch(0.985 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.46 0.13 155);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.58 0.11 155);
-  --chart-1: oklch(0.68 0.14 155);
-  --chart-2: oklch(0.72 0.16 72);
-  --chart-3: oklch(0.58 0.13 245);
-  --chart-4: oklch(0.62 0.15 25);
-  --chart-5: oklch(0.48 0.08 285);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: #f2f5f3;
+  --foreground: #142430;
+  --card: #ffffff;
+  --card-foreground: #142430;
+  --popover: #ffffff;
+  --popover-foreground: #142430;
+  --primary: #0e5c7d;
+  --primary-foreground: #f7fbfc;
+  --secondary: #e3ebec;
+  --secondary-foreground: #142430;
+  --muted: #e7ebe9;
+  --muted-foreground: #566268;
+  --accent: #f2e3c8;
+  --accent-foreground: #142430;
+  --destructive: #a6402e;
+  --border: #d7ded9;
+  --input: #d7ded9;
+  --ring: #0e5c7d;
+  --success: #1f7a50;
+  --success-foreground: #f4fbf7;
+  --warning: #b8791f;
+  --warning-foreground: #fff8ee;
+  --chart-1: #0e5c7d;
+  --chart-2: #b8791f;
+  --chart-3: #1f7a50;
+  --chart-4: #a6402e;
+  --chart-5: #566268;
+  --radius: 0.5rem;
+  --sidebar: #eef2f0;
+  --sidebar-foreground: #142430;
+  --sidebar-primary: #0e5c7d;
+  --sidebar-primary-foreground: #f7fbfc;
+  --sidebar-accent: #e3ebec;
+  --sidebar-accent-foreground: #142430;
+  --sidebar-border: #d7ded9;
+  --sidebar-ring: #0e5c7d;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #0b161c;
+  --foreground: #e7eeee;
+  --card: #10202a;
+  --card-foreground: #e7eeee;
+  --popover: #10202a;
+  --popover-foreground: #e7eeee;
+  --primary: #4fa9cc;
+  --primary-foreground: #08141a;
+  --secondary: #1b2e38;
+  --secondary-foreground: #e7eeee;
+  --muted: #16262f;
+  --muted-foreground: #93a7ad;
+  --accent: #2a2013;
+  --accent-foreground: #f0e6d3;
+  --destructive: #d9765f;
+  --border: color-mix(in oklch, white 10%, transparent);
+  --input: color-mix(in oklch, white 14%, transparent);
+  --ring: #4fa9cc;
+  --success: #4cb783;
+  --success-foreground: #08150f;
+  --warning: #e0a552;
+  --warning-foreground: #1d1206;
+  --chart-1: #4fa9cc;
+  --chart-2: #e0a552;
+  --chart-3: #4cb783;
+  --chart-4: #d9765f;
+  --chart-5: #93a7ad;
+  --sidebar: #0e1c23;
+  --sidebar-foreground: #e7eeee;
+  --sidebar-primary: #4fa9cc;
+  --sidebar-primary-foreground: #08141a;
+  --sidebar-accent: #1b2e38;
+  --sidebar-accent-foreground: #e7eeee;
+  --sidebar-border: color-mix(in oklch, white 10%, transparent);
+  --sidebar-ring: #4fa9cc;
 }
 
 @layer base {
@@ -124,8 +140,19 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "kern";
+    background-image:
+      linear-gradient(color-mix(in oklch, var(--foreground) 4%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in oklch, var(--foreground) 4%, transparent) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: -1px -1px;
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .font-tabular {
+    font-variant-numeric: tabular-nums;
   }
 }
