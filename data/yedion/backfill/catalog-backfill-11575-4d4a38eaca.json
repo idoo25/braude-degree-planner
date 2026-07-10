@@ -1,0 +1,112 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:37:11.801Z",
+    "finishedAt": "2026-07-09T16:37:11.801Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615031752__S_LOOK_FOR_NOSE__N11575__4d4a38eaca.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11575"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "11575",
+      "name": "מובילי אורח חיים בריא",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "הקורס \"מובילי אורח חיים בריא\" יעסוק בהיבטים של אורח חיים בריא. הנושאים המרכזיים בו יהיו: תזונה, אנטומיה וההשפעות הפיסיות והנפשיות של פעילות גופנית (בעיקר הליכה ויוגה), כמו הפחתת מתח ושיפור הלמידה. הקורס יכשיר אתכם להוביל קבוצות הליכה ופעילות גופנית ולהשפיע על חייהם של אנשים עם צרכים מיוחדים באמצעות הפעילות גופנית.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11575",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11575",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11575",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11575,-N1,-N1,-N261240110,-N",
+          "groupCode": "261240110",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "מר נעמן פרי גלעד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום חמישי",
+              "endTime": "12:20",
+              "lecturerName": "מר נעמן פרי גלעד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום חמישי",
+                "שעת התחלה : 10:30",
+                "שעת סיום: 12:20",
+                "מרצה: מר נעמן פרי גלעד",
+                "חדר לימוד: אולם ספורט"
+              ],
+              "room": "אולם ספורט",
+              "semesterPeriod": "א",
+              "startTime": "10:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11575,-N1,-N1,-N261240110,-N",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261240110 מרצה הקורס : מר נעמן פרי גלעד פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11575:1:1:261240110:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11575",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11575,-N2,-N1,-N261240110,-N",
+          "groupCode": "261240110",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "מר נעמן פרי גלעד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום חמישי",
+              "endTime": "12:20",
+              "lecturerName": "מר נעמן פרי גלעד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום חמישי",
+                "שעת התחלה : 10:30",
+                "שעת סיום: 12:20",
+                "מרצה: מר נעמן פרי גלעד",
+                "חדר לימוד:"
+              ],
+              "room": "",
+              "semesterPeriod": "ב",
+              "startTime": "10:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11575,-N2,-N1,-N261240110,-N",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261240110 מרצה הקורס : מר נעמן פרי גלעד פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11575:2:1:261240110:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

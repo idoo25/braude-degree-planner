@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Braude Degree Planner
 
-## Getting Started
+A degree-audit and planning tool for Braude College of Engineering (Carmiel). Pick a
+degree program, mark the courses you've completed, and see what's left: credits
+remaining, blocked/available courses, prerequisite and corequisite status, and
+elective-cluster progress.
 
-First, run the development server:
+Live app: https://braude-degree-planner.vercel.app
 
-```bash
+## What's here
+
+- **15 degree programs** seeded from the official yearbook (שנתון): all undergraduate
+  (B.Sc.) engineering/math programs plus the M.Sc. programs. Each program has its own
+  course list, prerequisites, corequisites, elective clusters, and credit requirements.
+- **Program picker** at `/` — choose a program, then plan at `/p/[programId]`.
+- **Corequisite-aware audit**: a corequisite never hard-blocks a course. It's satisfied
+  either by prior completion or by taking it the same semester; if unmet, the UI shows
+  a "recommended together" hint instead of blocking.
+- **General-studies & sport electives**: real course catalogs (67 general-studies +
+  39 sport courses — actual options like tennis, chess, film studies) rather than
+  generic placeholder slots, with a warning if you select more than the required credits.
+- A separate, much larger **Yedion schedule/exam data pipeline** (see below) that
+  scrapes info.braude.ac.il for real section times, lecturers, rooms, and exam dates —
+  currently only wired up for the Software Engineering program's course cards.
+
+## Running locally
+
+```powershell
+npm install
+npm run db:seed      # build data/degree-planner.sqlite from database/seed/programs/*.ts
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`npm run db:seed` (see `scripts/seed-db.mjs`) compiles every `*.ts` file under
+`database/seed/programs/` and loads it into SQLite — drop in a new program file and
+it's picked up automatically, no registration needed elsewhere.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `database/seed/programs/*.ts` — one file per degree program, each exporting a
+  `degreePlan` (see `src/types/degree.ts` for the shape: courses, prerequisites,
+  corequisites, elective clusters, requirement groups, mutual-exclusion rules).
+- `database/seed/shared/general-and-sport-courses.json` — the shared general-studies
+  and sport elective catalog, imported by every B.Sc. program's seed file.
+- `scripts/seed-db.mjs` — loads all program files into `data/degree-planner.sqlite`.
+- `src/lib/db/degree-repository.ts` — reads a program's full plan from SQLite.
+- `src/lib/degree-audit.ts` — the audit engine: given a program plan + selected
+  course IDs, computes credits completed/remaining, blocked/available courses,
+  corequisite recommendations, cluster progress, and rule warnings.
+- `src/app/api/{degree-plan,audit,programs}/route.ts` — API routes, all accept an
+  optional `?programId=` query param (defaults to Software Engineering).
+- `src/components/degree-planner.tsx` — the planner UI.
 
-## Learn More
+## Adding or editing a program's curriculum
 
-To learn more about Next.js, take a look at the following resources:
+Edit (or add) a file under `database/seed/programs/`, matching the existing files'
+shape, then `npm run db:seed`. No other file needs to change.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## The Yedion data pipeline
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Separately from the curriculum data above, there's a scraper for
+info.braude.ac.il/yedion that pulls real schedule sections, lecturers, rooms, and
+exam dates — imported into `yedion_*` tables in the same SQLite file (distinct from
+the `courses`/`course_sections` tables the app currently reads). Full details, current
+coverage stats, and resume instructions are in `docs/yedion-data-pipeline.md`.
 
-## Deploy on Vercel
+Quick reference:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```powershell
+npm run yedion:merge          # merge saved catalog fragments into catalog-current.json
+npm run yedion:import:reset -- --input=data\yedion\catalog-current.json
+npm run yedion:report         # print current DB coverage
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site is rate-limited and blocks non-browser HTTP clients — scraping must run
+from an authenticated in-app browser session, serially, with request spacing. See
+`docs/yedion-data-pipeline.md` for the working method and current coverage (583
+courses, 1417 sections, 494 exams, 1354 prerequisite relations as of the last run).
+
+## Other commands
+
+```powershell
+npm run build   # production build
+npm run lint
+npm run db:reset  # drop and rebuild data/degree-planner.sqlite from scratch
+```

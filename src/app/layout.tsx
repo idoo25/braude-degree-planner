@@ -16,8 +16,8 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "מפת תואר הנדסת תוכנה | Braude",
-  description: "מחשבון נקודות זכות ותנאי קדם לתואר בהנדסת תוכנה בבראודה",
+  title: "מפת תואר | Braude",
+  description: "מחשבון נקודות זכות ותנאי קדם לתוכניות הלימוד במכללה האקדמית להנדסה בראודה",
 };
 
 export default function RootLayout({

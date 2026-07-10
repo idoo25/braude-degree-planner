@@ -6,10 +6,18 @@ import { DatabaseSync } from "node:sqlite";
 
 const rootDir = process.cwd();
 const dbPath = process.env.DEGREE_DB_PATH ?? path.join(rootDir, "data", "degree-planner.sqlite");
-const sourcePath = path.join(rootDir, "database", "seed", "braude-software-2020.ts");
+const programsDir = path.join(rootDir, "database", "seed", "programs");
 const shouldReset = process.argv.includes("--reset");
 
-function readSeedPlan() {
+function listProgramSourcePaths() {
+  return fs
+    .readdirSync(programsDir)
+    .filter((name) => name.endsWith(".ts"))
+    .sort()
+    .map((name) => path.join(programsDir, name));
+}
+
+function readSeedPlan(sourcePath) {
   const source = fs.readFileSync(sourcePath, "utf8");
   const compiled = ts.transpileModule(source, {
     compilerOptions: {
@@ -24,6 +32,12 @@ function readSeedPlan() {
     require: (specifier) => {
       if (specifier.startsWith("@/types/")) {
         return {};
+      }
+
+      if (specifier.includes("shared/general-and-sport-courses")) {
+        const sharedPath = path.join(rootDir, "database", "seed", "shared", "general-and-sport-courses.json");
+
+        return JSON.parse(fs.readFileSync(sharedPath, "utf8"));
       }
 
       throw new Error(`Unexpected seed import: ${specifier}`);
@@ -48,6 +62,18 @@ function readScheduleSections() {
   }
 
   const raw = JSON.parse(fs.readFileSync(scheduleSectionsPath, "utf8"));
+
+  return Array.isArray(raw) ? raw : [];
+}
+
+const courseSyllabiPath = path.join(rootDir, "database", "seed", "course-syllabi.json");
+
+function readCourseSyllabi() {
+  if (!fs.existsSync(courseSyllabiPath)) {
+    return [];
+  }
+
+  const raw = JSON.parse(fs.readFileSync(courseSyllabiPath, "utf8"));
 
   return Array.isArray(raw) ? raw : [];
 }
@@ -230,6 +256,13 @@ function execSchema(db) {
 
     CREATE INDEX IF NOT EXISTS idx_sections_program_course ON course_sections(program_id, course_id);
     CREATE INDEX IF NOT EXISTS idx_sections_program_semester ON course_sections(program_id, semester_period);
+
+    CREATE TABLE IF NOT EXISTS course_syllabi (
+      program_id TEXT NOT NULL,
+      course_id TEXT NOT NULL,
+      body TEXT NOT NULL,
+      PRIMARY KEY (program_id, course_id)
+    );
   `);
 }
 
@@ -299,12 +332,17 @@ function seed(db, plan) {
       room, sort_order
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
+  const insertSyllabus = db.prepare(`
+    INSERT INTO course_syllabi (program_id, course_id, body)
+    VALUES (?, ?, ?)
+  `);
 
   db.exec("BEGIN IMMEDIATE");
 
   try {
     db.prepare("DELETE FROM course_search WHERE program_id = ?").run(programId);
     db.prepare("DELETE FROM course_sections WHERE program_id = ?").run(programId);
+    db.prepare("DELETE FROM course_syllabi WHERE program_id = ?").run(programId);
     db.prepare("DELETE FROM programs WHERE id = ?").run(programId);
 
     insertProgram.run(
@@ -421,25 +459,31 @@ function seed(db, plan) {
       );
     });
 
-    readScheduleSections().forEach((section, index) => {
-      insertSection.run(
-        programId,
-        section.courseId,
-        section.academicYear,
-        section.semesterPeriod,
-        section.sectionType,
-        section.groupCode,
-        section.trackNote ?? null,
-        section.lecturerName ?? null,
-        section.isFull ? 1 : 0,
-        section.teachingLanguage ?? null,
-        section.dayOfWeek,
-        section.startTime,
-        section.endTime,
-        section.room ?? null,
-        index
-      );
-    });
+    if (programId === "braude-software-2020") {
+      readScheduleSections().forEach((section, index) => {
+        insertSection.run(
+          programId,
+          section.courseId,
+          section.academicYear,
+          section.semesterPeriod,
+          section.sectionType,
+          section.groupCode,
+          section.trackNote ?? null,
+          section.lecturerName ?? null,
+          section.isFull ? 1 : 0,
+          section.teachingLanguage ?? null,
+          section.dayOfWeek,
+          section.startTime,
+          section.endTime,
+          section.room ?? null,
+          index
+        );
+      });
+
+      readCourseSyllabi().forEach((entry) => {
+        insertSyllabus.run(programId, entry.courseId, entry.body);
+      });
+    }
 
     db.exec("COMMIT");
   } catch (error) {
@@ -456,11 +500,21 @@ if (shouldReset && fs.existsSync(dbPath)) {
   fs.rmSync(`${dbPath}-wal`, { force: true });
 }
 
-const plan = readSeedPlan();
+const sourcePaths = listProgramSourcePaths();
+const plans = sourcePaths.map((sourcePath) => {
+  const plan = readSeedPlan(sourcePath);
+
+  if (!plan) {
+    throw new Error(`No "degreePlan" export found in ${sourcePath}`);
+  }
+
+  return plan;
+});
+
 const db = new DatabaseSync(dbPath);
 
 execSchema(db);
-seed(db, plan);
+plans.forEach((plan) => seed(db, plan));
 db.close();
 
 console.log(
@@ -468,9 +522,11 @@ console.log(
     {
       ok: true,
       dbPath,
-      programId: plan.id,
-      courses: plan.courses.length,
-      clusters: plan.clusters.length,
+      programs: plans.map((plan) => ({
+        programId: plan.id,
+        courses: plan.courses.length,
+        clusters: plan.clusters.length,
+      })),
     },
     null,
     2

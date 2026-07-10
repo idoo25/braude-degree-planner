@@ -1,0 +1,484 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:37:16.983Z",
+    "finishedAt": "2026-07-09T16:37:16.983Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615036918__S_LOOK_FOR_NOSE__N11122__7ae68a4901.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11122"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 10,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "11122",
+      "name": "משוואות דיפרנצ' חלקיות וטורי פורייה",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "11122 משוואות דיפרנציאליות חלקיות וטורי פורייה3 2 - - 4.0משוואת מסדר ראשון, משוואת העברה. מיון משוואות מסדר שני. משוואת הגל, מיתר אינסופי, נוסחת ד'לאמבר, תחום התלות וההשפעה ובעיית התחלה מוצגת היטב. בעיות שפה התחלה למשוואות הגל והחום, תנאי שפה דירכלה, נוימן ורובין. רעיון הפרדת המשתנים. חישוב ערכים עצמיים ופונקציות עצמיות בתנאי דירכלה וניומן. בעיות שפה התחלה לא הומוגניות למשוואות הגל והחום. טורי פורייה: טור סינוסים וקוסינוסים, אורתוגונליות, פונקציות מחזוריות. אורתוגונליות/אורתונורמליות של המערכות הטריגונומטריות. הקירוב הטוב ביותר, טור פורייה טריגונומטרי ממשי ומרוכב. חישובי טורי פורייה. משפט דירכלה, התכנסות נקודתית, שוויון פרסבל ותופעת גיבס. טורים בקטעים שונים. תורת שטורם-ליוביל, ערכים ופונקציות עצמיות של בעיות שפה. משוואת לפלס: בעיית דריכלה וניומן בתחומים מעגליים, עקרון המקסימום ותכונת הממוצע, גרעין פואסון.התמרת פורייה: הגדרת התמרת פורייה. חישוב ההתמרה של פונקציית אלמנטריות, אינטגרל פורייה, התמרת פורייה הפוכה ושוויון פלנשראל, קונבולוציה ושימושיה. יישומים למשוואות.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11122",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11122",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N1,-N1,-N261030210,-N",
+          "groupCode": "261030210",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "פרופ' קרפ לביא",
+          "linkedGroups": [
+            {
+              "groupCode": "261030210",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261030210",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261030210",
+              "groupNumber": "3"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "15:50",
+              "lecturerName": "פרופ' קרפ לביא",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 15:50",
+                "מרצה: פרופ' קרפ לביא",
+                "חדר לימוד: 102 EM"
+              ],
+              "room": "102 EM",
+              "semesterPeriod": "א",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N1,-N1,-N261030210,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261030210 / 1 , 261030210 / 2 , 261030210 / 3 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261030210 מרצה הקורס : פרופ' קרפ לביא פרטים נוספים",
+          "sectionKey": "11122:1:1:261030210:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N1,-N1,-N261030210,-N1",
+          "groupCode": "261030210",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "פרופ' אלמוג יניב",
+          "linkedGroups": [
+            {
+              "groupCode": "261030210",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261030210",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261030210",
+              "groupNumber": "3"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום חמישי",
+              "endTime": "11:30",
+              "lecturerName": "פרופ' אלמוג יניב",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום חמישי",
+                "שעת התחלה : 08:30",
+                "שעת סיום: 11:30",
+                "מרצה: פרופ' אלמוג יניב",
+                "חדר לימוד: 203 EM"
+              ],
+              "room": "203 EM",
+              "semesterPeriod": "א",
+              "startTime": "08:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N1,-N1,-N261030210,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261030210 / 1 , 261030210 / 2 , 261030210 / 3 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261030210/ 1 מרצה הקורס : פרופ' אלמוג יניב פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11122:1:1:261030210:1",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N1,-N9,-N261030210,-N1",
+          "groupCode": "261030210",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר חלימר לאוניד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר חלימר לאוניד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 13:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר חלימר לאוניד",
+                "חדר לימוד: 204 EM"
+              ],
+              "room": "204 EM",
+              "semesterPeriod": "א",
+              "startTime": "13:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N1,-N9,-N261030210,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261030210/ 1 מרצה הקורס : ד\"ר חלימר לאוניד פרטים נוספים",
+          "sectionKey": "11122:1:9:261030210:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N1,-N9,-N261030210,-N2",
+          "groupCode": "261030210",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר צברי גיא",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "10:30",
+              "lecturerName": "ד\"ר צברי גיא",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 08:30",
+                "שעת סיום: 10:30",
+                "מרצה: ד\"ר צברי גיא",
+                "חדר לימוד: 301 M"
+              ],
+              "room": "301 M",
+              "semesterPeriod": "א",
+              "startTime": "08:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N1,-N9,-N261030210,-N2",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261030210/ 2 מרצה הקורס : ד\"ר צברי גיא פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11122:1:9:261030210:2",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N1,-N9,-N261030210,-N3",
+          "groupCode": "261030210",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר צברי גיא",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "11:30",
+              "lecturerName": "ד\"ר צברי גיא",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 09:30",
+                "שעת סיום: 11:30",
+                "מרצה: ד\"ר צברי גיא",
+                "חדר לימוד: 309 M"
+              ],
+              "room": "309 M",
+              "semesterPeriod": "א",
+              "startTime": "09:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N1,-N9,-N261030210,-N3",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261030210/ 3 מרצה הקורס : ד\"ר צברי גיא פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11122:1:9:261030210:3",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N2,-N1,-N261030232,-N",
+          "groupCode": "261030232",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "פרופ' קרפ לביא",
+          "linkedGroups": [
+            {
+              "groupCode": "261030232",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261030232",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261030232",
+              "groupNumber": "3"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "16:50",
+              "lecturerName": "פרופ' קרפ לביא",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 13:50",
+                "שעת סיום: 16:50",
+                "מרצה: פרופ' קרפ לביא",
+                "חדר לימוד: 202 EM"
+              ],
+              "room": "202 EM",
+              "semesterPeriod": "ב",
+              "startTime": "13:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N2,-N1,-N261030232,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261030232 / 1 , 261030232 / 2 , 261030232 / 3 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261030232 מרצה הקורס : פרופ' קרפ לביא פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11122:2:1:261030232:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N2,-N1,-N261030232,-N1",
+          "groupCode": "261030232",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "פרופ' אלמוג יניב",
+          "linkedGroups": [
+            {
+              "groupCode": "261030232",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261030232",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261030232",
+              "groupNumber": "3"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "15:50",
+              "lecturerName": "פרופ' אלמוג יניב",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 15:50",
+                "מרצה: פרופ' אלמוג יניב",
+                "חדר לימוד: 202 EM"
+              ],
+              "room": "202 EM",
+              "semesterPeriod": "ב",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N2,-N1,-N261030232,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261030232 / 1 , 261030232 / 2 , 261030232 / 3 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261030232/ 1 מרצה הקורס : פרופ' אלמוג יניב פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11122:2:1:261030232:1",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N2,-N9,-N261030232,-N1",
+          "groupCode": "261030232",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר צברי גיא",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "10:30",
+              "lecturerName": "ד\"ר צברי גיא",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 08:30",
+                "שעת סיום: 10:30",
+                "מרצה: ד\"ר צברי גיא",
+                "חדר לימוד: 208 M"
+              ],
+              "room": "208 M",
+              "semesterPeriod": "ב",
+              "startTime": "08:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N2,-N9,-N261030232,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261030232/ 1 מרצה הקורס : ד\"ר צברי גיא פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "11122:2:9:261030232:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N2,-N9,-N261030232,-N2",
+          "groupCode": "261030232",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר צברי גיא",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "12:20",
+              "lecturerName": "ד\"ר צברי גיא",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 10:30",
+                "שעת סיום: 12:20",
+                "מרצה: ד\"ר צברי גיא",
+                "חדר לימוד: 208 M"
+              ],
+              "room": "208 M",
+              "semesterPeriod": "ב",
+              "startTime": "10:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N2,-N9,-N261030232,-N2",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261030232/ 2 מרצה הקורס : ד\"ר צברי גיא פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "11122:2:9:261030232:2",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11122",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11122,-N2,-N9,-N261030232,-N3",
+          "groupCode": "261030232",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר חלימר לאוניד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר חלימר לאוניד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר חלימר לאוניד",
+                "חדר לימוד: 204 EM"
+              ],
+              "room": "204 EM",
+              "semesterPeriod": "ב",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11122,-N2,-N9,-N261030232,-N3",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261030232/ 3 מרצה הקורס : ד\"ר חלימר לאוניד פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11122:2:9:261030232:3",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

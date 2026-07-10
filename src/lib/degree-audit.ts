@@ -138,6 +138,24 @@ function getConflictingSelections(
     });
 }
 
+function getCoRequisiteStatus(
+  course: Course,
+  selected: Set<string>
+): { status: CourseAudit["coRequisiteStatus"]; unsatisfied: string[] } {
+  const coRequisites = course.coRequisites ?? [];
+
+  if (coRequisites.length === 0) {
+    return { status: "none", unsatisfied: [] };
+  }
+
+  const unsatisfied = coRequisites.filter((id) => !selected.has(id));
+
+  return {
+    status: unsatisfied.length === 0 ? "satisfied" : "recommended",
+    unsatisfied,
+  };
+}
+
 function createCourseAudits(
   selected: Set<string>,
   plan: DegreePlan,
@@ -147,6 +165,10 @@ function createCourseAudits(
     const prerequisiteGaps = getMissingPrerequisites(course, selected, courseMap);
     const conflicts = getConflictingSelections(course, selected, plan.rules);
     const missingPrerequisites = [...prerequisiteGaps, ...conflicts];
+    const { status: coRequisiteStatus, unsatisfied: unsatisfiedCoRequisites } = getCoRequisiteStatus(
+      course,
+      selected
+    );
 
     return {
       course,
@@ -154,6 +176,8 @@ function createCourseAudits(
       available: missingPrerequisites.length === 0,
       missingPrerequisites,
       blockedByPrerequisite: prerequisiteGaps.length > 0 && conflicts.length === 0,
+      coRequisiteStatus,
+      unsatisfiedCoRequisites,
     };
   });
 }
@@ -224,6 +248,20 @@ function createRuleWarnings(
 
       if (selectedIds.length > maxCourses) {
         warnings.push(`סומנו יותר מדי אפשרויות עבור ${group.name}; בדרך כלל נדרשות ${maxCourses}.`);
+      }
+    });
+
+  plan.requirementGroups
+    .filter((group) => group.kind !== "alternative" && typeof group.requiredCredits === "number")
+    .forEach((group) => {
+      const courseMap = getCourseMap(plan);
+      const selectedIds = getSelectedRequirementCourseIds(group, selected, plan);
+      const selectedCredits = selectedIds.reduce((sum, id) => sum + (courseMap.get(id)?.credits ?? 0), 0);
+
+      if (selectedCredits > (group.requiredCredits ?? 0)) {
+        warnings.push(
+          `סומנו יותר קורסים מהנדרש עבור ${group.name} (${selectedCredits} נ"ז מתוך ${group.requiredCredits} נ"ז נדרשות); הקורסים העודפים לא ייספרו כבחירה נוספת.`
+        );
       }
     });
 
@@ -338,10 +376,10 @@ export function createDegreeAudit(selectedCourseIds: string[], plan: DegreePlan)
     selectedCourseIds: [...selected],
     totalCreditsCompleted,
     totalCreditsRemaining,
-    completionPercent: Math.min(
-      100,
-      Math.round((totalCreditsCompleted / plan.requirements.totalCredits) * 100)
-    ),
+    completionPercent:
+      plan.requirements.totalCredits > 0
+        ? Math.min(100, Math.round((totalCreditsCompleted / plan.requirements.totalCredits) * 100))
+        : 0,
     fixedCreditsCompleted: roundCredit(fixedCreditsCompleted),
     fixedCreditsRemaining: roundCredit(
       Math.max(0, plan.requirements.fixedDegreeCredits - fixedCreditsCompleted)

@@ -1,0 +1,119 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:37:11.121Z",
+    "finishedAt": "2026-07-09T16:37:11.121Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615031057__S_LOOK_FOR_NOSE__N201006__7d9643fff4.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N201006"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "201006",
+      "name": "משוואות דיפרנציאליות חלקיות מש",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "201006 משוואות דיפרנציאליות חלקיות מש 3 2 - - 4.0משוואות מסדר ראשון בשני משתנים: תנאי התחלה, וקוים אופייניים, קווי התחלה. מיון של משוואות לינאריות מסדר שני, מושג בעיה מוגדת היטב. משוואת הגלים החד-ממדית: בעיית התחלה עבור מיתר אינסופי (נוסחת דלמבר, פתרון גרפי). ? משוואת החום והדיפוסיה החד ממדית על הישר הממשי, ? גרעין גאוס. עקרון המקסימום למשוואת החום, שפה פרבולית, יחידות ויציבות.? בעיות התחלה-שפה עבור משוואת הגלים במיתר סופי ומשוואת החום במוט סופי, שיטת הפרדת המשתנים. ?תורת שטורם-ליוביל: קיום ותכונות של פונקציות וערכים עצמיים, תנאי דירכלה, ניומן ורובין?, תנאי מספיק לערכים עצמיים אי-שליליים.? ?פונקציות הרמוניות ומשוואת פואסון במישור ובמרחב:? ?מקור למשוואת לפלס, בעיית דירכלה וניומן, ?תכונת הממוצע, פונקציות הרמונית, תת-הרמוניות, עקרון המקסימום החזק? ?ומשפט היחידות.? ?פתרון בעיית דירכלה בעגול וגרעין פואסון. רגולריות של פונקציות הרמוניות.? ?זהויות גריין במרחב, פתרון יסודי ופוטנציאל ניוטון, הצגה של פונקציה הרמונית, פונקציית גריין, גרעין פואסון של הכדור.?",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N201006",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N201006",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "201006",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N201006,-N1,-N1,-N261200310,-N",
+          "groupCode": "261200310",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "פרופ' אלמוג יניב",
+          "linkedGroups": [
+            {
+              "groupCode": "261200310",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "12:20",
+              "lecturerName": "פרופ' אלמוג יניב",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 09:30",
+                "שעת סיום: 12:20",
+                "מרצה: פרופ' אלמוג יניב",
+                "חדר לימוד: 200 EM תיב\"מ"
+              ],
+              "room": "200 EM תיב\"מ",
+              "semesterPeriod": "א",
+              "startTime": "09:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N201006,-N1,-N1,-N261200310,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261200310 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261200310 מרצה הקורס : פרופ' אלמוג יניב פרטים נוספים שפת הוראה של הקורס : אנגלית",
+          "sectionKey": "201006:1:1:261200310:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "אנגלית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "201006",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N201006,-N1,-N9,-N261200310,-N1",
+          "groupCode": "261200310",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "פרופ' אלמוג יניב",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום חמישי",
+              "endTime": "14:50",
+              "lecturerName": "פרופ' אלמוג יניב",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום חמישי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: פרופ' אלמוג יניב",
+                "חדר לימוד: 301 M"
+              ],
+              "room": "301 M",
+              "semesterPeriod": "א",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N201006,-N1,-N9,-N261200310,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261200310/ 1 מרצה הקורס : פרופ' אלמוג יניב פרטים נוספים שפת הוראה של הקורס : אנגלית",
+          "sectionKey": "201006:1:9:261200310:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "אנגלית"
+        }
+      ]
+    }
+  ]
+}

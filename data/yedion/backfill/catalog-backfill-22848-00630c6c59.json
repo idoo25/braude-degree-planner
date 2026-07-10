@@ -1,0 +1,119 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:34.034Z",
+    "finishedAt": "2026-07-09T16:36:34.034Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614993965__S_LOOK_FOR_NOSE__N22848__00630c6c59.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22848"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22848",
+      "name": "מבוא לתהליכי הדפסה תלת ממדית",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22848 מבוא לתהליכי הדפסה תלת ממדית2 1 - - 2.5הקורס מיועד לסטודנטים הלומדים לימודי תואר ראשון בהנדסה (מכונות, חומרים, אזרחית וסביבתית, בנין, אווירונאוטיקה וכדו'). הקורס מתרכז על עקרונות ייצור בשיטות ריבוד שכבות תוך השוואה עם תהליכי ייצור קונבנציונליים הקיימים כיום, וכן בסקירת תהליכי ריבוד שכבות שונים. יילמדו עקרונות העבודה בתכנון הייצור ובקרתו, פרמטרים עיקריים של תהליכי ייצור, ייצור והכנה מיוחדת של חומרי הגלם תוך נתינת דעת על השפעת איכותם על טיב המוצרים המודפסים. יילמדו מספר תהליכי הדפסת תלת מימד תרמיים ולא-תרמיים תוך התעמקות בתהליכים הפיזיקליים הפועלים, כגון: מעבר חום, דיפוזיה והיווצרות פאזות, אינפילטרציה, סנטור, התכה והתמצקות וכדו'. יילמדו העקרונות והצורך בתהליכים המשלימים ההכרחיים לקבלת מוצר איכותי (טיפולים תרמיים, HIP, סנטור וכו'). יילמדו יישומים שונים של טכנולוגיות ריבוד שכבות ועקרונות הבחירה הנבונה בחומרים ותהליכי ייצור המתאימים ליישום ספציפי נדרש. יילמדו עקרונות של בקרת איכות המוצרים המודפסים ודרך קבלת החלטות אודות פעולות מתקנות בתהליך הייצור.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22848",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22848",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22848",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22848,-N1,-N1,-N261020410,-N",
+          "groupCode": "261020410",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר כץ-דמיאנץ אלכסנדר",
+          "linkedGroups": [
+            {
+              "groupCode": "261020410",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר כץ-דמיאנץ אלכסנדר",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר כץ-דמיאנץ אלכסנדר",
+                "חדר לימוד: 318 M"
+              ],
+              "room": "318 M",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22848,-N1,-N1,-N261020410,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020410 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020410 מרצה הקורס : ד\"ר כץ-דמיאנץ אלכסנדר פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22848:1:1:261020410:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22848",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22848,-N1,-N9,-N261020410,-N1",
+          "groupCode": "261020410",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר כץ-דמיאנץ אלכסנדר",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "18:50",
+              "lecturerName": "ד\"ר כץ-דמיאנץ אלכסנדר",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 17:50",
+                "שעת סיום: 18:50",
+                "מרצה: ד\"ר כץ-דמיאנץ אלכסנדר",
+                "חדר לימוד: 318 M"
+              ],
+              "room": "318 M",
+              "semesterPeriod": "א",
+              "startTime": "17:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22848,-N1,-N9,-N261020410,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020410/ 1 מרצה הקורס : ד\"ר כץ-דמיאנץ אלכסנדר פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22848:1:9:261020410:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

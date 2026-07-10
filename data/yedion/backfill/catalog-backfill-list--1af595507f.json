@@ -1,0 +1,2558 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:38:07.918Z",
+    "finishedAt": "2026-07-09T16:38:07.918Z",
+    "academicYearLabel": null,
+    "sourceKind": "browser-backfill-current-list-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615087693__S_LOOK_FOR_NOSE_AB__N__1af595507f.json"
+  },
+  "options": {
+    "source": "current browser list page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE_AB&arguments=-N%D7%9E",
+    "firstLetter": "מ"
+  },
+  "stats": {
+    "courses": 169,
+    "sections": 0,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "41411",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41411",
+      "firstLetter": "מ",
+      "name": "מאזן חומר ואנרגיה",
+      "rawArguments": "-N41411",
+      "rawCells": [
+        "קוד קורס: 41411",
+        "שם קורס: מאזן חומר ואנרגיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22705",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22705",
+      "firstLetter": "מ",
+      "name": "מבוא יצירתי להנדסת מכונות",
+      "rawArguments": "-N22705",
+      "rawCells": [
+        "קוד קורס: 22705",
+        "שם קורס: מבוא יצירתי להנדסת מכונות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31542",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31542",
+      "firstLetter": "מ",
+      "name": "מבוא ל- VLSI",
+      "rawArguments": "-N31542",
+      "rawCells": [
+        "קוד קורס: 31542",
+        "שם קורס: מבוא ל- VLSI",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51154",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51154",
+      "firstLetter": "מ",
+      "name": "מבוא ל-ERP ומערכות ארגוניות",
+      "rawArguments": "-N51154",
+      "rawCells": [
+        "קוד קורס: 51154",
+        "שם קורס: מבוא ל-ERP ומערכות ארגוניות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "65005",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N65005",
+      "firstLetter": "מ",
+      "name": "מבוא לאופטימיזציה",
+      "rawArguments": "-N65005",
+      "rawCells": [
+        "קוד קורס: 65005",
+        "שם קורס: מבוא לאופטימיזציה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22997",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22997",
+      "firstLetter": "מ",
+      "name": "מבוא לאינטרנט של הדברים בהנדסה",
+      "rawArguments": "-N22997",
+      "rawCells": [
+        "קוד קורס: 22997",
+        "שם קורס: מבוא לאינטרנט של הדברים בהנדסה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22106",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22106",
+      "firstLetter": "מ",
+      "name": "מבוא לאלגוריתמיקה ותכנות",
+      "rawArguments": "-N22106",
+      "rawCells": [
+        "קוד קורס: 22106",
+        "שם קורס: מבוא לאלגוריתמיקה ותכנות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421223",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421223",
+      "firstLetter": "מ",
+      "name": "מבוא לאלגוריתמיקה ותכנות",
+      "rawArguments": "-N421223",
+      "rawCells": [
+        "קוד קורס: 421223",
+        "שם קורס: מבוא לאלגוריתמיקה ותכנות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "500115",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N500115",
+      "firstLetter": "מ",
+      "name": "מבוא לאלמנטים סופיים",
+      "rawArguments": "-N500115",
+      "rawCells": [
+        "קוד קורס: 500115",
+        "שם קורס: מבוא לאלמנטים סופיים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31980",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31980",
+      "firstLetter": "מ",
+      "name": "מבוא לאלקטרו-אופטיקה",
+      "rawArguments": "-N31980",
+      "rawCells": [
+        "קוד קורס: 31980",
+        "שם קורס: מבוא לאלקטרו-אופטיקה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "62019",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N62019",
+      "firstLetter": "מ",
+      "name": "מבוא לאנליזה נומרית",
+      "rawArguments": "-N62019",
+      "rawCells": [
+        "קוד קורס: 62019",
+        "שם קורס: מבוא לאנליזה נומרית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61757",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61757",
+      "firstLetter": "מ",
+      "name": "מבוא לבדיקות תוכנה",
+      "rawArguments": "-N61757",
+      "rawCells": [
+        "קוד קורס: 61757",
+        "שם קורס: מבוא לבדיקות תוכנה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22467",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22467",
+      "firstLetter": "מ",
+      "name": "מבוא לביומכניקה",
+      "rawArguments": "-N22467",
+      "rawCells": [
+        "קוד קורס: 22467",
+        "שם קורס: מבוא לביומכניקה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61775",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61775",
+      "firstLetter": "מ",
+      "name": "מבוא לבינה מלאכותית",
+      "rawArguments": "-N61775",
+      "rawCells": [
+        "קוד קורס: 61775",
+        "שם קורס: מבוא לבינה מלאכותית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31910",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31910",
+      "firstLetter": "מ",
+      "name": "מבוא לבקרה",
+      "rawArguments": "-N31910",
+      "rawCells": [
+        "קוד קורס: 31910",
+        "שם קורס: מבוא לבקרה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22810",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22810",
+      "firstLetter": "מ",
+      "name": "מבוא לבקרה",
+      "rawArguments": "-N22810",
+      "rawCells": [
+        "קוד קורס: 22810",
+        "שם קורס: מבוא לבקרה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "21312",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N21312",
+      "firstLetter": "מ",
+      "name": "מבוא לבקרה לביוטכנולוגיה",
+      "rawArguments": "-N21312",
+      "rawCells": [
+        "קוד קורס: 21312",
+        "שם קורס: מבוא לבקרה לביוטכנולוגיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421213",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421213",
+      "firstLetter": "מ",
+      "name": "מבוא לגאולוגיה ורעידת אדמה",
+      "rawArguments": "-N421213",
+      "rawCells": [
+        "קוד קורס: 421213",
+        "שם קורס: מבוא לגאולוגיה ורעידת אדמה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22112",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22112",
+      "firstLetter": "מ",
+      "name": "מבוא לגרפיקה הנדסית",
+      "rawArguments": "-N22112",
+      "rawCells": [
+        "קוד קורס: 22112",
+        "שם קורס: מבוא לגרפיקה הנדסית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421109",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421109",
+      "firstLetter": "מ",
+      "name": "מבוא לגרפיקה הנדסית",
+      "rawArguments": "-N421109",
+      "rawCells": [
+        "קוד קורס: 421109",
+        "שם קורס: מבוא לגרפיקה הנדסית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "85381",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N85381",
+      "firstLetter": "מ",
+      "name": "מבוא להוראה מוטת עתיד",
+      "rawArguments": "-N85381",
+      "rawCells": [
+        "קוד קורס: 85381",
+        "שם קורס: מבוא להוראה מוטת עתיד",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "81280",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N81280",
+      "firstLetter": "מ",
+      "name": "מבוא להוראת המקצועות העיוניים ההתנסותיים",
+      "rawArguments": "-N81280",
+      "rawCells": [
+        "קוד קורס: 81280",
+        "שם קורס: מבוא להוראת המקצועות העיוניים ההתנסותיים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421322",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421322",
+      "firstLetter": "מ",
+      "name": "מבוא להנדסת הסביבה",
+      "rawArguments": "-N421322",
+      "rawCells": [
+        "קוד קורס: 421322",
+        "שם קורס: מבוא להנדסת הסביבה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31316",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31316",
+      "firstLetter": "מ",
+      "name": "מבוא להנדסת חשמל",
+      "rawArguments": "-N31316",
+      "rawCells": [
+        "קוד קורס: 31316",
+        "שם קורס: מבוא להנדסת חשמל",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "53311",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N53311",
+      "firstLetter": "מ",
+      "name": "מבוא להנדסת מערכות",
+      "rawArguments": "-N53311",
+      "rawCells": [
+        "קוד קורס: 53311",
+        "שם קורס: מבוא להנדסת מערכות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61830",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61830",
+      "firstLetter": "מ",
+      "name": "מבוא להנדסת מערכות מידע",
+      "rawArguments": "-N61830",
+      "rawCells": [
+        "קוד קורס: 61830",
+        "שם קורס: מבוא להנדסת מערכות מידע",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61750",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61750",
+      "firstLetter": "מ",
+      "name": "מבוא להנדסת תכנה",
+      "rawArguments": "-N61750",
+      "rawCells": [
+        "קוד קורס: 61750",
+        "שם קורס: מבוא להנדסת תכנה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51104",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51104",
+      "firstLetter": "מ",
+      "name": "מבוא להנדסת תעשייה",
+      "rawArguments": "-N51104",
+      "rawCells": [
+        "קוד קורס: 51104",
+        "שם קורס: מבוא להנדסת תעשייה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61832",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61832",
+      "firstLetter": "מ",
+      "name": "מבוא להסתברות וסטטיסטיקה",
+      "rawArguments": "-N61832",
+      "rawCells": [
+        "קוד קורס: 61832",
+        "שם קורס: מבוא להסתברות וסטטיסטיקה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51701",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51701",
+      "firstLetter": "מ",
+      "name": "מבוא להסתברות וסטטיסטיקה ביו",
+      "rawArguments": "-N51701",
+      "rawCells": [
+        "קוד קורס: 51701",
+        "שם קורס: מבוא להסתברות וסטטיסטיקה ביו",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "21461",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N21461",
+      "firstLetter": "מ",
+      "name": "מבוא לזיווד אלקטרוני ומיקרו אלקטרוני",
+      "rawArguments": "-N21461",
+      "rawCells": [
+        "קוד קורס: 21461",
+        "שם קורס: מבוא לזיווד אלקטרוני ומיקרו אלקטרוני",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421210",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421210",
+      "firstLetter": "מ",
+      "name": "מבוא לחומרי בנייה וסלילה",
+      "rawArguments": "-N421210",
+      "rawCells": [
+        "קוד קורס: 421210",
+        "שם קורס: מבוא לחומרי בנייה וסלילה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22998",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22998",
+      "firstLetter": "מ",
+      "name": "מבוא לחקר ביצועים למהנדסי מכונות",
+      "rawArguments": "-N22998",
+      "rawCells": [
+        "קוד קורס: 22998",
+        "שם קורס: מבוא לחקר ביצועים למהנדסי מכונות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "251507",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251507",
+      "firstLetter": "מ",
+      "name": "מבוא ליזמות",
+      "rawArguments": "-N251507",
+      "rawCells": [
+        "קוד קורס: 251507",
+        "שם קורס: מבוא ליזמות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "53428",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N53428",
+      "firstLetter": "מ",
+      "name": "מבוא ליישומי RAMST בהנדסת מערכות",
+      "rawArguments": "-N53428",
+      "rawCells": [
+        "קוד קורס: 53428",
+        "שם קורס: מבוא ליישומי RAMST בהנדסת מערכות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51600",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51600",
+      "firstLetter": "מ",
+      "name": "מבוא לכלכלה",
+      "rawArguments": "-N51600",
+      "rawCells": [
+        "קוד קורס: 51600",
+        "שם קורס: מבוא לכלכלה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51956",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51956",
+      "firstLetter": "מ",
+      "name": "מבוא לכלכלה - מיקרו",
+      "rawArguments": "-N51956",
+      "rawCells": [
+        "קוד קורס: 51956",
+        "שם קורס: מבוא לכלכלה - מיקרו",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31904",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31904",
+      "firstLetter": "מ",
+      "name": "מבוא ללייזרים",
+      "rawArguments": "-N31904",
+      "rawCells": [
+        "קוד קורס: 31904",
+        "שם קורס: מבוא ללייזרים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421327",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421327",
+      "firstLetter": "מ",
+      "name": "מבוא למבנים ארעיים",
+      "rawArguments": "-N421327",
+      "rawCells": [
+        "קוד קורס: 421327",
+        "שם קורס: מבוא למבנים ארעיים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61741",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61741",
+      "firstLetter": "מ",
+      "name": "מבוא למדעי המחשב (מל\"מ)",
+      "rawArguments": "-N61741",
+      "rawCells": [
+        "קוד קורס: 61741",
+        "שם קורס: מבוא למדעי המחשב (מל\"מ)",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31616",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31616",
+      "firstLetter": "מ",
+      "name": "מבוא למדעי המחשב ושפת C",
+      "rawArguments": "-N31616",
+      "rawCells": [
+        "קוד קורס: 31616",
+        "שם קורס: מבוא למדעי המחשב ושפת C",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61903",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61903",
+      "firstLetter": "מ",
+      "name": "מבוא למדעי המחשב לתעו\"נ",
+      "rawArguments": "-N61903",
+      "rawCells": [
+        "קוד קורס: 61903",
+        "שם קורס: מבוא למדעי המחשב לתעו\"נ",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51021",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51021",
+      "firstLetter": "מ",
+      "name": "מבוא למדעי הנתונים",
+      "rawArguments": "-N51021",
+      "rawCells": [
+        "קוד קורס: 51021",
+        "שם קורס: מבוא למדעי הנתונים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31230",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31230",
+      "firstLetter": "מ",
+      "name": "מבוא למחשבים",
+      "rawArguments": "-N31230",
+      "rawCells": [
+        "קוד קורס: 31230",
+        "שם קורס: מבוא למחשבים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61773",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61773",
+      "firstLetter": "מ",
+      "name": "מבוא למחשוב ענן",
+      "rawArguments": "-N61773",
+      "rawCells": [
+        "קוד קורס: 61773",
+        "שם קורס: מבוא למחשוב ענן",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31393",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31393",
+      "firstLetter": "מ",
+      "name": "מבוא למיקרו-גלים",
+      "rawArguments": "-N31393",
+      "rawCells": [
+        "קוד קורס: 31393",
+        "שם קורס: מבוא למיקרו-גלים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421110",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421110",
+      "firstLetter": "מ",
+      "name": "מבוא למכניקה הנדסית",
+      "rawArguments": "-N421110",
+      "rawCells": [
+        "קוד קורס: 421110",
+        "שם קורס: מבוא למכניקה הנדסית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22748",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22748",
+      "firstLetter": "מ",
+      "name": "מבוא למכניקת הטייס",
+      "rawArguments": "-N22748",
+      "rawCells": [
+        "קוד קורס: 22748",
+        "שם קורס: מבוא למכניקת הטייס",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51431",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51431",
+      "firstLetter": "מ",
+      "name": "מבוא למערכות ארגוניות",
+      "rawArguments": "-N51431",
+      "rawCells": [
+        "קוד קורס: 51431",
+        "שם קורס: מבוא למערכות ארגוניות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31991",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31991",
+      "firstLetter": "מ",
+      "name": "מבוא למערכות מכ\"מ",
+      "rawArguments": "-N31991",
+      "rawCells": [
+        "קוד קורס: 31991",
+        "שם קורס: מבוא למערכות מכ\"מ",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22861",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22861",
+      "firstLetter": "מ",
+      "name": "מבוא למערכות מכטרוניות",
+      "rawArguments": "-N22861",
+      "rawCells": [
+        "קוד קורס: 22861",
+        "שם קורס: מבוא למערכות מכטרוניות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "251512",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251512",
+      "firstLetter": "מ",
+      "name": "מבוא לניהול חדשנות ויזמות פנים ארגונית",
+      "rawArguments": "-N251512",
+      "rawCells": [
+        "קוד קורס: 251512",
+        "שם קורס: מבוא לניהול חדשנות ויזמות פנים ארגונית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421211",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421211",
+      "firstLetter": "מ",
+      "name": "מבוא לניהול פרויקטי בנייה",
+      "rawArguments": "-N421211",
+      "rawCells": [
+        "קוד קורס: 421211",
+        "שם קורס: מבוא לניהול פרויקטי בנייה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31442",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31442",
+      "firstLetter": "מ",
+      "name": "מבוא לעיבוד אותות ספרתי",
+      "rawArguments": "-N31442",
+      "rawCells": [
+        "קוד קורס: 31442",
+        "שם קורס: מבוא לעיבוד אותות ספרתי",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11179",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11179",
+      "firstLetter": "מ",
+      "name": "מבוא לפיזיקה אקדמית",
+      "rawArguments": "-N11179",
+      "rawCells": [
+        "קוד קורס: 11179",
+        "שם קורס: מבוא לפיזיקה אקדמית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61179",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61179",
+      "firstLetter": "מ",
+      "name": "מבוא לפיזיקה אקדמית להנדסת תכנה",
+      "rawArguments": "-N61179",
+      "rawCells": [
+        "קוד קורס: 61179",
+        "שם קורס: מבוא לפיזיקה אקדמית להנדסת תכנה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "251514",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251514",
+      "firstLetter": "מ",
+      "name": "מבוא לפיתוח אב טיפוס",
+      "rawArguments": "-N251514",
+      "rawCells": [
+        "קוד קורס: 251514",
+        "שם קורס: מבוא לפיתוח אב טיפוס",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "251506",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251506",
+      "firstLetter": "מ",
+      "name": "מבוא לקניין רוחני",
+      "rawArguments": "-N251506",
+      "rawCells": [
+        "קוד קורס: 251506",
+        "שם קורס: מבוא לקניין רוחני",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51302",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51302",
+      "firstLetter": "מ",
+      "name": "מבוא לשיווק",
+      "rawArguments": "-N51302",
+      "rawCells": [
+        "קוד קורס: 51302",
+        "שם קורס: מבוא לשיווק",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22848",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22848",
+      "firstLetter": "מ",
+      "name": "מבוא לתהליכי הדפסה תלת ממדית",
+      "rawArguments": "-N22848",
+      "rawCells": [
+        "קוד קורס: 22848",
+        "שם קורס: מבוא לתהליכי הדפסה תלת ממדית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22210",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22210",
+      "firstLetter": "מ",
+      "name": "מבוא לתהליכי ייצור",
+      "rawArguments": "-N22210",
+      "rawCells": [
+        "קוד קורס: 22210",
+        "שם קורס: מבוא לתהליכי ייצור",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31285",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31285",
+      "firstLetter": "מ",
+      "name": "מבוא לתכן כרטיסים (Board Design)",
+      "rawArguments": "-N31285",
+      "rawCells": [
+        "קוד קורס: 31285",
+        "שם קורס: מבוא לתכן כרטיסים (Board Design)",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22715",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22715",
+      "firstLetter": "מ",
+      "name": "מבוא לתכן מכני",
+      "rawArguments": "-N22715",
+      "rawCells": [
+        "קוד קורס: 22715",
+        "שם קורס: מבוא לתכן מכני",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22844",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22844",
+      "firstLetter": "מ",
+      "name": "מבוא לתכן מכניזמים",
+      "rawArguments": "-N22844",
+      "rawCells": [
+        "קוד קורס: 22844",
+        "שם קורס: מבוא לתכן מכניזמים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61745",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61745",
+      "firstLetter": "מ",
+      "name": "מבוא לתכנות מערכות (מת\"מ)",
+      "rawArguments": "-N61745",
+      "rawCells": [
+        "קוד קורס: 61745",
+        "שם קורס: מבוא לתכנות מערכות (מת\"מ)",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31711",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31711",
+      "firstLetter": "מ",
+      "name": "מבוא לתקשורת",
+      "rawArguments": "-N31711",
+      "rawCells": [
+        "קוד קורס: 31711",
+        "שם קורס: מבוא לתקשורת",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "881011",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N881011",
+      "firstLetter": "מ",
+      "name": "מבחן סיווג במתמטיקה",
+      "rawArguments": "-N881011",
+      "rawCells": [
+        "קוד קורס: 881011",
+        "שם קורס: מבחן סיווג במתמטיקה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421219",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421219",
+      "firstLetter": "מ",
+      "name": "מבני בטון 1",
+      "rawArguments": "-N421219",
+      "rawCells": [
+        "קוד קורס: 421219",
+        "שם קורס: מבני בטון 1",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421214",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421214",
+      "firstLetter": "מ",
+      "name": "מבני בטון 12",
+      "rawArguments": "-N421214",
+      "rawCells": [
+        "קוד קורס: 421214",
+        "שם קורס: מבני בטון 12",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51913",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51913",
+      "firstLetter": "מ",
+      "name": "מבני נתונים ואלגוריתמים",
+      "rawArguments": "-N51913",
+      "rawCells": [
+        "קוד קורס: 51913",
+        "שם קורס: מבני נתונים ואלגוריתמים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31632",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31632",
+      "firstLetter": "מ",
+      "name": "מבני נתונים ואלגוריתמים",
+      "rawArguments": "-N31632",
+      "rawCells": [
+        "קוד קורס: 31632",
+        "שם קורס: מבני נתונים ואלגוריתמים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61739",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61739",
+      "firstLetter": "מ",
+      "name": "מבני נתונים ומבוא לאלגוריתמים",
+      "rawArguments": "-N61739",
+      "rawCells": [
+        "קוד קורס: 61739",
+        "שם קורס: מבני נתונים ומבוא לאלגוריתמים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421312",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421312",
+      "firstLetter": "מ",
+      "name": "מבני פלדה",
+      "rawArguments": "-N421312",
+      "rawCells": [
+        "קוד קורס: 421312",
+        "שם קורס: מבני פלדה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61738",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61738",
+      "firstLetter": "מ",
+      "name": "מבנים אלגבריים להנדסת תוכנה 1",
+      "rawArguments": "-N61738",
+      "rawCells": [
+        "קוד קורס: 61738",
+        "שם קורס: מבנים אלגבריים להנדסת תוכנה 1",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61911",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61911",
+      "firstLetter": "מ",
+      "name": "מבנים אלגבריים להנדסת תוכנה 2",
+      "rawArguments": "-N61911",
+      "rawCells": [
+        "קוד קורס: 61911",
+        "שם קורס: מבנים אלגבריים להנדסת תוכנה 2",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "251965",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251965",
+      "firstLetter": "מ",
+      "name": "מהנדסים למען הגיל השלישי",
+      "rawArguments": "-N251965",
+      "rawCells": [
+        "קוד קורס: 251965",
+        "שם קורס: מהנדסים למען הגיל השלישי",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11575",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11575",
+      "firstLetter": "מ",
+      "name": "מובילי אורח חיים בריא",
+      "rawArguments": "-N11575",
+      "rawCells": [
+        "קוד קורס: 11575",
+        "שם קורס: מובילי אורח חיים בריא",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51702",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51702",
+      "firstLetter": "מ",
+      "name": "מודלים דטרמיניסטים בחקב\"צ",
+      "rawArguments": "-N51702",
+      "rawCells": [
+        "קוד קורס: 51702",
+        "שם קורס: מודלים דטרמיניסטים בחקב\"צ",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51703",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51703",
+      "firstLetter": "מ",
+      "name": "מודלים סטוכסטיים בחקב\"צ",
+      "rawArguments": "-N51703",
+      "rawCells": [
+        "קוד קורס: 51703",
+        "שם קורס: מודלים סטוכסטיים בחקב\"צ",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51725",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51725",
+      "firstLetter": "מ",
+      "name": "מודלים סטטיסטיים לביוטכנולוגיה",
+      "rawArguments": "-N51725",
+      "rawCells": [
+        "קוד קורס: 51725",
+        "שם קורס: מודלים סטטיסטיים לביוטכנולוגיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31350",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31350",
+      "firstLetter": "מ",
+      "name": "מוליכים למחצה",
+      "rawArguments": "-N31350",
+      "rawCells": [
+        "קוד קורס: 31350",
+        "שם קורס: מוליכים למחצה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61955",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61955",
+      "firstLetter": "מ",
+      "name": "מחשוב זמן אמת",
+      "rawArguments": "-N61955",
+      "rawCells": [
+        "קוד קורס: 61955",
+        "שם קורס: מחשוב זמן אמת",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41335",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41335",
+      "firstLetter": "מ",
+      "name": "מטבוליזם ואינזימולוגיה",
+      "rawArguments": "-N41335",
+      "rawCells": [
+        "קוד קורס: 41335",
+        "שם קורס: מטבוליזם ואינזימולוגיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22784",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22784",
+      "firstLetter": "מ",
+      "name": "מידול וייצור מיקרו התקנים מכניים",
+      "rawArguments": "-N22784",
+      "rawCells": [
+        "קוד קורס: 22784",
+        "שם קורס: מידול וייצור מיקרו התקנים מכניים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "53422",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N53422",
+      "firstLetter": "מ",
+      "name": "מידול וסימולציה של מערכות",
+      "rawArguments": "-N53422",
+      "rawCells": [
+        "קוד קורס: 53422",
+        "שם קורס: מידול וסימולציה של מערכות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22769",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22769",
+      "firstLetter": "מ",
+      "name": "מידול סימולציה וזיהוי מערכות",
+      "rawArguments": "-N22769",
+      "rawCells": [
+        "קוד קורס: 22769",
+        "שם קורס: מידול סימולציה וזיהוי מערכות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "81285",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N81285",
+      "firstLetter": "מ",
+      "name": "מיומנויות הוראה",
+      "rawArguments": "-N81285",
+      "rawCells": [
+        "קוד קורס: 81285",
+        "שם קורס: מיומנויות הוראה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "251961",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251961",
+      "firstLetter": "מ",
+      "name": "מיומנויות יסוד הנדסיות",
+      "rawArguments": "-N251961",
+      "rawCells": [
+        "קוד קורס: 251961",
+        "שם קורס: מיומנויות יסוד הנדסיות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "881006",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N881006",
+      "firstLetter": "מ",
+      "name": "מיומנויות קריאה וכתיבה אקדמית",
+      "rawArguments": "-N881006",
+      "rawCells": [
+        "קוד קורס: 881006",
+        "שם קורס: מיומנויות קריאה וכתיבה אקדמית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421318",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421318",
+      "firstLetter": "מ",
+      "name": "מיכון ותיעוש",
+      "rawArguments": "-N421318",
+      "rawCells": [
+        "קוד קורס: 421318",
+        "שם קורס: מיכון ותיעוש",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41231",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41231",
+      "firstLetter": "מ",
+      "name": "מיקרוביולוגיה",
+      "rawArguments": "-N41231",
+      "rawCells": [
+        "קוד קורס: 41231",
+        "שם קורס: מיקרוביולוגיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31226",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31226",
+      "firstLetter": "מ",
+      "name": "מיקרו-בקרים",
+      "rawArguments": "-N31226",
+      "rawCells": [
+        "קוד קורס: 31226",
+        "שם קורס: מיקרו-בקרים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31215",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31215",
+      "firstLetter": "מ",
+      "name": "מיקרו-מעבדים",
+      "rawArguments": "-N31215",
+      "rawCells": [
+        "קוד קורס: 31215",
+        "שם קורס: מיקרו-מעבדים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31511",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31511",
+      "firstLetter": "מ",
+      "name": "מיתוג ומערכות ספרתיות",
+      "rawArguments": "-N31511",
+      "rawCells": [
+        "קוד קורס: 31511",
+        "שם קורס: מיתוג ומערכות ספרתיות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22610",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22610",
+      "firstLetter": "מ",
+      "name": "מכניקת זורמים",
+      "rawArguments": "-N22610",
+      "rawCells": [
+        "קוד קורס: 22610",
+        "שם קורס: מכניקת זורמים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41431",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41431",
+      "firstLetter": "מ",
+      "name": "מכניקת זורמים",
+      "rawArguments": "-N41431",
+      "rawCells": [
+        "קוד קורס: 41431",
+        "שם קורס: מכניקת זורמים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421215",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421215",
+      "firstLetter": "מ",
+      "name": "מכניקת זורמים",
+      "rawArguments": "-N421215",
+      "rawCells": [
+        "קוד קורס: 421215",
+        "שם קורס: מכניקת זורמים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22305",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22305",
+      "firstLetter": "מ",
+      "name": "מכניקת מוצקים 1",
+      "rawArguments": "-N22305",
+      "rawCells": [
+        "קוד קורס: 22305",
+        "שם קורס: מכניקת מוצקים 1",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22310",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22310",
+      "firstLetter": "מ",
+      "name": "מכניקת מוצקים 2",
+      "rawArguments": "-N22310",
+      "rawCells": [
+        "קוד קורס: 22310",
+        "שם קורס: מכניקת מוצקים 2",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31361",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31361",
+      "firstLetter": "מ",
+      "name": "מכשור אלקטרוני",
+      "rawArguments": "-N31361",
+      "rawCells": [
+        "קוד קורס: 31361",
+        "שם קורס: מכשור אלקטרוני",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31363",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31363",
+      "firstLetter": "מ",
+      "name": "מכשור רפואי",
+      "rawArguments": "-N31363",
+      "rawCells": [
+        "קוד קורס: 31363",
+        "שם קורס: מכשור רפואי",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11228",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11228",
+      "firstLetter": "מ",
+      "name": "מלחמת חרבות ברזל-2 מוסמכים",
+      "rawArguments": "-N11228",
+      "rawCells": [
+        "קוד קורס: 11228",
+        "שם קורס: מלחמת חרבות ברזל-2 מוסמכים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11229",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11229",
+      "firstLetter": "מ",
+      "name": "מלחמת חרבות ברזל-3 מוסמכים",
+      "rawArguments": "-N11229",
+      "rawCells": [
+        "קוד קורס: 11229",
+        "שם קורס: מלחמת חרבות ברזל-3 מוסמכים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61769",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61769",
+      "firstLetter": "מ",
+      "name": "ממשק אדם מחשב",
+      "rawArguments": "-N61769",
+      "rawCells": [
+        "קוד קורס: 61769",
+        "שם קורס: ממשק אדם מחשב",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "53417",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N53417",
+      "firstLetter": "מ",
+      "name": "מנהיגות בארגונים",
+      "rawArguments": "-N53417",
+      "rawCells": [
+        "קוד קורס: 53417",
+        "שם קורס: מנהיגות בארגונים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61834",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61834",
+      "firstLetter": "מ",
+      "name": "מסדי נתונים מבוזרים",
+      "rawArguments": "-N61834",
+      "rawCells": [
+        "קוד קורס: 61834",
+        "שם קורס: מסדי נתונים מבוזרים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61984",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61984",
+      "firstLetter": "מ",
+      "name": "מעבדה באופטימיזציה",
+      "rawArguments": "-N61984",
+      "rawCells": [
+        "קוד קורס: 61984",
+        "שם קורס: מעבדה באופטימיזציה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41182",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41182",
+      "firstLetter": "מ",
+      "name": "מעבדה באימונולוגיה",
+      "rawArguments": "-N41182",
+      "rawCells": [
+        "קוד קורס: 41182",
+        "שם קורס: מעבדה באימונולוגיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41345",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41345",
+      "firstLetter": "מ",
+      "name": "מעבדה בביוכימיה",
+      "rawArguments": "-N41345",
+      "rawCells": [
+        "קוד קורס: 41345",
+        "שם קורס: מעבדה בביוכימיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41162",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41162",
+      "firstLetter": "מ",
+      "name": "מעבדה בביולוגיה מולקולרית",
+      "rawArguments": "-N41162",
+      "rawCells": [
+        "קוד קורס: 41162",
+        "שם קורס: מעבדה בביולוגיה מולקולרית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41507",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41507",
+      "firstLetter": "מ",
+      "name": "מעבדה בביוריאקטורים",
+      "rawArguments": "-N41507",
+      "rawCells": [
+        "קוד קורס: 41507",
+        "שם קורס: מעבדה בביוריאקטורים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "62012",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N62012",
+      "firstLetter": "מ",
+      "name": "מעבדה בדבאופס",
+      "rawArguments": "-N62012",
+      "rawCells": [
+        "קוד קורס: 62012",
+        "שם קורס: מעבדה בדבאופס",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41175",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41175",
+      "firstLetter": "מ",
+      "name": "מעבדה בהנדסה גנטית",
+      "rawArguments": "-N41175",
+      "rawCells": [
+        "קוד קורס: 41175",
+        "שם קורס: מעבדה בהנדסה גנטית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "43113",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N43113",
+      "firstLetter": "מ",
+      "name": "מעבדה בהנדסה גנטית כללית",
+      "rawArguments": "-N43113",
+      "rawCells": [
+        "קוד קורס: 43113",
+        "שם קורס: מעבדה בהנדסה גנטית כללית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41242",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41242",
+      "firstLetter": "מ",
+      "name": "מעבדה בהנדסה סביבתית",
+      "rawArguments": "-N41242",
+      "rawCells": [
+        "קוד קורס: 41242",
+        "שם קורס: מעבדה בהנדסה סביבתית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41525",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41525",
+      "firstLetter": "מ",
+      "name": "מעבדה בהנדסה תהליכית-ביוטכנולוגית",
+      "rawArguments": "-N41525",
+      "rawCells": [
+        "קוד קורס: 41525",
+        "שם קורס: מעבדה בהנדסה תהליכית-ביוטכנולוגית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22415",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22415",
+      "firstLetter": "מ",
+      "name": "מעבדה בחוזק וחומרים",
+      "rawArguments": "-N22415",
+      "rawCells": [
+        "קוד קורס: 22415",
+        "שם קורס: מעבדה בחוזק וחומרים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "421220",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N421220",
+      "firstLetter": "מ",
+      "name": "מעבדה בחוזק וחומרים",
+      "rawArguments": "-N421220",
+      "rawCells": [
+        "קוד קורס: 421220",
+        "שם קורס: מעבדה בחוזק וחומרים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "62017",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N62017",
+      "firstLetter": "מ",
+      "name": "מעבדה במבנה המחשב ושפת אסמבלי",
+      "rawArguments": "-N62017",
+      "rawCells": [
+        "קוד קורס: 62017",
+        "שם קורס: מעבדה במבנה המחשב ושפת אסמבלי",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51159",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51159",
+      "firstLetter": "מ",
+      "name": "מעבדה במיב\"םׁ(CIMׂ)",
+      "rawArguments": "-N51159",
+      "rawCells": [
+        "קוד קורס: 51159",
+        "שם קורס: מעבדה במיב\"םׁ(CIMׂ)",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61982",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61982",
+      "firstLetter": "מ",
+      "name": "מעבדה במידול מערכות אקולוגיות",
+      "rawArguments": "-N61982",
+      "rawCells": [
+        "קוד קורס: 61982",
+        "שם קורס: מעבדה במידול מערכות אקולוגיות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41679",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41679",
+      "firstLetter": "מ",
+      "name": "מעבדה במיקרוביולוגיה של מזון",
+      "rawArguments": "-N41679",
+      "rawCells": [
+        "קוד קורס: 41679",
+        "שם קורס: מעבדה במיקרוביולוגיה של מזון",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22862",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22862",
+      "firstLetter": "מ",
+      "name": "מעבדה במכטרוניקה",
+      "rawArguments": "-N22862",
+      "rawCells": [
+        "קוד קורס: 22862",
+        "שם קורס: מעבדה במכטרוניקה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "62010",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N62010",
+      "firstLetter": "מ",
+      "name": "מעבדה בניתוח נתונים",
+      "rawArguments": "-N62010",
+      "rawCells": [
+        "קוד קורס: 62010",
+        "שם קורס: מעבדה בניתוח נתונים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61988",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61988",
+      "firstLetter": "מ",
+      "name": "מעבדה בעיצוב תבניות בתכנה",
+      "rawArguments": "-N61988",
+      "rawCells": [
+        "קוד קורס: 61988",
+        "שם קורס: מעבדה בעיצוב תבניות בתכנה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61985",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61985",
+      "firstLetter": "מ",
+      "name": "מעבדה בפיתוח יישומים באנדרואיד",
+      "rawArguments": "-N61985",
+      "rawCells": [
+        "קוד קורס: 61985",
+        "שם קורס: מעבדה בפיתוח יישומים באנדרואיד",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41443",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41443",
+      "firstLetter": "מ",
+      "name": "מעבדה בפעולות יסוד בהנדסה כימית",
+      "rawArguments": "-N41443",
+      "rawCells": [
+        "קוד קורס: 41443",
+        "שם קורס: מעבדה בפעולות יסוד בהנדסה כימית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41652",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41652",
+      "firstLetter": "מ",
+      "name": "מעבדה בשיטות הפרדה ודיאגנוסטיקה",
+      "rawArguments": "-N41652",
+      "rawCells": [
+        "קוד קורס: 41652",
+        "שם קורס: מעבדה בשיטות הפרדה ודיאגנוסטיקה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41562",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41562",
+      "firstLetter": "מ",
+      "name": "מעבדה בתהליכי הפרדה 1",
+      "rawArguments": "-N41562",
+      "rawCells": [
+        "קוד קורס: 41562",
+        "שם קורס: מעבדה בתהליכי הפרדה 1",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22635",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22635",
+      "firstLetter": "מ",
+      "name": "מעבדה בתופעות מעבר",
+      "rawArguments": "-N22635",
+      "rawCells": [
+        "קוד קורס: 22635",
+        "שם קורס: מעבדה בתופעות מעבר",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "43114",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N43114",
+      "firstLetter": "מ",
+      "name": "מעבדה לטכנולוגית תאים ורקמות",
+      "rawArguments": "-N43114",
+      "rawCells": [
+        "קוד קורס: 43114",
+        "שם קורס: מעבדה לטכנולוגית תאים ורקמות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31471",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31471",
+      "firstLetter": "מ",
+      "name": "מעבדה לעיבוד אותות",
+      "rawArguments": "-N31471",
+      "rawCells": [
+        "קוד קורס: 31471",
+        "שם קורס: מעבדה לעיבוד אותות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41243",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41243",
+      "firstLetter": "מ",
+      "name": "מעבדה מתקדמת בהנדסה סביבתית",
+      "rawArguments": "-N41243",
+      "rawCells": [
+        "קוד קורס: 41243",
+        "שם קורס: מעבדה מתקדמת בהנדסה סביבתית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31820",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31820",
+      "firstLetter": "מ",
+      "name": "מעבדה מתקדמת לאפיון התקנים",
+      "rawArguments": "-N31820",
+      "rawCells": [
+        "קוד קורס: 31820",
+        "שם קורס: מעבדה מתקדמת לאפיון התקנים",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41232",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41232",
+      "firstLetter": "מ",
+      "name": "מעבדות מיקרוביוליוגיה",
+      "rawArguments": "-N41232",
+      "rawCells": [
+        "קוד קורס: 41232",
+        "שם קורס: מעבדות מיקרוביוליוגיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31402",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31402",
+      "firstLetter": "מ",
+      "name": "מעבדת חשמל ואלקטרוניקה 1",
+      "rawArguments": "-N31402",
+      "rawCells": [
+        "קוד קורס: 31402",
+        "שם קורס: מעבדת חשמל ואלקטרוניקה 1",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31403",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31403",
+      "firstLetter": "מ",
+      "name": "מעבדת חשמל ואלקטרוניקה 2",
+      "rawArguments": "-N31403",
+      "rawCells": [
+        "קוד קורס: 31403",
+        "שם קורס: מעבדת חשמל ואלקטרוניקה 2",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22620",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22620",
+      "firstLetter": "מ",
+      "name": "מעבר חום",
+      "rawArguments": "-N22620",
+      "rawCells": [
+        "קוד קורס: 22620",
+        "שם קורס: מעבר חום",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "41415",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N41415",
+      "firstLetter": "מ",
+      "name": "מעבר מסה",
+      "rawArguments": "-N41415",
+      "rawCells": [
+        "קוד קורס: 41415",
+        "שם קורס: מעבר מסה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "500218",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N500218",
+      "firstLetter": "מ",
+      "name": "מערכות בבניינים ובפרויקטי תשתית",
+      "rawArguments": "-N500218",
+      "rawCells": [
+        "קוד קורס: 500218",
+        "שם קורס: מערכות בבניינים ובפרויקטי תשתית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "201180",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N201180",
+      "firstLetter": "מ",
+      "name": "מערכות דינמיות מרוכבות",
+      "rawArguments": "-N201180",
+      "rawCells": [
+        "קוד קורס: 201180",
+        "שם קורס: מערכות דינמיות מרוכבות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31261",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31261",
+      "firstLetter": "מ",
+      "name": "מערכות הפעלה",
+      "rawArguments": "-N31261",
+      "rawCells": [
+        "קוד קורס: 31261",
+        "שם קורס: מערכות הפעלה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61752",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61752",
+      "firstLetter": "מ",
+      "name": "מערכות הפעלה",
+      "rawArguments": "-N61752",
+      "rawCells": [
+        "קוד קורס: 61752",
+        "שם קורס: מערכות הפעלה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22254",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22254",
+      "firstLetter": "מ",
+      "name": "מערכות ייצור ממוחשבות",
+      "rawArguments": "-N22254",
+      "rawCells": [
+        "קוד קורס: 22254",
+        "שם קורס: מערכות ייצור ממוחשבות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51141",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51141",
+      "firstLetter": "מ",
+      "name": "מערכות ייצור משולבות מחשב(מיב\"מ)",
+      "rawArguments": "-N51141",
+      "rawCells": [
+        "קוד קורס: 51141",
+        "שם קורס: מערכות ייצור משולבות מחשב(מיב\"מ)",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "63011",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N63011",
+      "firstLetter": "מ",
+      "name": "מערכות לומדות",
+      "rawArguments": "-N63011",
+      "rawCells": [
+        "קוד קורס: 63011",
+        "שם קורס: מערכות לומדות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "31245",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N31245",
+      "firstLetter": "מ",
+      "name": "מערכות לומדות ולמידה עמוקה",
+      "rawArguments": "-N31245",
+      "rawCells": [
+        "קוד קורס: 31245",
+        "שם קורס: מערכות לומדות ולמידה עמוקה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51106",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51106",
+      "firstLetter": "מ",
+      "name": "מערכות מלאי",
+      "rawArguments": "-N51106",
+      "rawCells": [
+        "קוד קורס: 51106",
+        "שם קורס: מערכות מלאי",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51519",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51519",
+      "firstLetter": "מ",
+      "name": "מערכות מסדי נתונים (SQL)",
+      "rawArguments": "-N51519",
+      "rawCells": [
+        "קוד קורס: 51519",
+        "שם קורס: מערכות מסדי נתונים (SQL)",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61755",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61755",
+      "firstLetter": "מ",
+      "name": "מערכות מסדי נתונים מ",
+      "rawArguments": "-N61755",
+      "rawCells": [
+        "קוד קורס: 61755",
+        "שם קורס: מערכות מסדי נתונים מ",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "62008",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N62008",
+      "firstLetter": "מ",
+      "name": "מערכות משובצות מחשב",
+      "rawArguments": "-N62008",
+      "rawCells": [
+        "קוד קורס: 62008",
+        "שם קורס: מערכות משובצות מחשב",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61740",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61740",
+      "firstLetter": "מ",
+      "name": "מערכות ספרתיות",
+      "rawArguments": "-N61740",
+      "rawCells": [
+        "קוד קורס: 61740",
+        "שם קורס: מערכות ספרתיות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51129",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51129",
+      "firstLetter": "מ",
+      "name": "מערכות שינוע ואחסנה",
+      "rawArguments": "-N51129",
+      "rawCells": [
+        "קוד קורס: 51129",
+        "שם קורס: מערכות שינוע ואחסנה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "22868",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22868",
+      "firstLetter": "מ",
+      "name": "מקורות אנרגיה",
+      "rawArguments": "-N22868",
+      "rawCells": [
+        "קוד קורס: 22868",
+        "שם קורס: מקורות אנרגיה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "53350",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N53350",
+      "firstLetter": "מ",
+      "name": "מקרי בוחן בהנדסת מערכות עכשווית",
+      "rawArguments": "-N53350",
+      "rawCells": [
+        "קוד קורס: 53350",
+        "שם קורס: מקרי בוחן בהנדסת מערכות עכשווית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "312980",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N312980",
+      "firstLetter": "מ",
+      "name": "מרכז חלל כיתה י'",
+      "rawArguments": "-N312980",
+      "rawCells": [
+        "קוד קורס: 312980",
+        "שם קורס: מרכז חלל כיתה י'",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "312990",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N312990",
+      "firstLetter": "מ",
+      "name": "מרכז חלל כיתה יא",
+      "rawArguments": "-N312990",
+      "rawCells": [
+        "קוד קורס: 312990",
+        "שם קורס: מרכז חלל כיתה יא",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11122",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11122",
+      "firstLetter": "מ",
+      "name": "משוואות דיפרנצ' חלקיות וטורי פורייה",
+      "rawArguments": "-N11122",
+      "rawCells": [
+        "קוד קורס: 11122",
+        "שם קורס: משוואות דיפרנצ' חלקיות וטורי פורייה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11136",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11136",
+      "firstLetter": "מ",
+      "name": "משוואות דיפרנציאליות ב",
+      "rawArguments": "-N11136",
+      "rawCells": [
+        "קוד קורס: 11136",
+        "שם קורס: משוואות דיפרנציאליות ב",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51310",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51310",
+      "firstLetter": "מ",
+      "name": "משוואות דיפרנציאליות ומערכות בקרה",
+      "rawArguments": "-N51310",
+      "rawCells": [
+        "קוד קורס: 51310",
+        "שם קורס: משוואות דיפרנציאליות ומערכות בקרה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "201006",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N201006",
+      "firstLetter": "מ",
+      "name": "משוואות דיפרנציאליות חלקיות מש",
+      "rawArguments": "-N201006",
+      "rawCells": [
+        "קוד קורס: 201006",
+        "שם קורס: משוואות דיפרנציאליות חלקיות מש",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11133",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11133",
+      "firstLetter": "מ",
+      "name": "משוואות דיפרנציאליות מכ",
+      "rawArguments": "-N11133",
+      "rawCells": [
+        "קוד קורס: 11133",
+        "שם קורס: משוואות דיפרנציאליות מכ",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11121",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11121",
+      "firstLetter": "מ",
+      "name": "משוואות דיפרנציאליות רגילות",
+      "rawArguments": "-N11121",
+      "rawCells": [
+        "קוד קורס: 11121",
+        "שם קורס: משוואות דיפרנציאליות רגילות",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "11348",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11348",
+      "firstLetter": "מ",
+      "name": "משפחה והולדה בעידן טכנולוגי",
+      "rawArguments": "-N11348",
+      "rawCells": [
+        "קוד קורס: 11348",
+        "שם קורס: משפחה והולדה בעידן טכנולוגי",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "63010",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N63010",
+      "firstLetter": "מ",
+      "name": "מתודולוגיות מתקדמות לפיתוח תכנה",
+      "rawArguments": "-N63010",
+      "rawCells": [
+        "קוד קורס: 63010",
+        "שם קורס: מתודולוגיות מתקדמות לפיתוח תכנה",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "51005",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N51005",
+      "firstLetter": "מ",
+      "name": "מתמטיקה דיסקרטית",
+      "rawArguments": "-N51005",
+      "rawCells": [
+        "קוד קורס: 51005",
+        "שם קורס: מתמטיקה דיסקרטית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "61743",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N61743",
+      "firstLetter": "מ",
+      "name": "מתמטיקה דיסקרטית 1",
+      "rawArguments": "-N61743",
+      "rawCells": [
+        "קוד קורס: 61743",
+        "שם קורס: מתמטיקה דיסקרטית 1",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "881000",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N881000",
+      "firstLetter": "מ",
+      "name": "מתמטיקה טרומית",
+      "rawArguments": "-N881000",
+      "rawCells": [
+        "קוד קורס: 881000",
+        "שם קורס: מתמטיקה טרומית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    },
+    {
+      "courseCode": "881003",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N881003",
+      "firstLetter": "מ",
+      "name": "מתמטיקה ייעודית",
+      "rawArguments": "-N881003",
+      "rawCells": [
+        "קוד קורס: 881003",
+        "שם קורס: מתמטיקה ייעודית",
+        "האם נלמד: נלמד",
+        "חיפוש קורס במערכת השעות: חיפוש קורס במערכת השעות",
+        "הערות:"
+      ],
+      "taughtStatus": "נלמד"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:34.832Z",
+    "finishedAt": "2026-07-09T16:36:34.832Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614994768__S_LOOK_FOR_NOSE__N22844__af31977b56.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22844"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22844",
+      "name": "מבוא לתכן מכניזמים",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22844 מבוא לתכן מכניזמים2 2 - - 3.0הקורס דן בתגובה הדינמית של מערכות מכניות שמורכבות מחוליות (כל חוליה מהווה גוף קשיח). המטרה מתכן מכניזם, בין היתר, היא לקבל מסלול תנועה או כוח. הקורס דן במכניזמים בסייסים, מוביליות, מכניזם ארבע מוטות, מיקום ומהירות במכניזם, מרכז סיבוב רגעי, תאוצות, כוחות קינמיטיקה של גלגלי שיניים ושל פיקות, סינתזה קינמיטית.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22844",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22844",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22844",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22844,-N1,-N1,-N261020410,-N",
+          "groupCode": "261020410",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר אבו-סאלח סאמי",
+          "linkedGroups": [
+            {
+              "groupCode": "261020410",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "16:50",
+              "lecturerName": "ד\"ר אבו-סאלח סאמי",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: ד\"ר אבו-סאלח סאמי",
+                "חדר לימוד: 319 M"
+              ],
+              "room": "319 M",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22844,-N1,-N1,-N261020410,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020410 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020410 מרצה הקורס : ד\"ר אבו-סאלח סאמי פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22844:1:1:261020410:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22844",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22844,-N1,-N9,-N261020410,-N1",
+          "groupCode": "261020410",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר אבו-סאלח סאמי",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "18:50",
+              "lecturerName": "ד\"ר אבו-סאלח סאמי",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 16:50",
+                "שעת סיום: 18:50",
+                "מרצה: ד\"ר אבו-סאלח סאמי",
+                "חדר לימוד: 319 M"
+              ],
+              "room": "319 M",
+              "semesterPeriod": "א",
+              "startTime": "16:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22844,-N1,-N9,-N261020410,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020410/ 1 מרצה הקורס : ד\"ר אבו-סאלח סאמי פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22844:1:9:261020410:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

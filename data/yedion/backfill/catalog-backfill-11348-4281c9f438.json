@@ -1,0 +1,73 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:37:12.552Z",
+    "finishedAt": "2026-07-09T16:37:12.552Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615032488__S_LOOK_FOR_NOSE__N11348__4281c9f438.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11348"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 1,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "11348",
+      "name": "משפחה והולדה בעידן טכנולוגי",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "מה הקשר בין חיי האהבה שלנו לבין החוק וחיי המשפחה שלנו ?האם ילד יכול לתבוע את הוריו או הורים את ילדיהם בגין אהבה בלתי מספקת או רשלנות? מהם גניבת זרע, שיבוט, הולדה מהמתים ועוד שיטות הולדה והאם למדינה יש השפעה על חיינו בהקשר?דרך צפייה בסרטונים נגלה את התשובות ודיונים אודות המשפט והחברה בהקשר למשפחה והולדה. התא המשפחתי במדינת ישראל עבר תהפוכות רבות במיוחד לאור ההתפתחות המדעית והטכנולוגיה החדשנית. בנוסף לכך, אמצעי ההולדה השתנו לבלתי הכר, כיום אפשרי להוליד מן המתים ובאמצעות פונדקאיות, לשלוט בחלק מהמטען הגנטי ועוד. מטרת הקורס להבין אילו אתגרים עומדים בפני המשפחה המודרנית ולהכיר את האמצעים שהמדינה מעמידה לרשות המשפחה והפרט בתחום הזכויות והחובות בקשר לעבודה, חינוך ותפקוד כללי וביחס להולדה וגידול ילדים. כמו כן נכיר את השיח התרבותי, המשפטי והחברתי הקשור למשפחה, תפקיד ותפקודי המשפחה: אימהות ואבהות, זוגות, יחידים וחד מיניים, שימוש וסחר בתאי רבייה ועוד.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11348",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11348",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11348",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11348,-N2,-N1,-N261240110,-N",
+          "groupCode": "261240110",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר כץ פלד תמר",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום חמישי",
+              "endTime": "14:50",
+              "lecturerName": "ד\"ר כץ פלד תמר",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום חמישי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: ד\"ר כץ פלד תמר",
+                "חדר לימוד:"
+              ],
+              "room": "",
+              "semesterPeriod": "ב",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11348,-N2,-N1,-N261240110,-N",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261240110 מרצה הקורס : ד\"ר כץ פלד תמר פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11348:2:1:261240110:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

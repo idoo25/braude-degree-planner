@@ -1,0 +1,119 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:38.018Z",
+    "finishedAt": "2026-07-09T16:36:38.018Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614997950__S_LOOK_FOR_NOSE__N22748__2eff3ab947.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22748"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22748",
+      "name": "מבוא למכניקת הטייס",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22748 מבוא למכניקת הטיס2 1 - - 2.5רקע ומבוא למכניקה של כלי טיס. אווירודינמיקה בסיסית: עקרונות ומשוואות בסיסיות עבור זורמים. משטרי זרימה שונים וסיווגם. האטמוספירה הסטנדרטית. מבוא לתורת הכנף הדקה, כוחות ומומנטים אווירודינמיים. כנף סופית. סקירת אמצעי הנעה בתעופה. ביצועי כלי טיס: מהירות אווירית, משוואות טיסה אופקית ישרה, המראה ונחיתה, דאייה וטיפוס, טווח ושהייה, פניות. משוואות תנועה של כלי טיס: מערכות צירים וטרנספורמציות, משוואות כוחות ומומנטים, משוואות אורכיות וצידיות, קינמטיקה. יציבות סטטית של כלי טייס: יציבות אורכית ורוחבית, נגזרות הבקרה, נגזרות הכוחות והמומנטים",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22748",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22748",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22748",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22748,-N2,-N1,-N261020410,-N",
+          "groupCode": "261020410",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר וייס אברהם",
+          "linkedGroups": [
+            {
+              "groupCode": "261020410",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "18:50",
+              "lecturerName": "ד\"ר וייס אברהם",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 16:50",
+                "שעת סיום: 18:50",
+                "מרצה: ד\"ר וייס אברהם",
+                "חדר לימוד: 218 M"
+              ],
+              "room": "218 M",
+              "semesterPeriod": "ב",
+              "startTime": "16:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22748,-N2,-N1,-N261020410,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "קורס זה ניתן לביטול עד 16.3.26 ( קבוצות הקשורות לקורס זה : 261020410 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020410 מרצה הקורס : ד\"ר וייס אברהם פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22748:2:1:261020410:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22748",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22748,-N2,-N9,-N261020410,-N1",
+          "groupCode": "261020410",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר וייס אברהם",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "19:50",
+              "lecturerName": "ד\"ר וייס אברהם",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 18:50",
+                "שעת סיום: 19:50",
+                "מרצה: ד\"ר וייס אברהם",
+                "חדר לימוד: 218 M"
+              ],
+              "room": "218 M",
+              "semesterPeriod": "ב",
+              "startTime": "18:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22748,-N2,-N9,-N261020410,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020410/ 1 מרצה הקורס : ד\"ר וייס אברהם פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22748:2:9:261020410:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

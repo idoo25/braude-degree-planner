@@ -12,6 +12,7 @@ import {
   Search,
   Upload,
 } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 import { Badge } from "@/components/ui/badge";
@@ -45,6 +46,16 @@ function formatCredits(value: number) {
 
 function getClusterName(plan: DegreePlan, clusterId?: string) {
   return plan.clusters.find((cluster) => cluster.id === clusterId)?.name;
+}
+
+function formatCourseRefs(plan: DegreePlan, courseIds: string[]) {
+  return courseIds
+    .map((id) => {
+      const name = plan.courses.find((course) => course.id === id)?.name;
+
+      return name ? `${name} (${id})` : id;
+    })
+    .join(", ");
 }
 
 const ROMAN_NUMERALS: [number, string][] = [
@@ -188,7 +199,12 @@ function normalizeSelectedCourseIds(plan: DegreePlan, courseIds: string[]) {
   }, []);
 }
 
-function useAudit(selectedCourseIds: string[], initialAudit: DegreeAudit, hydrated: boolean) {
+function useAudit(
+  selectedCourseIds: string[],
+  initialAudit: DegreeAudit,
+  hydrated: boolean,
+  programId: string
+) {
   const [audit, setAudit] = useState<DegreeAudit>(initialAudit);
   const [pending, setPending] = useState(false);
 
@@ -203,7 +219,7 @@ function useAudit(selectedCourseIds: string[], initialAudit: DegreeAudit, hydrat
       setPending(true);
 
       try {
-        const response = await fetch("/api/audit", {
+        const response = await fetch(`/api/audit?programId=${encodeURIComponent(programId)}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ selectedCourseIds }),
@@ -229,7 +245,7 @@ function useAudit(selectedCourseIds: string[], initialAudit: DegreeAudit, hydrat
     updateAudit();
 
     return () => controller.abort();
-  }, [selectedCourseIds, hydrated]);
+  }, [selectedCourseIds, hydrated, programId]);
 
   return { audit, pending };
 }
@@ -503,9 +519,14 @@ function CourseRow({
             </Badge>
           ) : null}
         </div>
-        {course.coRequisites?.length ? (
+        {audit.coRequisiteStatus === "recommended" ? (
+          <p className="flex items-start gap-1 text-xs leading-5 text-warning">
+            <AlertTriangle className="mt-0.5 size-3.5 shrink-0" />
+            מומלץ לקחת יחד עם: {formatCourseRefs(plan, audit.unsatisfiedCoRequisites)}
+          </p>
+        ) : audit.coRequisiteStatus === "satisfied" ? (
           <p className="text-xs leading-5 text-muted-foreground">
-            צמודים: {course.coRequisites.join(", ")}
+            צמוד הושלם: {formatCourseRefs(plan, course.coRequisites ?? [])}
           </p>
         ) : null}
         {!selected && audit.missingPrerequisites.length ? (
@@ -647,7 +668,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
   const [activeTab, setActiveTab] = useState("all");
   const [activeSubTab, setActiveSubTab] = useState("all");
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const { audit, pending } = useAudit(selectedCourseIds, initialAudit, hydrated);
+  const { audit, pending } = useAudit(selectedCourseIds, initialAudit, hydrated, plan.id);
   const auditByCourseId = useMemo(
     () => new Map(audit.courseAudits.map((courseAudit) => [courseAudit.course.id, courseAudit])),
     [audit.courseAudits]
@@ -825,10 +846,12 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <div className="space-y-2">
               <div className="flex flex-wrap items-center gap-2">
-                <Badge className="border border-primary/25 bg-primary/10 text-primary">B.Sc.</Badge>
+                <Badge className="border border-primary/25 bg-primary/10 text-primary">
+                  {plan.id.startsWith("msc-") ? "M.Sc." : "B.Sc."}
+                </Badge>
                 <Badge variant="outline">עמודים {plan.source.pages}</Badge>
                 <Badge variant="outline" className="font-mono font-tabular">
-                  160 {'נ"ז'}
+                  {formatCredits(plan.requirements.totalCredits)} {'נ"ז'}
                 </Badge>
               </div>
               <div>
@@ -837,6 +860,11 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
+              <Button variant="outline" asChild>
+                <Link href="/">
+                  <GraduationCap /> תוכניות אחרות
+                </Link>
+              </Button>
               <Button variant="outline" onClick={exportSelection}>
                 <Download /> יצוא
               </Button>

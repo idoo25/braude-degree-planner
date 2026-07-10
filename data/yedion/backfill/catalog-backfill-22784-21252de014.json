@@ -1,0 +1,119 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:36.416Z",
+    "finishedAt": "2026-07-09T16:36:36.416Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614996348__S_LOOK_FOR_NOSE__N22784__21252de014.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22784"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22784",
+      "name": "מידול וייצור מיקרו התקנים מכניים",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22784 מידול וייצור מיקרו התקנים מכניים 2 1 - - 2.5מטרת הקורס היא להקנות ידע בסיסי במידול וייצור של מיקרו מערכות מכניות (MEMS, Micro Electro Mechanical Systems) והתקנים כמו מיקרו-חיישנים, מיקור-רזונטורים, מיקרו-שסתומים ומיקרו-משאבות. שיטות תפעול שונות של מיקרו חיישנים ומשפעלים כמו אלה שמבוססות על כוח חשמלי אלקטרוסטטי וכוח מגנטי. שיטות חישה ותפעול שמתבססות על התגובה האלקטרו-מכנית או התרמו-מכנית של חומרים חכמים כמו חומרים פייזואלקטריים, פייזורזיזטיביים וחומרים עם זיכרון צורה. שיטות ייצור מתקדמות במיקרו תהליכים כמו איכול, נידוף וליתוגרפיה.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22784",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22784",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22784",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22784,-N2,-N1,-N261020410,-N",
+          "groupCode": "261020410",
+          "groupNumber": null,
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "ד\"ר אבו-סאלח סאמי",
+          "linkedGroups": [
+            {
+              "groupCode": "261020410",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "11:30",
+              "lecturerName": "ד\"ר אבו-סאלח סאמי",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 09:30",
+                "שעת סיום: 11:30",
+                "מרצה: ד\"ר אבו-סאלח סאמי",
+                "חדר לימוד: 705 L"
+              ],
+              "room": "705 L",
+              "semesterPeriod": "ב",
+              "startTime": "09:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22784,-N2,-N1,-N261020410,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "קורס זה ניתן לביטול עד 16.3.26 ( קבוצות הקשורות לקורס זה : 261020410 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020410 מרצה הקורס : ד\"ר אבו-סאלח סאמי פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22784:2:1:261020410:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22784",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22784,-N2,-N9,-N261020410,-N1",
+          "groupCode": "261020410",
+          "groupNumber": "1",
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "ד\"ר אבו-סאלח סאמי",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "12:20",
+              "lecturerName": "ד\"ר אבו-סאלח סאמי",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 11:30",
+                "שעת סיום: 12:20",
+                "מרצה: ד\"ר אבו-סאלח סאמי",
+                "חדר לימוד: 705 L"
+              ],
+              "room": "705 L",
+              "semesterPeriod": "ב",
+              "startTime": "11:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22784,-N2,-N9,-N261020410,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020410/ 1 מרצה הקורס : ד\"ר אבו-סאלח סאמי פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22784:2:9:261020410:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

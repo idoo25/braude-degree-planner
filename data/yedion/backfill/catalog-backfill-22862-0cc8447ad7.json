@@ -1,0 +1,289 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:32.431Z",
+    "finishedAt": "2026-07-09T16:36:32.431Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614992368__S_LOOK_FOR_NOSE__N22862__0cc8447ad7.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22862"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 6,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22862",
+      "name": "מעבדה במכטרוניקה",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22862 מעבדה במכטרוניקה1 - 2 - 2.0התנסות בקריאת אמצעי חישה ומדידה שונים בעזרת מחשב, עיבוד אותות נמדדים, ביצוע התמרת פורייה, הפעלת מסננים. התנסות בהפעלה של מפעילים דיסקרטיים ורציפים בעזרת מחשב. מדידת תגובה של תהליכים מסדר ראשון ומסדר שני וניתוח התגובה הדינמית. תכן בקרים ורשתות תיקון למערכות לבקרת מהירות ולבקרת מצב ומימושם בעזרת בקר ספרתי. זיהוי פרמטרים של תהליך וביצוע התכן של הבקר המתאים, בדיקת התכן ובדיקת רגישות המערכת להפרעות.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22862",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22862",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22862",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22862,-N1,-N1,-N261020330,-N1",
+          "groupCode": "261020330",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר סאלח אדהם",
+          "linkedGroups": [
+            {
+              "groupCode": "261020330",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר סאלח אדהם",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר סאלח אדהם",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22862,-N1,-N1,-N261020330,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020330 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020330/ 1 מרצה הקורס : ד\"ר סאלח אדהם פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22862:1:1:261020330:1",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22862",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22862,-N1,-N8,-N261020330,-N1",
+          "groupCode": "261020330",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר סאלח אדהם",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר סאלח אדהם",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר סאלח אדהם",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22862,-N1,-N8,-N261020330,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020330/ 1 מרצה הקורס : ד\"ר סאלח אדהם פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22862:1:8:261020330:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22862",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22862,-N2,-N1,-N261020310,-N1",
+          "groupCode": "261020310",
+          "groupNumber": "1",
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "ד\"ר בן חנן אורי",
+          "linkedGroups": [
+            {
+              "groupCode": "261020310",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר בן חנן אורי",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר בן חנן אורי",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22862,-N2,-N1,-N261020310,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "שמור להתמחות מכטרוניקה ( קבוצות הקשורות לקורס זה : 261020310 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020310/ 1 מרצה הקורס : ד\"ר בן חנן אורי פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22862:2:1:261020310:1",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22862",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22862,-N2,-N1,-N261020310,-N2",
+          "groupCode": "261020310",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר בן חנן אורי",
+          "linkedGroups": [
+            {
+              "groupCode": "261020310",
+              "groupNumber": "2"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר בן חנן אורי",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר בן חנן אורי",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22862,-N2,-N1,-N261020310,-N2",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020310 / 2 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020310/ 2 מרצה הקורס : ד\"ר בן חנן אורי פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22862:2:1:261020310:2",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22862",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22862,-N2,-N8,-N261020310,-N1",
+          "groupCode": "261020310",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר בן חנן אורי",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר בן חנן אורי",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר בן חנן אורי",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22862,-N2,-N8,-N261020310,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 1 מרצה הקורס : ד\"ר בן חנן אורי פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22862:2:8:261020310:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22862",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22862,-N2,-N8,-N261020310,-N2",
+          "groupCode": "261020310",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר בן חנן אורי",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר בן חנן אורי",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר בן חנן אורי",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22862,-N2,-N8,-N261020310,-N2",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 2 מרצה הקורס : ד\"ר בן חנן אורי פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22862:2:8:261020310:2",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

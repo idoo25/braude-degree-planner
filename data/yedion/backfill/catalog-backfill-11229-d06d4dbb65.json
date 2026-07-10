@@ -1,0 +1,56 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:37:13.237Z",
+    "finishedAt": "2026-07-09T16:37:13.237Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615033186__S_LOOK_FOR_NOSE__N11229__d06d4dbb65.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11229"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 1,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "11229",
+      "name": "מלחמת חרבות ברזל-3 מוסמכים",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11229",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11229",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11229",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11229,-N2,-N1,-N263510200,-N",
+          "groupCode": "263510200",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "טרם נקבע ‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏",
+          "linkedGroups": [],
+          "meetings": [],
+          "noteText": "",
+          "rawArguments": "-N11229,-N2,-N1,-N263510200,-N",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 263510200 מרצה הקורס : טרם נקבע ‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏ פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11229:2:1:263510200:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": null,
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

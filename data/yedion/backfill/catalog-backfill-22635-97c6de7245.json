@@ -1,0 +1,393 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:40.434Z",
+    "finishedAt": "2026-07-09T16:36:40.434Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615000366__S_LOOK_FOR_NOSE__N22635__97c6de7245.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22635"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 9,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22635",
+      "name": "מעבדה בתופעות מעבר",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22635 מעבדה בתופעות מעבר- - 2 - 1.0מדידות לחץ, ספיקה, הפסדי לחץ, מאפייני משאבה, משטרי זרימה, מעבר חום בהולכה, בהסעה ובקרינה, מדידת כוחות אווירודינמיים במנהרת רוח, מדידות טמפרטורה במחליף חום, ועוד.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22635",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22635",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N1,-N8,-N261020330,-N1",
+          "groupCode": "261020330",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר צ'רנוב ויקטור",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "16:50",
+              "lecturerName": "ד\"ר צ'רנוב ויקטור",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: ד\"ר צ'רנוב ויקטור",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "נוכחות חובה",
+          "rawArguments": "-N22635,-N1,-N8,-N261020330,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "נוכחות חובה"
+          ],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020330/ 1 מרצה הקורס : ד\"ר צ'רנוב ויקטור פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22635:1:8:261020330:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N1,-N8,-N261020330,-N2",
+          "groupCode": "261020330",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר גולדשטיין איילת",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום חמישי",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר גולדשטיין איילת",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום חמישי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר גולדשטיין איילת",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "נוכחות חובה",
+          "rawArguments": "-N22635,-N1,-N8,-N261020330,-N2",
+          "rawBetweenHeaderAndSchedule": [
+            "נוכחות חובה"
+          ],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020330/ 2 מרצה הקורס : ד\"ר גולדשטיין איילת פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22635:1:8:261020330:2",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N1,-N8,-N261020330,-N3",
+          "groupCode": "261020330",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר גילדין דוד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "11:30",
+              "lecturerName": "מר גילדין דוד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 09:30",
+                "שעת סיום: 11:30",
+                "מרצה: מר גילדין דוד",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "09:30"
+            }
+          ],
+          "noteText": "נוכחות חובה",
+          "rawArguments": "-N22635,-N1,-N8,-N261020330,-N3",
+          "rawBetweenHeaderAndSchedule": [
+            "נוכחות חובה"
+          ],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020330/ 3 מרצה הקורס : מר גילדין דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22635:1:8:261020330:3",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N1,-N8,-N261020330,-N4",
+          "groupCode": "261020330",
+          "groupNumber": "4",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר גילדין דוד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "13:50",
+              "lecturerName": "מר גילדין דוד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 11:30",
+                "שעת סיום: 13:50",
+                "מרצה: מר גילדין דוד",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "11:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22635,-N1,-N8,-N261020330,-N4",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020330/ 4 מרצה הקורס : מר גילדין דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22635:1:8:261020330:4",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N2,-N8,-N261020310,-N1",
+          "groupCode": "261020310",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר גילדין דוד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "14:50",
+              "lecturerName": "מר גילדין דוד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: מר גילדין דוד",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22635,-N2,-N8,-N261020310,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 1 מרצה הקורס : מר גילדין דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22635:2:8:261020310:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N2,-N8,-N261020310,-N2",
+          "groupCode": "261020310",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר דולב אלון",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "18:50",
+              "lecturerName": "ד\"ר דולב אלון",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 16:50",
+                "שעת סיום: 18:50",
+                "מרצה: ד\"ר דולב אלון",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "16:50"
+            }
+          ],
+          "noteText": "מעבדה זו מועברת באנגלית",
+          "rawArguments": "-N22635,-N2,-N8,-N261020310,-N2",
+          "rawBetweenHeaderAndSchedule": [
+            "מעבדה זו מועברת באנגלית"
+          ],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 2 מרצה הקורס : ד\"ר דולב אלון פרטים נוספים שפת הוראה של הקורס : אנגלית",
+          "sectionKey": "22635:2:8:261020310:2",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "אנגלית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N2,-N8,-N261020310,-N3",
+          "groupCode": "261020310",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "מר גילדין דוד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "18:50",
+              "lecturerName": "מר גילדין דוד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 16:50",
+                "שעת סיום: 18:50",
+                "מרצה: מר גילדין דוד",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "16:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22635,-N2,-N8,-N261020310,-N3",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 3 מרצה הקורס : מר גילדין דוד פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22635:2:8:261020310:3",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N2,-N8,-N261020310,-N4",
+          "groupCode": "261020310",
+          "groupNumber": "4",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר דולב אלון",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "16:50",
+              "lecturerName": "ד\"ר דולב אלון",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: ד\"ר דולב אלון",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22635,-N2,-N8,-N261020310,-N4",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 4 מרצה הקורס : ד\"ר דולב אלון פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22635:2:8:261020310:4",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22635",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22635,-N2,-N8,-N261020310,-N5",
+          "groupCode": "261020310",
+          "groupNumber": "5",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר צ'רנוב ויקטור",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "19:50",
+              "lecturerName": "ד\"ר צ'רנוב ויקטור",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 17:50",
+                "שעת סיום: 19:50",
+                "מרצה: ד\"ר צ'רנוב ויקטור",
+                "חדר לימוד: 109 D מע'"
+              ],
+              "room": "109 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "17:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22635,-N2,-N8,-N261020310,-N5",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 5 מרצה הקורס : ד\"ר צ'רנוב ויקטור פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22635:2:8:261020310:5",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

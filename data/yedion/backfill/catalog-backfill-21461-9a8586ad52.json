@@ -1,0 +1,75 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:49.100Z",
+    "finishedAt": "2026-07-09T16:36:49.100Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615009037__S_LOOK_FOR_NOSE__N21461__9a8586ad52.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N21461"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 1,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "21461",
+      "name": "מבוא לזיווד אלקטרוני ומיקרו אלקטרוני",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N21461",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N21461",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "21461",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N21461,-N2,-N1,-N261020410,-N",
+          "groupCode": "261020410",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר בראון-בנימין אורית",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר בראון-בנימין אורית",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר בראון-בנימין אורית",
+                "חדר לימוד: 301 M"
+              ],
+              "room": "301 M",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "קורס זה ניתן לביטול עד 16.3.26",
+          "rawArguments": "-N21461,-N2,-N1,-N261020410,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "קורס זה ניתן לביטול עד 16.3.26"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020410 מרצה הקורס : ד\"ר בראון-בנימין אורית פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "21461:2:1:261020410:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

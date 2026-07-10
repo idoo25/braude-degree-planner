@@ -1,0 +1,119 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:37.218Z",
+    "finishedAt": "2026-07-09T16:36:37.218Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614997150__S_LOOK_FOR_NOSE__N22769__6a7dcd5549.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22769"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22769",
+      "name": "מידול סימולציה וזיהוי מערכות",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22769 מידול סימולציה וזיהוי מערכות2 1 - - 2.5הקורס עוסק בתיאור תופעות פיסיקליות ע\"י מודל מתמטי תוך מתן דוגמאות מעולמו של מהנדס המכונות, פישוט מערכות והתרת צימודים, בניית סימולציה והרצתה, זיהוי מערכות באמצעות ניסויים ושימוש בסימולציה לצורך חיזוי התנהגותן של מערכות בתרחישים שונים.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22769",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22769",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22769",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22769,-N1,-N1,-N261020410,-N",
+          "groupCode": "261020410",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "מר חורש ערן",
+          "linkedGroups": [
+            {
+              "groupCode": "261020410",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "17:50",
+              "lecturerName": "מר חורש ערן",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: מר חורש ערן",
+                "חדר לימוד: 203 M"
+              ],
+              "room": "203 M",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22769,-N1,-N1,-N261020410,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020410 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020410 מרצה הקורס : מר חורש ערן פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22769:1:1:261020410:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22769",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22769,-N1,-N9,-N261020410,-N1",
+          "groupCode": "261020410",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "מר חורש ערן",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "18:50",
+              "lecturerName": "מר חורש ערן",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 17:50",
+                "שעת סיום: 18:50",
+                "מרצה: מר חורש ערן",
+                "חדר לימוד: 203 M"
+              ],
+              "room": "203 M",
+              "semesterPeriod": "א",
+              "startTime": "17:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22769,-N1,-N9,-N261020410,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020410/ 1 מרצה הקורס : מר חורש ערן פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22769:1:9:261020410:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

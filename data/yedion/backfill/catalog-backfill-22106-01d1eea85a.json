@@ -1,0 +1,752 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:48.317Z",
+    "finishedAt": "2026-07-09T16:36:48.317Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615008267__S_LOOK_FOR_NOSE__N22106__01d1eea85a.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22106"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 16,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22106",
+      "name": "מבוא לאלגוריתמיקה ותכנות",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22106 מבוא לאלגוריתמיקה ותכנות 2 1 2 - 3.5הקורס מתמקד בפיתוח יכולת חשיבה אלגוריתמית לצורך פתרון בעיות מורכבות, כולל לימוד בסיסי של אלגוריתמים ותכנות ומיושם בתוכנת MATLAB. נושאי הקורס: חשיבה אלגוריתמית, תרשימי זרימה ופירוק משימות מורכבות, שימוש במשתנים, מערכים, אופרטורים ופונקציות מובנות בתוכנה, משפטי תנאי, לולאות, פונקציות משתמש והצגה גרפית של נתונים.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22106",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22106",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N1,-N1,-N261020130,-N",
+          "groupCode": "261020130",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020130",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 13:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 202 EM"
+              ],
+              "room": "202 EM",
+              "semesterPeriod": "א",
+              "startTime": "13:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N1,-N1,-N261020130,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020130 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020130 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:1:1:261020130:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N1,-N8,-N261020130,-N1",
+          "groupCode": "261020130",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר מטלון-איזנשטדט אראלה",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "10:30",
+              "lecturerName": "ד\"ר מטלון-איזנשטדט אראלה",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 08:30",
+                "שעת סיום: 10:30",
+                "מרצה: ד\"ר מטלון-איזנשטדט אראלה",
+                "חדר לימוד: 306 M מע'"
+              ],
+              "room": "306 M מע'",
+              "semesterPeriod": "א",
+              "startTime": "08:30"
+            }
+          ],
+          "noteText": "חובת נוכחות",
+          "rawArguments": "-N22106,-N1,-N8,-N261020130,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "חובת נוכחות"
+          ],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020130/ 1 מרצה הקורס : ד\"ר מטלון-איזנשטדט אראלה פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:1:8:261020130:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N1,-N8,-N261020130,-N2",
+          "groupCode": "261020130",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "מר שלו יואב",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "14:50",
+              "lecturerName": "מר שלו יואב",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: מר שלו יואב",
+                "חדר לימוד: 306 M מע'"
+              ],
+              "room": "306 M מע'",
+              "semesterPeriod": "א",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "חובת נוכחות",
+          "rawArguments": "-N22106,-N1,-N8,-N261020130,-N2",
+          "rawBetweenHeaderAndSchedule": [
+            "חובת נוכחות"
+          ],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020130/ 2 מרצה הקורס : מר שלו יואב פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:1:8:261020130:2",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N1,-N8,-N261020130,-N3",
+          "groupCode": "261020130",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוט נאוית",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "14:50",
+              "lecturerName": "ד\"ר רוט נאוית",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: ד\"ר רוט נאוית",
+                "חדר לימוד: 102 M מע'"
+              ],
+              "room": "102 M מע'",
+              "semesterPeriod": "א",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "חובת נוכחות",
+          "rawArguments": "-N22106,-N1,-N8,-N261020130,-N3",
+          "rawBetweenHeaderAndSchedule": [
+            "חובת נוכחות"
+          ],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020130/ 3 מרצה הקורס : ד\"ר רוט נאוית פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:1:8:261020130:3",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N1,-N8,-N261020130,-N4",
+          "groupCode": "261020130",
+          "groupNumber": "4",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר מטלון-איזנשטדט אראלה",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "12:20",
+              "lecturerName": "ד\"ר מטלון-איזנשטדט אראלה",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 10:30",
+                "שעת סיום: 12:20",
+                "מרצה: ד\"ר מטלון-איזנשטדט אראלה",
+                "חדר לימוד: 306 M מע'"
+              ],
+              "room": "306 M מע'",
+              "semesterPeriod": "א",
+              "startTime": "10:30"
+            }
+          ],
+          "noteText": "חובת נוכחות",
+          "rawArguments": "-N22106,-N1,-N8,-N261020130,-N4",
+          "rawBetweenHeaderAndSchedule": [
+            "חובת נוכחות"
+          ],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020130/ 4 מרצה הקורס : ד\"ר מטלון-איזנשטדט אראלה פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:1:8:261020130:4",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N1,-N9,-N261020130,-N1",
+          "groupCode": "261020130",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020130",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261020130",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261020130",
+              "groupNumber": "3"
+            },
+            {
+              "groupCode": "261020130",
+              "groupNumber": "4"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "16:50",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 16:50",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 202 EM"
+              ],
+              "room": "202 EM",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N1,-N9,-N261020130,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020130 / 1 , 261020130 / 2 , 261020130 / 3 , 261020130 / 4 )"
+          ],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020130/ 1 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:1:9:261020130:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N1,-N261020110,-N",
+          "groupCode": "261020110",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020110",
+              "groupNumber": "2"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "10:30",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 08:30",
+                "שעת סיום: 10:30",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 709 L"
+              ],
+              "room": "709 L",
+              "semesterPeriod": "ב",
+              "startTime": "08:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N1,-N261020110,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020110 / 2 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020110 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:1:261020110:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N1,-N261020110,-N1",
+          "groupCode": "261020110",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020110",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "14:50",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 705 L"
+              ],
+              "room": "705 L",
+              "semesterPeriod": "ב",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N1,-N261020110,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020110 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020110/ 1 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים הקורס מלא",
+          "sectionKey": "22106:2:1:261020110:1",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N8,-N261020110,-N2",
+          "groupCode": "261020110",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוט נאוית",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "13:50",
+              "lecturerName": "ד\"ר רוט נאוית",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 11:30",
+                "שעת סיום: 13:50",
+                "מרצה: ד\"ר רוט נאוית",
+                "חדר לימוד: מע' 109 M"
+              ],
+              "room": "מע' 109 M",
+              "semesterPeriod": "ב",
+              "startTime": "11:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N8,-N261020110,-N2",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 2 מרצה הקורס : ד\"ר רוט נאוית פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:8:261020110:2",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N8,-N261020110,-N4",
+          "groupCode": "261020110",
+          "groupNumber": "4",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר מאור גיל",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "13:50",
+              "lecturerName": "מר מאור גיל",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 11:30",
+                "שעת סיום: 13:50",
+                "מרצה: מר מאור גיל",
+                "חדר לימוד: 217 M מע'"
+              ],
+              "room": "217 M מע'",
+              "semesterPeriod": "ב",
+              "startTime": "11:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N8,-N261020110,-N4",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 4 מרצה הקורס : מר מאור גיל פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:8:261020110:4",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N8,-N261020110,-N5",
+          "groupCode": "261020110",
+          "groupNumber": "5",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר שלו יואב",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "16:50",
+              "lecturerName": "מר שלו יואב",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: מר שלו יואב",
+                "חדר לימוד: 102 M מע'"
+              ],
+              "room": "102 M מע'",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N8,-N261020110,-N5",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 5 מרצה הקורס : מר שלו יואב פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:8:261020110:5",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N8,-N261020110,-N6",
+          "groupCode": "261020110",
+          "groupNumber": "6",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוט נאוית",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "18:50",
+              "lecturerName": "ד\"ר רוט נאוית",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 16:50",
+                "שעת סיום: 18:50",
+                "מרצה: ד\"ר רוט נאוית",
+                "חדר לימוד: מע' 109 M"
+              ],
+              "room": "מע' 109 M",
+              "semesterPeriod": "ב",
+              "startTime": "16:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N8,-N261020110,-N6",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 6 מרצה הקורס : ד\"ר רוט נאוית פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:8:261020110:6",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N8,-N261020110,-N7",
+          "groupCode": "261020110",
+          "groupNumber": "7",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "מר מאור גיל",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "17:50",
+              "lecturerName": "מר מאור גיל",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: מר מאור גיל",
+                "חדר לימוד: מע' 109 M"
+              ],
+              "room": "מע' 109 M",
+              "semesterPeriod": "ב",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N8,-N261020110,-N7",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 7 מרצה הקורס : מר מאור גיל פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:8:261020110:7",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N8,-N261020110,-N8",
+          "groupCode": "261020110",
+          "groupNumber": "8",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "18:50",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 16:50",
+                "שעת סיום: 18:50",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 201 EM מע' אלקט'"
+              ],
+              "room": "201 EM מע' אלקט'",
+              "semesterPeriod": "ב",
+              "startTime": "16:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N8,-N261020110,-N8",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 8 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:8:261020110:8",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N9,-N261020110,-N1",
+          "groupCode": "261020110",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020110",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "4"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "5"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "6"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "7"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 705 L"
+              ],
+              "room": "705 L",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N9,-N261020110,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020110 / 2 , 261020110 / 4 , 261020110 / 5 , 261020110 / 6 , 261020110 / 7 )"
+          ],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020110/ 1 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:9:261020110:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22106",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22106,-N2,-N9,-N261020110,-N2",
+          "groupCode": "261020110",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020110",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "4"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "5"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "6"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "7"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "11:30",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 10:30",
+                "שעת סיום: 11:30",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 709 L"
+              ],
+              "room": "709 L",
+              "semesterPeriod": "ב",
+              "startTime": "10:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22106,-N2,-N9,-N261020110,-N2",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020110 / 2 , 261020110 / 4 , 261020110 / 5 , 261020110 / 6 , 261020110 / 7 )"
+          ],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020110/ 2 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22106:2:9:261020110:2",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

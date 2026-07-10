@@ -1,0 +1,121 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:45.999Z",
+    "finishedAt": "2026-07-09T16:36:45.999Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615005952__S_LOOK_FOR_NOSE__N22254__4ff149c1e0.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22254"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22254",
+      "name": "מערכות ייצור ממוחשבות",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22254 מערכות ייצור ממוחשבות 2 2 - - 3.0הקורס מיועד להקנות מושגים ועקרונות של מערכות ייצור משולבות מחשב (CIM). הכרת סוגי מערכות ייצור, וביישום טכנולוגיות שמשתתפות בהפעלת אוטומציה גמישה בייצור כמו: רובוטים, חיישנים, ייצור בעזרת מחשב (CAM), בקרה ספרתית (CNC) , בקר מתוכנת (PLC), טכנולוגית קבוצות (GT), ובבעיות אינטגרציה, ובקרה של מערכות אלו. הקורס יכלול את הנושאים הבאים: הקדמה למערכות ייצור, קודים בינאריים, סוגי חיישנים במערכות ייצור אוטומטיות, רובוטיקה, ראיה ממוחשבת, בקרה ספרתית (CNC) , בקרים מתוכנתים (PLC) וטכנולוגיית קבוצות .(GT)",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22254",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22254",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22254",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22254,-N2,-N1,-N261020410,-N",
+          "groupCode": "261020410",
+          "groupNumber": null,
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "מר יפרח יצחק",
+          "linkedGroups": [
+            {
+              "groupCode": "261020410",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "14:50",
+              "lecturerName": "מר יפרח יצחק",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: מר יפרח יצחק",
+                "חדר לימוד:"
+              ],
+              "room": "",
+              "semesterPeriod": "ב",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22254,-N2,-N1,-N261020410,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "ניתן לבטל רישום עד 16.03.26. ( קבוצות הקשורות לקורס זה : 261020410 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020410 מרצה הקורס : מר יפרח יצחק פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22254:2:1:261020410:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22254",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22254,-N2,-N9,-N261020410,-N1",
+          "groupCode": "261020410",
+          "groupNumber": "1",
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "מר יפרח יצחק",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "16:50",
+              "lecturerName": "מר יפרח יצחק",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: מר יפרח יצחק",
+                "חדר לימוד:"
+              ],
+              "room": "",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "הקורס מועבר באופן מקוון בZOOM",
+          "rawArguments": "-N22254,-N2,-N9,-N261020410,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "הקורס מועבר באופן מקוון בZOOM"
+          ],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020410/ 1 מרצה הקורס : מר יפרח יצחק פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22254:2:9:261020410:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

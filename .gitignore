@@ -45,6 +45,18 @@ data/*.sqlite-wal
 data/*.sqlite-shm
 data/*.sqlite-journal
 
+# Yedion background worker: browser profile, authenticated session, raw pages, and logs.
+data/yedion/worker/
+
+# Yedion raw scraping cache: not read by the running app (already imported into
+# data/degree-planner.sqlite) and fully regenerable via the yedion:* scripts.
+# The merged catalog/search JSON files ARE kept tracked - they're the hard-won,
+# WAF-workaround-dependent result and are worth preserving even though the DB
+# already has them imported.
+data/yedion/page-cache/
+data/yedion/checkpoints/
+data/yedion/search/page-cache/
+
 # local dev server logs
 dev-server.out.log
 dev-server.err.log

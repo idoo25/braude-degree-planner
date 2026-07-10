@@ -8,7 +8,15 @@
     "start": "node --no-warnings ./node_modules/next/dist/bin/next start",
     "lint": "eslint",
     "db:seed": "node --no-warnings scripts/seed-db.mjs",
-    "db:reset": "node --no-warnings scripts/seed-db.mjs --reset"
+    "db:reset": "node --no-warnings scripts/seed-db.mjs --reset",
+    "yedion:merge": "node --no-warnings scripts/merge-yedion-catalogs.mjs",
+    "yedion:import": "node --no-warnings scripts/import-yedion-catalog.mjs",
+    "yedion:import:reset": "node --no-warnings scripts/import-yedion-catalog.mjs --reset-yedion",
+    "yedion:import-search": "node --no-warnings scripts/import-yedion-search-results.mjs --reset-search",
+    "yedion:normalize-exams": "node --no-warnings scripts/normalize-yedion-exams.mjs",
+    "yedion:report": "node --no-warnings scripts/report-yedion-catalog.mjs",
+    "yedion:worker": "node --no-warnings scripts/yedion-background-worker.mjs",
+    "yedion:worker:reporter": "node --no-warnings scripts/yedion-worker-status-reporter.mjs"
   },
   "dependencies": {
     "better-sqlite3": "^12.11.1",
@@ -31,6 +39,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "playwright-core": "^1.61.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

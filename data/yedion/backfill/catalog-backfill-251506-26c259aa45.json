@@ -1,0 +1,73 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:35:30.616Z",
+    "finishedAt": "2026-07-09T16:35:30.616Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614930557__S_LOOK_FOR_NOSE__N251506__26c259aa45.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251506"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 1,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "251506",
+      "name": "מבוא לקניין רוחני",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "הקורס יעסוק בכלים להנעה ומימוש של רעיון יזמי. הקורס כולל: תיאוריות במרחב היזמות, הגנהעל קנין רוחני, ניסוח ורישום פטנטים, הערכה של הזדמנות יזמית (התכנות שיווקית, פיננסית,ניהולית-תפעולית) וניהול השלבים הראשונים של מיזם. הסטודנטים ידרשו לבצע הערכה מודרכתשל רעיון יזמי תוך התייחסות לקניין רוחני ותכנית עסקית על פי העקרונות שנלמדו בקורס. בסיוםהקורס הסטודנטים יציגו בפני הכיתה את המיזם והמודל העסקי.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251506",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N251506",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "251506",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N251506,-N2,-N1,-N261250110,-N",
+          "groupCode": "261250110",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר דביר רון",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "19:50",
+              "lecturerName": "ד\"ר דביר רון",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 17:50",
+                "שעת סיום: 19:50",
+                "מרצה: ד\"ר דביר רון",
+                "חדר לימוד: 218 M"
+              ],
+              "room": "218 M",
+              "semesterPeriod": "ב",
+              "startTime": "17:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N251506,-N2,-N1,-N261250110,-N",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261250110 מרצה הקורס : ד\"ר דביר רון פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "251506:2:1:261250110:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

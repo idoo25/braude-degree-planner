@@ -1,0 +1,78 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:37:14.000Z",
+    "finishedAt": "2026-07-09T16:37:14.000Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615033932__S_LOOK_FOR_NOSE__N11228__39af453429.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11228"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "11228",
+      "name": "מלחמת חרבות ברזל-2 מוסמכים",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11228",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11228",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11228",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11228,-N1,-N1,-N263510200,-N",
+          "groupCode": "263510200",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "טרם נקבע ‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏",
+          "linkedGroups": [],
+          "meetings": [],
+          "noteText": "",
+          "rawArguments": "-N11228,-N1,-N1,-N263510200,-N",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 263510200 מרצה הקורס : טרם נקבע ‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏ פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11228:1:1:263510200:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": null,
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11228",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11228,-N2,-N1,-N263510200,-N",
+          "groupCode": "263510200",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "טרם נקבע ‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏",
+          "linkedGroups": [],
+          "meetings": [],
+          "noteText": "",
+          "rawArguments": "-N11228,-N2,-N1,-N263510200,-N",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 263510200 מרצה הקורס : טרם נקבע ‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏ פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11228:2:1:263510200:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": null,
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

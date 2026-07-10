@@ -1,0 +1,204 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:49.913Z",
+    "finishedAt": "2026-07-09T16:36:49.913Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615009836__S_LOOK_FOR_NOSE__N21312__9394ea360c.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N21312"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 4,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "21312",
+      "name": "מבוא לבקרה לביוטכנולוגיה",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "21312 מבוא לבקרה לביוטכנולוגיה 2 1 - - 2.5הקנית כלים לתיאור התגובה הדינמית של תהליכים ותיכון של מערכות בקרה לקבלת תגובה נדרשת. הכרת אמצעי מדידה ואופן שילובם במערכות בקרה.תאור הקורס:1. מבוא - דוגמאות של בקרת תהליכים בתעשייה הכימית והביוטכנולוגית. 2. הגדרת מושגים - מערכת, חוג פתוח, חוג סגור, תאור מערכת בעזרת דיאגרמת מלבנים. 3. מודלים של מערכות פיסיקליות, מערכות הידראוליות, מערכות תרמיות, ריכוז. 4. התמרות לפלס, שימוש בהתמרות לפתרון משוואות דיפרנציאליות, פונקציות תמסורת של מערכות. 5. התנהגות אופיינית של תהליך מסדר ראשון ושני.6. הכרת בקרים נפוצים - בקר on/off בקר P, בקר PI ובקר PID. כיוון אופטימלי של בקרים. 7. שיטות להתמרת אותות פיסיקליים למתח חשמלי. 8. שיטת למדידת טמפרטורה: צמד תרמי, תרמיסטור, RTD. 9. שיטות למדידה של ספיקה ולחץ, שיטות למדידת מוליכות ו- pH. 10. שילוב אמצעי המדידה במערכות בקרה.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N21312",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N21312",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "21312",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N21312,-N1,-N1,-N261041410,-N",
+          "groupCode": "261041410",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר גולדשטיין איילת",
+          "linkedGroups": [
+            {
+              "groupCode": "261041410",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "12:20",
+              "lecturerName": "ד\"ר גולדשטיין איילת",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 10:30",
+                "שעת סיום: 12:20",
+                "מרצה: ד\"ר גולדשטיין איילת",
+                "חדר לימוד: 221 M נגישות"
+              ],
+              "room": "221 M נגישות",
+              "semesterPeriod": "א",
+              "startTime": "10:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N21312,-N1,-N1,-N261041410,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261041410 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261041410 מרצה הקורס : ד\"ר גולדשטיין איילת פרטים נוספים הקורס מלא",
+          "sectionKey": "21312:1:1:261041410:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "21312",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N21312,-N1,-N9,-N261041410,-N1",
+          "groupCode": "261041410",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר גולדשטיין איילת",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום חמישי",
+              "endTime": "14:50",
+              "lecturerName": "ד\"ר גולדשטיין איילת",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום חמישי",
+                "שעת התחלה : 11:30",
+                "שעת סיום: 14:50",
+                "מרצה: ד\"ר גולדשטיין איילת",
+                "חדר לימוד: 112 M אודיטוריום"
+              ],
+              "room": "112 M אודיטוריום",
+              "semesterPeriod": "א",
+              "startTime": "11:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N21312,-N1,-N9,-N261041410,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261041410/ 1 מרצה הקורס : ד\"ר גולדשטיין איילת פרטים נוספים הקורס מלא",
+          "sectionKey": "21312:1:9:261041410:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "21312",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N21312,-N2,-N1,-N261041442,-N",
+          "groupCode": "261041442",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר גולדשטיין איילת",
+          "linkedGroups": [
+            {
+              "groupCode": "261041442",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "11:30",
+              "lecturerName": "ד\"ר גולדשטיין איילת",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 08:30",
+                "שעת סיום: 11:30",
+                "מרצה: ד\"ר גולדשטיין איילת",
+                "חדר לימוד: 219 M נגישות"
+              ],
+              "room": "219 M נגישות",
+              "semesterPeriod": "ב",
+              "startTime": "08:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N21312,-N2,-N1,-N261041442,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "ראו סילבוס - החל מהשבוע הרביעי לסמסטר ( קבוצות הקשורות לקורס זה : 261041442 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261041442 מרצה הקורס : ד\"ר גולדשטיין איילת פרטים נוספים",
+          "sectionKey": "21312:2:1:261041442:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "21312",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N21312,-N2,-N9,-N261041442,-N1",
+          "groupCode": "261041442",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר גולדשטיין איילת",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "13:50",
+              "lecturerName": "ד\"ר גולדשטיין איילת",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 11:30",
+                "שעת סיום: 13:50",
+                "מרצה: ד\"ר גולדשטיין איילת",
+                "חדר לימוד: 219 M נגישות"
+              ],
+              "room": "219 M נגישות",
+              "semesterPeriod": "ב",
+              "startTime": "11:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N21312,-N2,-N9,-N261041442,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261041442/ 1 מרצה הקורס : ד\"ר גולדשטיין איילת פרטים נוספים",
+          "sectionKey": "21312:2:9:261041442:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": ""
+        }
+      ]
+    }
+  ]
+}

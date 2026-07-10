@@ -1,0 +1,563 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:47.570Z",
+    "finishedAt": "2026-07-09T16:36:47.570Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615007519__S_LOOK_FOR_NOSE__N22112__a3e008ea8b.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22112"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 12,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22112",
+      "name": "מבוא לגרפיקה הנדסית",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22112 מבוא לגרפיקה הנדסית2 - 2 - 3.0עקרונות הגיאומטריה התיאורית והשרטוט ההנדסי. הטלות ומבטים ראשיים, תיאור הישר, מצב הדדי של שני ישרים, תיאור המישור, מצב הדדי בין ישר, מישור וגוף מרחבי, חדירות ופריסות, חתכים, מבטים תלת-מימדיים.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22112",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22112",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N1,-N1,-N261020110,-N",
+          "groupCode": "261020110",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר פלוסי אבישג",
+          "linkedGroups": [
+            {
+              "groupCode": "261020110",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "3"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "4"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "5"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "6"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "12:20",
+              "lecturerName": "ד\"ר פלוסי אבישג",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 10:30",
+                "שעת סיום: 12:20",
+                "מרצה: ד\"ר פלוסי אבישג",
+                "חדר לימוד: 317 M"
+              ],
+              "room": "317 M",
+              "semesterPeriod": "א",
+              "startTime": "10:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N1,-N1,-N261020110,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020110 , 261020110 / 2 , 261020110 / 3 , 261020110 / 4 , 261020110 / 5 , 261020110 / 6 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020110 מרצה הקורס : ד\"ר פלוסי אבישג פרטים נוספים הקורס מלא",
+          "sectionKey": "22112:1:1:261020110:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N1,-N1,-N261020110,-N1",
+          "groupCode": "261020110",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר פלוסי אבישג",
+          "linkedGroups": [
+            {
+              "groupCode": "261020110",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "3"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "4"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "5"
+            },
+            {
+              "groupCode": "261020110",
+              "groupNumber": "6"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "14:50",
+              "lecturerName": "ד\"ר פלוסי אבישג",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: ד\"ר פלוסי אבישג",
+                "חדר לימוד: 706 L"
+              ],
+              "room": "706 L",
+              "semesterPeriod": "א",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N1,-N1,-N261020110,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020110 , 261020110 / 2 , 261020110 / 3 , 261020110 / 4 , 261020110 / 5 , 261020110 / 6 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020110/ 1 מרצה הקורס : ד\"ר פלוסי אבישג פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:1:1:261020110:1",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N1,-N8,-N261020110,-N",
+          "groupCode": "261020110",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "גב' אריאלי סוניה",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "15:50",
+              "lecturerName": "גב' אריאלי סוניה",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 13:50",
+                "שעת סיום: 15:50",
+                "מרצה: גב' אריאלי סוניה",
+                "חדר לימוד: 200 EM תיב\"מ"
+              ],
+              "room": "200 EM תיב\"מ",
+              "semesterPeriod": "א",
+              "startTime": "13:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N1,-N8,-N261020110,-N",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110 מרצה הקורס : גב' אריאלי סוניה פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:1:8:261020110:",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N1,-N8,-N261020110,-N2",
+          "groupCode": "261020110",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר שלו יואב",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "12:20",
+              "lecturerName": "מר שלו יואב",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 10:30",
+                "שעת סיום: 12:20",
+                "מרצה: מר שלו יואב",
+                "חדר לימוד: 200 EM תיב\"מ"
+              ],
+              "room": "200 EM תיב\"מ",
+              "semesterPeriod": "א",
+              "startTime": "10:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N1,-N8,-N261020110,-N2",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 2 מרצה הקורס : מר שלו יואב פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:1:8:261020110:2",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N1,-N8,-N261020110,-N3",
+          "groupCode": "261020110",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר שלו יואב",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "16:50",
+              "lecturerName": "מר שלו יואב",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: מר שלו יואב",
+                "חדר לימוד: 200 EM תיב\"מ"
+              ],
+              "room": "200 EM תיב\"מ",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N1,-N8,-N261020110,-N3",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 3 מרצה הקורס : מר שלו יואב פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:1:8:261020110:3",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N1,-N8,-N261020110,-N4",
+          "groupCode": "261020110",
+          "groupNumber": "4",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר שלו יואב",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "17:50",
+              "lecturerName": "מר שלו יואב",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: מר שלו יואב",
+                "חדר לימוד: 201 EM מע' אלקט'"
+              ],
+              "room": "201 EM מע' אלקט'",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N1,-N8,-N261020110,-N4",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 4 מרצה הקורס : מר שלו יואב פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:1:8:261020110:4",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N1,-N8,-N261020110,-N5",
+          "groupCode": "261020110",
+          "groupNumber": "5",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "גב' אריאלי סוניה",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "14:50",
+              "lecturerName": "גב' אריאלי סוניה",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: גב' אריאלי סוניה",
+                "חדר לימוד: 200 EM תיב\"מ"
+              ],
+              "room": "200 EM תיב\"מ",
+              "semesterPeriod": "א",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N1,-N8,-N261020110,-N5",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 5 מרצה הקורס : גב' אריאלי סוניה פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:1:8:261020110:5",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N1,-N8,-N261020110,-N6",
+          "groupCode": "261020110",
+          "groupNumber": "6",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "גב' אריאלי סוניה",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "16:50",
+              "lecturerName": "גב' אריאלי סוניה",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: גב' אריאלי סוניה",
+                "חדר לימוד: 200 EM תיב\"מ"
+              ],
+              "room": "200 EM תיב\"מ",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N1,-N8,-N261020110,-N6",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020110/ 6 מרצה הקורס : גב' אריאלי סוניה פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:1:8:261020110:6",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N2,-N1,-N261020130,-N",
+          "groupCode": "261020130",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר פלוסי אבישג",
+          "linkedGroups": [
+            {
+              "groupCode": "261020130",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261020130",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261020130",
+              "groupNumber": "3"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר פלוסי אבישג",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 13:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר פלוסי אבישג",
+                "חדר לימוד: 706 L"
+              ],
+              "room": "706 L",
+              "semesterPeriod": "ב",
+              "startTime": "13:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N2,-N1,-N261020130,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020130 , 261020130 / 1 , 261020130 / 2 , 261020130 / 3 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020130 מרצה הקורס : ד\"ר פלוסי אבישג פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:2:1:261020130:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N2,-N8,-N261020130,-N1",
+          "groupCode": "261020130",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "גב' אריאלי סוניה",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "16:50",
+              "lecturerName": "גב' אריאלי סוניה",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: גב' אריאלי סוניה",
+                "חדר לימוד: 216 M מע'"
+              ],
+              "room": "216 M מע'",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N2,-N8,-N261020130,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020130/ 1 מרצה הקורס : גב' אריאלי סוניה פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:2:8:261020130:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N2,-N8,-N261020130,-N2",
+          "groupCode": "261020130",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "גב' אריאלי סוניה",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "16:50",
+              "lecturerName": "גב' אריאלי סוניה",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: גב' אריאלי סוניה",
+                "חדר לימוד: 217 M מע'"
+              ],
+              "room": "217 M מע'",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N2,-N8,-N261020130,-N2",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020130/ 2 מרצה הקורס : גב' אריאלי סוניה פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:2:8:261020130:2",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22112",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22112,-N2,-N8,-N261020130,-N3",
+          "groupCode": "261020130",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "גב' אריאלי סוניה",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "13:50",
+              "lecturerName": "גב' אריאלי סוניה",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 11:30",
+                "שעת סיום: 13:50",
+                "מרצה: גב' אריאלי סוניה",
+                "חדר לימוד: 216 M מע'"
+              ],
+              "room": "216 M מע'",
+              "semesterPeriod": "ב",
+              "startTime": "11:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22112,-N2,-N8,-N261020130,-N3",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020130/ 3 מרצה הקורס : גב' אריאלי סוניה פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22112:2:8:261020130:3",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

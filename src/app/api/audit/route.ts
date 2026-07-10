@@ -15,6 +15,7 @@ export async function POST(request: Request) {
   const selectedCourseIds = Array.isArray(body.selectedCourseIds)
     ? body.selectedCourseIds.filter((id): id is string => typeof id === "string")
     : [];
+  const programId = new URL(request.url).searchParams.get("programId") ?? undefined;
 
-  return NextResponse.json(createDegreeAudit(selectedCourseIds, getDegreePlan()));
+  return NextResponse.json(createDegreeAudit(selectedCourseIds, getDegreePlan(programId)));
 }

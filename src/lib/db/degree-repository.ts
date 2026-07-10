@@ -328,6 +328,30 @@ function readRules(programId: string): DegreeRule[] {
   }));
 }
 
+export type ProgramSummary = {
+  id: string;
+  title: string;
+  subtitle: string;
+};
+
+export function getProgramList(): ProgramSummary[] {
+  const rows = getDb()
+    .prepare(
+      `
+        SELECT id, title, subtitle
+        FROM programs
+        ORDER BY title
+      `
+    )
+    .all() as Row[];
+
+  return rows.map((row) => ({
+    id: String(row.id),
+    title: String(row.title),
+    subtitle: String(row.subtitle),
+  }));
+}
+
 export function getDegreePlan(programId = DEFAULT_PROGRAM_ID): DegreePlan {
   const signature = getDbSignature();
 

@@ -1,0 +1,204 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:37:15.466Z",
+    "finishedAt": "2026-07-09T16:37:15.466Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783615035407__S_LOOK_FOR_NOSE__N11136__ba811253c3.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11136"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 4,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "11136",
+      "name": "משוואות דיפרנציאליות ב",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "11136 משוואות דיפרנציאליות ב3 2 - - 4.0משוואה דיפרנציאלית מסדר ראשון, מודלים מתמטיים, מושג הפתרון, בעיית קושי, משפט הקיום והיחידות, שדה הכיוונים. משוואות מסדר ראשון: הפרדת משתנים, משוואה לינארית. משוואה לינארית מסדר שני ומעלה: תלות לינארית, וורונסקיאן, מבנה הפתרונות של משוואה לינארית. משוואות עם מקדמים קבועים, השוואת מקדמים ווריאציית הפרמטר. התמרת לפלס: תכונות ומשפט הקונבוליוציה, התמרת לפלס של פונקציות הביסייד ודלתא של דירק, פתרון משוואת דיפרנציאליות באמצעות התמרת לפלס. משוואת הולכת החום במוט סופי. משוואת לפלס.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11136",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N11136",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11136",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11136,-N1,-N1,-N261041210,-N",
+          "groupCode": "261041210",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר גולדוורד אלכסנדר",
+          "linkedGroups": [
+            {
+              "groupCode": "261041210",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "16:50",
+              "lecturerName": "ד\"ר גולדוורד אלכסנדר",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 13:50",
+                "שעת סיום: 16:50",
+                "מרצה: ד\"ר גולדוורד אלכסנדר",
+                "חדר לימוד: 203 EM"
+              ],
+              "room": "203 EM",
+              "semesterPeriod": "א",
+              "startTime": "13:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11136,-N1,-N1,-N261041210,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261041210 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261041210 מרצה הקורס : ד\"ר גולדוורד אלכסנדר פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11136:1:1:261041210:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11136",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11136,-N1,-N9,-N261041210,-N1",
+          "groupCode": "261041210",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "מר עראבי יוסוף",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שלישי",
+              "endTime": "16:50",
+              "lecturerName": "מר עראבי יוסוף",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שלישי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: מר עראבי יוסוף",
+                "חדר לימוד: 309 M"
+              ],
+              "room": "309 M",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11136,-N1,-N9,-N261041210,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261041210/ 1 מרצה הקורס : מר עראבי יוסוף פרטים נוספים שפת הוראה של הקורס : עברית",
+          "sectionKey": "11136:1:9:261041210:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11136",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11136,-N2,-N1,-N261041242,-N",
+          "groupCode": "261041242",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר גולדוורד אלכסנדר",
+          "linkedGroups": [
+            {
+              "groupCode": "261041242",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר גולדוורד אלכסנדר",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר גולדוורד אלכסנדר",
+                "חדר לימוד: 202 M"
+              ],
+              "room": "202 M",
+              "semesterPeriod": "ב",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11136,-N2,-N1,-N261041242,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261041242 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261041242 מרצה הקורס : ד\"ר גולדוורד אלכסנדר פרטים נוספים",
+          "sectionKey": "11136:2:1:261041242:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "11136",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N11136,-N2,-N9,-N261041242,-N1",
+          "groupCode": "261041242",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": false,
+          "lecturerName": "ד\"ר גולדוורד אלכסנדר",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "14:50",
+              "lecturerName": "ד\"ר גולדוורד אלכסנדר",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: ד\"ר גולדוורד אלכסנדר",
+                "חדר לימוד: 103 EM"
+              ],
+              "room": "103 EM",
+              "semesterPeriod": "ב",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N11136,-N2,-N9,-N261041242,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261041242/ 1 מרצה הקורס : ד\"ר גולדוורד אלכסנדר פרטים נוספים",
+          "sectionKey": "11136:2:9:261041242:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": ""
+        }
+      ]
+    }
+  ]
+}

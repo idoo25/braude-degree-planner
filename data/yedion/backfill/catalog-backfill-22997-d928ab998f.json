@@ -1,0 +1,204 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:30.816Z",
+    "finishedAt": "2026-07-09T16:36:30.816Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614990749__S_LOOK_FOR_NOSE__N22997__d928ab998f.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22997"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 4,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22997",
+      "name": "מבוא לאינטרנט של הדברים בהנדסה",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22997 אינטרנט של הדברים IOT 1 - 3- 2.5אינטרנט של הדברים (Internet of things – IoT) הוא תחום שצובר תאוצה לאחרונה. עוד ועוד מפעלים הופכים ל\"מפעלים חכמים\". מפעל חכם הוא מפעל בהם מכונות הייצור, חומרי הגלם והמוצרים, כולם מנוטרים ע\"י חיישנים. המידע מהחיישנים עולה לענן, שם נעשות עליו אנליזות שונות. בנוסף , ניתן לשלוט על כל מרכיבי תהליך הייצור מהענן ומרחוק. הקורס עוסק בתכן מערכות IoT באמצעות יישום מבוסס תיאוריה. הסטודנט יפתח מיומנויות בשימוש מערכות משובצות מחשב (\"בקרים\"), חיישנים, מפעילים, מערכות תיווך (Middleware) ואינטגרציה ביניהם.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22997",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22997",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22997",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22997,-N1,-N1,-N261020330,-N",
+          "groupCode": "261020330",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר רוזן עוזי",
+          "linkedGroups": [
+            {
+              "groupCode": "261020330",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "15:50",
+              "lecturerName": "מר רוזן עוזי",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 15:50",
+                "מרצה: מר רוזן עוזי",
+                "חדר לימוד: fab lab 297"
+              ],
+              "room": "fab lab 297",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22997,-N1,-N1,-N261020330,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020330 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020330 מרצה הקורס : מר רוזן עוזי פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22997:1:1:261020330:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22997",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22997,-N1,-N8,-N261020330,-N1",
+          "groupCode": "261020330",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "מר רוזן עוזי",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "18:50",
+              "lecturerName": "מר רוזן עוזי",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 18:50",
+                "מרצה: מר רוזן עוזי",
+                "חדר לימוד: fab lab 297"
+              ],
+              "room": "fab lab 297",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22997,-N1,-N8,-N261020330,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020330/ 1 מרצה הקורס : מר רוזן עוזי פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22997:1:8:261020330:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22997",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22997,-N2,-N1,-N261020310,-N",
+          "groupCode": "261020310",
+          "groupNumber": null,
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "מר רוזן עוזי",
+          "linkedGroups": [
+            {
+              "groupCode": "261020310",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "16:50",
+              "lecturerName": "מר רוזן עוזי",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 16:50",
+                "מרצה: מר רוזן עוזי",
+                "חדר לימוד: EM 307 מעב'"
+              ],
+              "room": "EM 307 מעב'",
+              "semesterPeriod": "ב",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22997,-N2,-N1,-N261020310,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020310 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020310 מרצה הקורס : מר רוזן עוזי פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22997:2:1:261020310:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22997",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22997,-N2,-N8,-N261020310,-N1",
+          "groupCode": "261020310",
+          "groupNumber": "1",
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "מר רוזן עוזי",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "19:50",
+              "lecturerName": "מר רוזן עוזי",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 16:50",
+                "שעת סיום: 19:50",
+                "מרצה: מר רוזן עוזי",
+                "חדר לימוד: EM 307 מעב'"
+              ],
+              "room": "EM 307 מעב'",
+              "semesterPeriod": "ב",
+              "startTime": "16:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22997,-N2,-N8,-N261020310,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 1 מרצה הקורס : מר רוזן עוזי פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22997:2:8:261020310:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

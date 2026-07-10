@@ -1,0 +1,478 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:36:33.231Z",
+    "finishedAt": "2026-07-09T16:36:33.231Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614993166__S_LOOK_FOR_NOSE__N22861__cf418ae57d.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22861"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 10,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22861",
+      "name": "מבוא למערכות מכטרוניות",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "22861 מבוא למערכות מכטרוניות2 - 2 - 3.0מבנה ועקרון פעולה של מיקרו-בקר, ממשקים לחיבור כניסות ויציאות בדידות. עקרונות תורת המדידה, חיישנים למדידות: טמפרטורה, לחץ, מרחק, מומנט, מהירות. ממשקי D/A ו-A/D לחיבור אותות רציפים אל ומאת המיקרו-בקר. תכן של מערכת המופעלת בעזרת מנוע חשמלי, הפעלת מנוע חשמלי בשיטת PWM. מערכת דגימה, משפט הדגימה של נייקוויסט, התמרת Z, תכן מערכת בדידה לבקרת מצב. תכן של מערכת שיש בה שילוב של תכנה, ממשקים וחיישנים שונים לביצוע משימה מוגדרת, מימוש התכן על מערכת הכוללת מיקרו-בקר ובדיקת ביצועי המערכת.",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22861",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22861",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N1,-N1,-N261020310,-N",
+          "groupCode": "261020310",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוזנפלד דוד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020310",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261020310",
+              "groupNumber": "2"
+            },
+            {
+              "groupCode": "261020310",
+              "groupNumber": "3"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר רוזנפלד דוד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר רוזנפלד דוד",
+                "חדר לימוד: 203 M"
+              ],
+              "room": "203 M",
+              "semesterPeriod": "א",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N1,-N1,-N261020310,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020310 / 1 , 261020310 / 2 , 261020310 / 3 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020310 מרצה הקורס : ד\"ר רוזנפלד דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:1:1:261020310:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N1,-N8,-N261020310,-N1",
+          "groupCode": "261020310",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוזנפלד דוד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר רוזנפלד דוד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר רוזנפלד דוד",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N1,-N8,-N261020310,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 1 מרצה הקורס : ד\"ר רוזנפלד דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:1:8:261020310:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N1,-N8,-N261020310,-N2",
+          "groupCode": "261020310",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר סאלח אדהם",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר סאלח אדהם",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר סאלח אדהם",
+                "חדר לימוד: 99 D1 מע' לפלסטיקה"
+              ],
+              "room": "99 D1 מע' לפלסטיקה",
+              "semesterPeriod": "א",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N1,-N8,-N261020310,-N2",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 2 מרצה הקורס : ד\"ר סאלח אדהם פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:1:8:261020310:2",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N1,-N8,-N261020310,-N3",
+          "groupCode": "261020310",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוזנפלד דוד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "16:50",
+              "lecturerName": "ד\"ר רוזנפלד דוד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 16:50",
+                "מרצה: ד\"ר רוזנפלד דוד",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N1,-N8,-N261020310,-N3",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 3 מרצה הקורס : ד\"ר רוזנפלד דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:1:8:261020310:3",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N1,-N9,-N261020310,-N1",
+          "groupCode": "261020310",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוזנפלד דוד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020310",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר רוזנפלד דוד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר רוזנפלד דוד",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N1,-N9,-N261020310,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020310 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020310/ 1 מרצה הקורס : ד\"ר רוזנפלד דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:1:9:261020310:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N1,-N9,-N261020310,-N2",
+          "groupCode": "261020310",
+          "groupNumber": "2",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר סאלח אדהם",
+          "linkedGroups": [
+            {
+              "groupCode": "261020310",
+              "groupNumber": "2"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר סאלח אדהם",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר סאלח אדהם",
+                "חדר לימוד: 316 M מע'"
+              ],
+              "room": "316 M מע'",
+              "semesterPeriod": "א",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N1,-N9,-N261020310,-N2",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020310 / 2 )"
+          ],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020310/ 2 מרצה הקורס : ד\"ר סאלח אדהם פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:1:9:261020310:2",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N1,-N9,-N261020310,-N3",
+          "groupCode": "261020310",
+          "groupNumber": "3",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוזנפלד דוד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020310",
+              "groupNumber": "3"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום שני",
+              "endTime": "14:50",
+              "lecturerName": "ד\"ר רוזנפלד דוד",
+              "rawCells": [
+                "סמסטר: א",
+                "יום בשבוע: יום שני",
+                "שעת התחלה : 13:50",
+                "שעת סיום: 14:50",
+                "מרצה: ד\"ר רוזנפלד דוד",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "א",
+              "startTime": "13:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N1,-N9,-N261020310,-N3",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020310 / 3 )"
+          ],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020310/ 3 מרצה הקורס : ד\"ר רוזנפלד דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:1:9:261020310:3",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "1",
+          "semesterPeriod": "א",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N2,-N1,-N261020330,-N",
+          "groupCode": "261020330",
+          "groupNumber": null,
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוזנפלד דוד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020330",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261020330",
+              "groupNumber": "2"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "14:50",
+              "lecturerName": "ד\"ר רוזנפלד דוד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 12:50",
+                "שעת סיום: 14:50",
+                "מרצה: ד\"ר רוזנפלד דוד",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "12:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N2,-N1,-N261020330,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "שמור להתמחות מכטרוניקה ( קבוצות הקשורות לקורס זה : 261020330 / 1 , 261020330 / 2 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020330 מרצה הקורס : ד\"ר רוזנפלד דוד פרטים נוספים הקורס מלא",
+          "sectionKey": "22861:2:1:261020330:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": ""
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N2,-N8,-N261020330,-N1",
+          "groupCode": "261020330",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוזנפלד דוד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "17:50",
+              "lecturerName": "ד\"ר רוזנפלד דוד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 15:50",
+                "שעת סיום: 17:50",
+                "מרצה: ד\"ר רוזנפלד דוד",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "15:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N2,-N8,-N261020330,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020330/ 1 מרצה הקורס : ד\"ר רוזנפלד דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:2:8:261020330:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22861",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22861,-N2,-N9,-N261020330,-N1",
+          "groupCode": "261020330",
+          "groupNumber": "1",
+          "isBlockedForRegistration": false,
+          "isFull": true,
+          "lecturerName": "ד\"ר רוזנפלד דוד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020330",
+              "groupNumber": "1"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום רביעי",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר רוזנפלד דוד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום רביעי",
+                "שעת התחלה : 14:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר רוזנפלד דוד",
+                "חדר לימוד: 154 D מע'"
+              ],
+              "room": "154 D מע'",
+              "semesterPeriod": "ב",
+              "startTime": "14:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22861,-N2,-N9,-N261020330,-N1",
+          "rawBetweenHeaderAndSchedule": [
+            "( קבוצות הקשורות לקורס זה : 261020330 / 1 )"
+          ],
+          "rawHeaderText": "קורס מסוג תרגיל קבוצה : 261020330/ 1 מרצה הקורס : ד\"ר רוזנפלד דוד פרטים נוספים הקורס מלא שפת הוראה של הקורס : עברית",
+          "sectionKey": "22861:2:9:261020330:1",
+          "sectionType": "תרגיל",
+          "sectionTypeCode": "9",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

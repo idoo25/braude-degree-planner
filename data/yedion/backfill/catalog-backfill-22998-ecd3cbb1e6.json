@@ -1,0 +1,123 @@
+{
+  "scraperVersion": 1,
+  "source": {
+    "baseUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx",
+    "startedAt": "2026-07-09T16:35:40.508Z",
+    "finishedAt": "2026-07-09T16:35:40.508Z",
+    "academicYearLabel": "תשפ\"ו",
+    "sourceKind": "browser-backfill-current-page",
+    "rawFilePath": "C:\\school\\braude-degree-planner\\data\\yedion\\page-cache\\backfill\\1783614940453__S_LOOK_FOR_NOSE__N22998__ecd3cbb1e6.json"
+  },
+  "options": {
+    "source": "current browser page",
+    "currentUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22998"
+  },
+  "stats": {
+    "courses": 1,
+    "sections": 2,
+    "detailedSections": 0
+  },
+  "courses": [
+    {
+      "courseCode": "22998",
+      "name": "מבוא לחקר ביצועים למהנדסי מכונות",
+      "taughtStatus": null,
+      "firstLetter": null,
+      "academicYearLabel": "תשפ\"ו",
+      "syllabusText": "הנה:22998 - מבוא לחקר ביצועים למהנדסי מכונות3נק\"ז, 2ש הרצאה, 2ש מעבדהתחום חקר הביצועים עוסק באוטימיזציה (מיטוב) של מערכות מורכבות וקבלת החלטות. הסטודנטים ילמדו דרכי מידול של בעיות ומערכות, וכן שיטות שונות לאופטימיזציה כמו Simplex, Gradient Descent, Branch and bound וכו'. הסטודנטים יתרגלו כלים אלו על מגוון בעיות הנדסיות שרלוונטיות לתחום הנדסת המכונות, ומגיעות מעולם המהפכה התעשייתית הרבעית (תעשיה 4.0).",
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22998",
+      "detailListUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_LOOK_FOR_NOSE&arguments=-N22998",
+      "sections": [
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22998",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22998,-N2,-N1,-N261020310,-N",
+          "groupCode": "261020310",
+          "groupNumber": null,
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [
+            {
+              "groupCode": "261020310",
+              "groupNumber": "1"
+            },
+            {
+              "groupCode": "261020310",
+              "groupNumber": "2"
+            }
+          ],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "13:50",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 11:30",
+                "שעת סיום: 13:50",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 302 EM"
+              ],
+              "room": "302 EM",
+              "semesterPeriod": "ב",
+              "startTime": "11:30"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22998,-N2,-N1,-N261020310,-N",
+          "rawBetweenHeaderAndSchedule": [
+            "בקורס יתבצע סיור מקצועי.(ביום א) נוכחות חובה. ( קבוצות הקשורות לקורס זה : 261020310 / 1 , 261020310 / 2 )"
+          ],
+          "rawHeaderText": "קורס מסוג הרצאה קבוצה : 261020310 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22998:2:1:261020310:",
+          "sectionType": "הרצאה",
+          "sectionTypeCode": "1",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        },
+        {
+          "academicYearLabel": "תשפ\"ו",
+          "courseCode": "22998",
+          "detailUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_CourseDetails&arguments=-N22998,-N2,-N8,-N261020310,-N1",
+          "groupCode": "261020310",
+          "groupNumber": "1",
+          "isBlockedForRegistration": true,
+          "isFull": false,
+          "lecturerName": "ד\"ר דננברג אלעד",
+          "linkedGroups": [],
+          "meetings": [
+            {
+              "dayOfWeek": "יום ראשון",
+              "endTime": "15:50",
+              "lecturerName": "ד\"ר דננברג אלעד",
+              "rawCells": [
+                "סמסטר: ב",
+                "יום בשבוע: יום ראשון",
+                "שעת התחלה : 13:50",
+                "שעת סיום: 15:50",
+                "מרצה: ד\"ר דננברג אלעד",
+                "חדר לימוד: 100 EM תיב\"מ"
+              ],
+              "room": "100 EM תיב\"מ",
+              "semesterPeriod": "ב",
+              "startTime": "13:50"
+            }
+          ],
+          "noteText": "",
+          "rawArguments": "-N22998,-N2,-N8,-N261020310,-N1",
+          "rawBetweenHeaderAndSchedule": [],
+          "rawHeaderText": "קורס מסוג מעבדה קבוצה : 261020310/ 1 מרצה הקורס : ד\"ר דננברג אלעד פרטים נוספים הקורס חסום לרישום שפת הוראה של הקורס : עברית",
+          "sectionKey": "22998:2:8:261020310:1",
+          "sectionType": "מעבדה",
+          "sectionTypeCode": "8",
+          "semesterCode": "2",
+          "semesterPeriod": "ב",
+          "teachingLanguage": "עברית"
+        }
+      ]
+    }
+  ]
+}

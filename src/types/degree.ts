@@ -94,6 +94,8 @@ export type MissingPrerequisite = {
   ids: string[];
 };
 
+export type CoRequisiteStatus = "none" | "satisfied" | "recommended";
+
 export type CourseAudit = {
   course: Course;
   completed: boolean;
@@ -101,6 +103,14 @@ export type CourseAudit = {
   missingPrerequisites: MissingPrerequisite[];
   /** True only when the course is blocked purely by an unmet prerequisite - false whenever a mutual-exclusion conflict is also present, since a chosen equivalent/alternative supersedes the course regardless of its own prerequisite state. */
   blockedByPrerequisite: boolean;
+  /**
+   * Corequisites never block availability - a corequisite is satisfied either by prior completion
+   * or by taking it in the same semester, so it's surfaced as a recommendation, not a gate.
+   * "satisfied": no corequisites, or all of them are already completed.
+   * "recommended": at least one corequisite exists and isn't completed yet - suggest taking it together.
+   */
+  coRequisiteStatus: CoRequisiteStatus;
+  unsatisfiedCoRequisites: string[];
 };
 
 export type ClusterAudit = {
