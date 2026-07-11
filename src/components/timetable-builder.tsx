@@ -220,6 +220,17 @@ function canonicalCourseName(offering: ProgramCourseOffering) {
   return offering.yedionCourseName ?? offering.course.name;
 }
 
+function isAcademicHebrewCourse(course: Course) {
+  const normalizedName = normalizedCourseName(course.name);
+
+  return (
+    course.id === "11360" ||
+    course.id === "11361" ||
+    normalizedName.includes("עברית אקדמית") ||
+    normalizedName.includes("עברית למטרות אקדמיות")
+  );
+}
+
 function englishCourseLevel(course: Course) {
   if (course.type !== "english") return null;
   if (course.name.includes("בסיס")) return 0;
@@ -1669,6 +1680,7 @@ export function TimetableBuilder({
       : null;
     const selectedIds = scheduledOfferings
       .filter((offering) => offering.course.semester === Number(nextDegreeSemester))
+      .filter((offering) => !isAcademicHebrewCourse(offering.course))
       .filter((offering) => nextSelectionMode !== "manual" || englishCourseLevel(offering.course) === null)
       .filter((offering) => {
         const courseAudit = courseAudits.get(offering.course.id);
