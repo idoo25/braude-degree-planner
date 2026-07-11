@@ -259,6 +259,8 @@ export const degreePlan: DegreePlan = {
   id: "msc-systems-engineering",
   title: "תואר שני בהנדסת מערכות",
   subtitle: "לימודי תואר שני (M.Sc.) - המכללה האקדמית להנדסה בראודה, כרמיאל",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName: "שנתון תשפ\"ד 2024-2023 - בראודה.pdf",
     pages: "207-211",

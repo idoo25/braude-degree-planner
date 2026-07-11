@@ -15,6 +15,7 @@
     "yedion:import-search": "node --no-warnings scripts/import-yedion-search-results.mjs --reset-search",
     "yedion:normalize-exams": "node --no-warnings scripts/normalize-yedion-exams.mjs",
     "yedion:report": "node --no-warnings scripts/report-yedion-catalog.mjs",
+    "yedion:audit": "node --no-warnings scripts/audit-yedion-data.mjs",
     "yedion:worker": "node --no-warnings scripts/yedion-background-worker.mjs",
     "yedion:worker:reporter": "node --no-warnings scripts/yedion-worker-status-reporter.mjs"
   },

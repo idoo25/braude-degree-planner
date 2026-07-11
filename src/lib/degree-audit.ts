@@ -97,6 +97,10 @@ function isRequirementGroupSatisfied(group: RequirementGroup, selected: Set<stri
 }
 
 function getRequirementGroupCredits(group: RequirementGroup, selected: Set<string>, plan: DegreePlan) {
+  if (group.metadata?.countsTowardFixedCredits === false) {
+    return 0;
+  }
+
   if (!isRequirementGroupSatisfied(group, selected, plan)) {
     return 0;
   }
@@ -360,13 +364,13 @@ export function createDegreeAudit(selectedCourseIds: string[], plan: DegreePlan)
     (audit) =>
       !audit.completed &&
       audit.blockedByPrerequisite &&
-      ["required", "elective", "english"].includes(audit.course.type)
+      ["required", "elective", "english", "language"].includes(audit.course.type)
   );
   const availableCourses = courseAudits.filter(
     (audit) =>
       !audit.completed &&
       audit.available &&
-      ["required", "elective", "general", "sport", "english", "placement", "conversion"].includes(
+      ["required", "elective", "general", "sport", "english", "language", "placement", "conversion"].includes(
         audit.course.type
       )
   );

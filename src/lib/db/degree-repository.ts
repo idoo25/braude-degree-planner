@@ -16,7 +16,11 @@ import type {
 
 type Row = Record<string, unknown>;
 
-let cachedPlan: DegreePlan | null = null;
+// Plans are cached per program id; the whole cache is invalidated together when the
+// underlying DB file changes (signature). A single-slot cache here caused the
+// free-timetable path (which iterates all 15 programs twice) to rebuild every plan
+// from ~10 SQL statements on every request.
+const cachedPlans = new Map<string, DegreePlan>();
 let cachedSignature: string | null = null;
 
 function parseJson<T>(value: unknown, fallback: T): T {
@@ -332,31 +336,45 @@ export type ProgramSummary = {
   id: string;
   title: string;
   subtitle: string;
+  catalogYear: string | null;
+  status: "active" | "archived";
 };
 
 export function getProgramList(): ProgramSummary[] {
   const rows = getDb()
     .prepare(
       `
-        SELECT id, title, subtitle
+        SELECT id, title, subtitle, metadata_json
         FROM programs
         ORDER BY title
       `
     )
     .all() as Row[];
 
-  return rows.map((row) => ({
-    id: String(row.id),
-    title: String(row.title),
-    subtitle: String(row.subtitle),
-  }));
+  return rows.map((row) => {
+    const metadata = parseJson<Record<string, unknown>>(row.metadata_json, {});
+
+    return {
+      id: String(row.id),
+      title: String(row.title),
+      subtitle: String(row.subtitle),
+      catalogYear: typeof metadata.catalogYear === "string" ? metadata.catalogYear : null,
+      status: metadata.status === "archived" ? "archived" : "active",
+    };
+  });
 }
 
 export function getDegreePlan(programId = DEFAULT_PROGRAM_ID): DegreePlan {
   const signature = getDbSignature();
 
-  if (cachedPlan && cachedSignature === signature && cachedPlan.id === programId) {
-    return cachedPlan;
+  if (cachedSignature !== signature) {
+    cachedPlans.clear();
+    cachedSignature = signature;
+  }
+
+  const cached = cachedPlans.get(programId);
+  if (cached) {
+    return cached;
   }
 
   const program = requireProgram(programId);
@@ -389,8 +407,7 @@ export function getDegreePlan(programId = DEFAULT_PROGRAM_ID): DegreePlan {
     notes: readProgramNotes(programId),
   };
 
-  cachedPlan = plan;
-  cachedSignature = signature;
+  cachedPlans.set(programId, plan);
 
   return plan;
 }

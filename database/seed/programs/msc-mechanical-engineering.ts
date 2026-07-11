@@ -115,6 +115,8 @@ export const degreePlan: DegreePlan = {
   id: "msc-mechanical-engineering",
   title: "תואר שני בהנדסת מכונות",
   subtitle: "M.Sc. תואר שני נלמד - המכללה האקדמית להנדסה בראודה, כרמיאל",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName: "שנתון תשפ\"ד 2024-2023 - בראודה.pdf",
     pages: "203-206",

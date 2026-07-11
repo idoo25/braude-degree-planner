@@ -349,6 +349,8 @@ export const degreePlan: DegreePlan = {
   id: "msc-biotechnology",
   title: "תואר שני בביוטכנולוגיה",
   subtitle: "לימודי מוסמך M.Sc. - המכללה האקדמית להנדסה בראודה, כרמיאל",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName:
       "ידיעונים, שנתונים ולוח שנה אקדמית - בראודה.pdf (שנתון תשפ\"ד 2024-2023, פרק ז' - לימודים לתואר מוסמך במדעים M.Sc.)",

@@ -3,6 +3,7 @@
 import {
   AlertTriangle,
   BookOpen,
+  CalendarDays,
   Check,
   CheckCircle2,
   Download,
@@ -376,7 +377,9 @@ function SemesterRail({
     <div className="rounded-2xl border bg-card px-4 py-4 sm:px-6">
       <div className="mb-3 flex items-center justify-between gap-2">
         <h2 className="text-xs font-semibold tracking-wide text-muted-foreground">מסלול הסמסטרים</h2>
-        <span className="font-mono text-[0.65rem] text-muted-foreground">I ← VIII</span>
+        <span className="font-mono text-[0.65rem] text-muted-foreground">
+          {toRoman(semesters[0])} ← {toRoman(semesters.at(-1) ?? semesters[0])}
+        </span>
       </div>
       <div className="relative">
         <div
@@ -861,6 +864,11 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
             </div>
             <div className="flex flex-wrap gap-2">
               <Button variant="outline" asChild>
+                <Link href={`/p/${plan.id}/timetable`}>
+                  <CalendarDays /> מערכת שעות
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
                 <Link href="/">
                   <GraduationCap /> תוכניות אחרות
                 </Link>
@@ -905,7 +913,7 @@ export function DegreePlanner({ plan, initialAudit }: PlannerProps) {
               icon={BookOpen}
               label="חובה וליבה"
               value={`${formatCredits(audit.fixedCreditsCompleted)}/${plan.requirements.fixedDegreeCredits}`}
-              detail={`${formatCredits(audit.fixedCreditsRemaining)} נ"ז חובה/כללי/פיזיקה נשארו`}
+              detail={`${formatCredits(audit.fixedCreditsRemaining)} נ"ז חובה ודרישות התוכנית נשארו`}
               progress={(audit.fixedCreditsCompleted / plan.requirements.fixedDegreeCredits) * 100}
               tone="warning"
             />

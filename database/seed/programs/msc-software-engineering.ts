@@ -144,6 +144,8 @@ export const degreePlan: DegreePlan = {
   id: "msc-software-engineering",
   title: "תואר שני בהנדסת תוכנה",
   subtitle: "המכללה האקדמית להנדסה בראודה - תואר מוסמך M.Sc. בהנדסת תוכנה",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName: "שנתון תשפ\"ד 2024-2023 - בראודה.pdf",
     pages: "212-215",

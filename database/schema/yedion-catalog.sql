@@ -621,3 +621,165 @@ JOIN yedion_course_sections s ON s.id = m.section_id
 JOIN yedion_courses c ON c.course_code = m.course_code
 WHERE COALESCE(m.lecturer_name, s.lecturer_name) IS NOT NULL
   AND trim(COALESCE(m.lecturer_name, s.lecturer_name)) <> '';
+
+-- Canonical, non-destructive read models for the timetable application.
+-- Imported tables intentionally retain groups whose time is not published yet.
+DROP VIEW IF EXISTS yedion_section_schedule_quality;
+CREATE VIEW yedion_section_schedule_quality AS
+WITH meeting_quality AS (
+  SELECT
+    s.id AS section_id,
+    COUNT(m.id) AS meeting_count,
+    SUM(
+      CASE
+        WHEN trim(COALESCE(m.day_of_week, '')) <> ''
+          AND m.start_time GLOB '[0-2][0-9]:[0-5][0-9]'
+          AND m.end_time GLOB '[0-2][0-9]:[0-5][0-9]'
+          AND m.start_time < m.end_time
+          THEN 1
+        ELSE 0
+      END
+    ) AS scheduled_meeting_count
+  FROM yedion_course_sections s
+  LEFT JOIN yedion_section_meetings m ON m.section_id = s.id
+  GROUP BY s.id
+)
+SELECT
+  s.id AS section_id,
+  s.course_code,
+  c.name AS course_name,
+  s.academic_year_label,
+  s.semester_code,
+  s.semester_period,
+  s.section_type,
+  s.group_code,
+  s.group_number,
+  s.is_full,
+  s.is_blocked_for_registration,
+  mq.meeting_count,
+  COALESCE(mq.scheduled_meeting_count, 0) AS scheduled_meeting_count,
+  CASE
+    WHEN COALESCE(mq.scheduled_meeting_count, 0) > 0 THEN 'scheduled'
+    WHEN COALESCE(mq.meeting_count, 0) > 0 THEN 'time-unpublished'
+    ELSE 'no-meetings'
+  END AS schedule_status,
+  CASE WHEN s.raw_json LIKE '%"details":%' THEN 1 ELSE 0 END AS has_details
+FROM yedion_course_sections s
+JOIN yedion_courses c ON c.course_code = s.course_code
+LEFT JOIN meeting_quality mq ON mq.section_id = s.id;
+
+DROP VIEW IF EXISTS yedion_section_link_resolution;
+CREATE VIEW yedion_section_link_resolution AS
+SELECT
+  l.id AS link_id,
+  l.section_id AS source_section_id,
+  l.course_code,
+  l.link_kind,
+  l.linked_course_code AS required_course_code,
+  l.linked_course_name AS required_course_name,
+  l.linked_section_type AS required_section_type,
+  l.detail_arguments,
+  l.detail_url,
+  target.id AS required_section_id,
+  target.section_key AS required_section_key,
+  CASE WHEN target.id IS NULL THEN 'unresolved' ELSE 'resolved' END AS resolution_status
+FROM yedion_section_links l
+LEFT JOIN yedion_course_sections target
+  ON target.course_code = l.linked_course_code
+  AND (
+    (l.detail_arguments IS NOT NULL AND target.raw_arguments = l.detail_arguments)
+    OR (l.detail_url IS NOT NULL AND target.detail_url = l.detail_url)
+  );
+
+DROP VIEW IF EXISTS yedion_exam_slots;
+CREATE VIEW yedion_exam_slots AS
+WITH raw_exams AS (
+  SELECT
+    'detail' AS source_kind,
+    e.course_code,
+    c.name AS course_name,
+    COALESCE(s.semester_period, '') AS semester_period,
+    e.exam_date,
+    COALESCE(e.exam_time, '') AS exam_time,
+    e.term_label,
+    e.exam_kind,
+    e.exam_type,
+    COALESCE(s.lecturer_name, '') AS lecturer_name,
+    s.id AS section_id,
+    e.id AS source_exam_id
+  FROM yedion_exams e
+  JOIN yedion_courses c ON c.course_code = e.course_code
+  LEFT JOIN yedion_course_sections s ON s.id = e.section_id
+  WHERE e.exam_date IS NOT NULL
+
+  UNION ALL
+
+  SELECT
+    'search' AS source_kind,
+    e.course_code,
+    COALESCE(c.name, e.course_name) AS course_name,
+    COALESCE(e.semester_period, '') AS semester_period,
+    e.exam_date,
+    COALESCE(e.exam_time, '') AS exam_time,
+    e.term_label,
+    e.subject_type AS exam_kind,
+    NULL AS exam_type,
+    COALESCE(e.lecturer_name, '') AS lecturer_name,
+    NULL AS section_id,
+    e.id AS source_exam_id
+  FROM yedion_search_exams e
+  LEFT JOIN yedion_courses c ON c.course_code = e.course_code
+)
+SELECT
+  course_code,
+  MAX(course_name) AS course_name,
+  semester_period,
+  exam_date,
+  NULLIF(exam_time, '') AS exam_time,
+  group_concat(DISTINCT NULLIF(term_label, '')) AS term_labels,
+  group_concat(DISTINCT NULLIF(exam_kind, '')) AS exam_kinds,
+  group_concat(DISTINCT NULLIF(exam_type, '')) AS exam_types,
+  group_concat(DISTINCT NULLIF(lecturer_name, '')) AS lecturer_names,
+  group_concat(DISTINCT section_id) AS section_ids,
+  group_concat(DISTINCT source_kind) AS source_kinds,
+  COUNT(*) AS source_rows
+FROM raw_exams
+GROUP BY course_code, semester_period, exam_date, exam_time;
+
+DROP VIEW IF EXISTS yedion_dependency_resolution;
+CREATE VIEW yedion_dependency_resolution AS
+WITH normalized AS (
+  SELECT
+    cr.*,
+    trim(COALESCE(cr.related_course_code, '')) AS required_course_label,
+    CASE
+      WHEN trim(COALESCE(cr.related_course_code, '')) <> ''
+        AND trim(cr.related_course_code) NOT GLOB '*[^0-9]*'
+        THEN trim(cr.related_course_code)
+      ELSE NULL
+    END AS required_course_code
+  FROM yedion_course_relations cr
+)
+SELECT
+  n.id AS relation_id,
+  n.course_code,
+  source.name AS course_name,
+  n.section_id,
+  n.relation_title,
+  n.relation_type,
+  n.population,
+  CASE
+    WHEN instr(COALESCE(n.relation_type, ''), char(1510,1502,1493,1491)) > 0
+      OR instr(COALESCE(n.relation_type, ''), char(1502,1511,1489,1497,1500)) > 0
+      THEN 'corequisite'
+    WHEN instr(COALESCE(n.relation_type, '') || COALESCE(n.relation_title, ''), char(1511,1491,1501)) > 0
+      THEN 'prerequisite'
+    ELSE 'relation'
+  END AS dependency_kind,
+  n.required_course_code,
+  n.required_course_label,
+  target.name AS required_course_name,
+  n.alternative_group
+FROM normalized n
+JOIN yedion_courses source ON source.course_code = n.course_code
+LEFT JOIN yedion_courses target ON target.course_code = n.required_course_code;

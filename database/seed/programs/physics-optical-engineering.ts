@@ -235,6 +235,8 @@ export const degreePlan: DegreePlan = {
   title: "פיזיקה והנדסה אופטית",
   subtitle:
     "המכללה האקדמית להנדסה בראודה - תוכנית לימודים לא נמצאה במהדורת השנתון הנוכחית (מוצגת רשימת קורסי שירות בלבד)",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName: "שנתון תשפ\"ד 2024-2023 - בראודה.pdf",
     pages: "133-135",

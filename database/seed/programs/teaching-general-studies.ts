@@ -1759,6 +1759,8 @@ export const degreePlan: DegreePlan = {
   id: "teaching-general-studies",
   title: "הוראה ולימודים כלליים",
   subtitle: "המכללה האקדמית להנדסה בראודה - קטלוג משלים: מסלולי תעודת הוראה, לימודים כלליים וספורט (אינו תואר עצמאי)",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName: "ידיעונים, שנתונים ולוח שנה אקדמית - בראודה.pdf",
     pages: "180-196",

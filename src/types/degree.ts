@@ -4,6 +4,7 @@ export type CourseType =
   | "general"
   | "sport"
   | "english"
+  | "language"
   | "placement"
   | "conversion";
 
@@ -68,6 +69,10 @@ export type DegreePlan = {
   id: string;
   title: string;
   subtitle: string;
+  /** Yearbook edition this curriculum was extracted from, e.g. 'תשפ"ד (2023-2024)'. */
+  catalogYear?: string;
+  /** "active" (default) shows in the main picker; "archived" moves it to a closed-programs section. */
+  status?: "active" | "archived";
   source: {
     fileName: string;
     pages: string;

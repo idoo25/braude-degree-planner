@@ -133,6 +133,38 @@
   --sidebar-ring: #4fa9cc;
 }
 
+/*
+  Course inks — six drafting-ink tones that identify a course everywhere it appears
+  (parts-list row accent, timetable lesson block). Drawn from the schematic family
+  so they sit next to blueprint/copper/circuit without fighting them.
+  Each class sets: --course-accent (full ink), --course-surface (paper tint),
+  --course-ink (readable text on the surface).
+*/
+.course-ink-0 { --course-accent: #0e5c7d; }
+.course-ink-1 { --course-accent: #b8791f; }
+.course-ink-2 { --course-accent: #1f7a50; }
+.course-ink-3 { --course-accent: #5c4d9b; }
+.course-ink-4 { --course-accent: #0d6a6e; }
+.course-ink-5 { --course-accent: #a6402e; }
+
+.course-ink-0, .course-ink-1, .course-ink-2, .course-ink-3, .course-ink-4, .course-ink-5 {
+  --course-surface: color-mix(in oklab, var(--course-accent) 11%, var(--card));
+  --course-ink: color-mix(in oklab, var(--course-accent) 72%, var(--foreground));
+}
+
+.dark .course-ink-0 { --course-accent: #4fa9cc; }
+.dark .course-ink-1 { --course-accent: #e0a552; }
+.dark .course-ink-2 { --course-accent: #4cb783; }
+.dark .course-ink-3 { --course-accent: #9d8fd6; }
+.dark .course-ink-4 { --course-accent: #4fb8bc; }
+.dark .course-ink-5 { --course-accent: #d9765f; }
+
+.dark .course-ink-0, .dark .course-ink-1, .dark .course-ink-2,
+.dark .course-ink-3, .dark .course-ink-4, .dark .course-ink-5 {
+  --course-surface: color-mix(in oklab, var(--course-accent) 16%, var(--card));
+  --course-ink: color-mix(in oklab, var(--course-accent) 55%, var(--foreground));
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

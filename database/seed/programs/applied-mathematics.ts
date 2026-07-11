@@ -1,9 +1,5 @@
 import type { Course, DegreePlan, ElectiveCluster } from "@/types/degree";
-
-const generalAndSportCourses = require("../shared/general-and-sport-courses.json") as {
-  general: { id: string; name: string; credits: number }[];
-  sport: { id: string; name: string; credits: number }[];
-};
+import generalAndSportCourses from "../shared/general-and-sport-courses.json";
 
 const generalStudiesCourses: Course[] = generalAndSportCourses.general.map((course) => ({
   ...course,
@@ -769,6 +765,8 @@ export const degreePlan: DegreePlan = {
   id: "applied-mathematics",
   title: "מפת תואר מתמטיקה שימושית",
   subtitle: "המכללה האקדמית להנדסה בראודה - תוכנית תלת-שנתית (שנתון תשפ\"ד)",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName: "ידיעונים, שנתונים ולוח שנה אקדמית - בראודה.pdf",
     pages: "123-132",

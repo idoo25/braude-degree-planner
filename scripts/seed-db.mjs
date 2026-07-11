@@ -17,7 +17,13 @@ function listProgramSourcePaths() {
     .map((name) => path.join(programsDir, name));
 }
 
-function readSeedPlan(sourcePath) {
+function readSeedModule(sourcePath, moduleCache = new Map()) {
+  const cached = moduleCache.get(sourcePath);
+
+  if (cached) {
+    return cached;
+  }
+
   const source = fs.readFileSync(sourcePath, "utf8");
   const compiled = ts.transpileModule(source, {
     compilerOptions: {
@@ -40,6 +46,12 @@ function readSeedPlan(sourcePath) {
         return JSON.parse(fs.readFileSync(sharedPath, "utf8"));
       }
 
+      if (specifier.startsWith(".")) {
+        const importedPath = path.resolve(path.dirname(sourcePath), `${specifier}.ts`);
+
+        return readSeedModule(importedPath, moduleCache);
+      }
+
       throw new Error(`Unexpected seed import: ${specifier}`);
     },
   };
@@ -47,35 +59,116 @@ function readSeedPlan(sourcePath) {
   sandbox.exports = sandbox.module.exports;
   vm.runInNewContext(compiled, sandbox, { filename: sourcePath });
 
-  return sandbox.module.exports.degreePlan ?? sandbox.exports.degreePlan;
+  const exported = Object.keys(sandbox.module.exports).length ? sandbox.module.exports : sandbox.exports;
+
+  moduleCache.set(sourcePath, exported);
+
+  return exported;
+}
+
+function readSeedPlan(sourcePath, moduleCache = new Map()) {
+  const seedModule = readSeedModule(sourcePath, moduleCache);
+  const plan = seedModule.degreePlan;
+
+  return plan;
 }
 
 function stringify(value) {
   return JSON.stringify(value ?? {});
 }
 
-const scheduleSectionsPath = path.join(rootDir, "database", "seed", "schedule-sections.json");
+const yedionCodeAliasesPath = path.join(
+  rootDir,
+  "database",
+  "seed",
+  "shared",
+  "yedion-code-aliases.json"
+);
+const yearbook2026ExtractionPath = path.join(
+  rootDir,
+  "data",
+  "yearbook",
+  "shnaton-2026-extraction.json"
+);
+const yearbookProgramKeys = {
+  "applied-mathematics-2026": "applied-mathematics",
+  "biotechnology-engineering-2026": "biotechnology-engineering",
+  "braude-software-2026": "braude-software-2020",
+  "civil-engineering-2026": "civil-engineering",
+  "electrical-engineering-2026": "electrical-engineering",
+  "industrial-engineering-bsc-2026": "industrial-engineering-bsc",
+  "information-systems-engineering-2026": "information-systems-engineering",
+  "mechanical-engineering-bsc-2026": "mechanical-engineering-bsc",
+  "msc-biotechnology-2026": "msc-biotechnology",
+  "msc-industrial-engineering-2026": "msc-industrial-engineering",
+  "msc-software-engineering-2026": "msc-software-engineering",
+  "msc-systems-engineering-2026": "msc-systems-engineering",
+  "teaching-general-studies-2026": "teaching-general-studies",
+};
 
-function readScheduleSections() {
-  if (!fs.existsSync(scheduleSectionsPath)) {
+function readYedionCodeAliases() {
+  if (!fs.existsSync(yedionCodeAliasesPath)) {
     return [];
   }
 
-  const raw = JSON.parse(fs.readFileSync(scheduleSectionsPath, "utf8"));
+  const raw = JSON.parse(fs.readFileSync(yedionCodeAliasesPath, "utf8"));
 
-  return Array.isArray(raw) ? raw : [];
+  return Array.isArray(raw?.aliases) ? raw.aliases : [];
 }
 
-const courseSyllabiPath = path.join(rootDir, "database", "seed", "course-syllabi.json");
-
-function readCourseSyllabi() {
-  if (!fs.existsSync(courseSyllabiPath)) {
-    return [];
+function readYearbook2026Extraction() {
+  if (!fs.existsSync(yearbook2026ExtractionPath)) {
+    return null;
   }
 
-  const raw = JSON.parse(fs.readFileSync(courseSyllabiPath, "utf8"));
+  return JSON.parse(fs.readFileSync(yearbook2026ExtractionPath, "utf8"));
+}
 
-  return Array.isArray(raw) ? raw : [];
+function normalizeYearbookName(value) {
+  return typeof value === "string" ? value.replace(/\s+/g, " ").replace(/^\*+\s*/, "").trim() : "";
+}
+
+function applyYearbook2026Facts(plan, extraction) {
+  const yearbookProgramKey = yearbookProgramKeys[plan.id];
+  const sourceCourses = extraction?.programs?.[yearbookProgramKey]?.courses;
+
+  if (!yearbookProgramKey || !Array.isArray(sourceCourses)) {
+    return plan;
+  }
+
+  const factsByCourseId = new Map(
+    sourceCourses
+      .filter(
+        (course) =>
+          course?.source === "grid" &&
+          typeof course.id === "string" &&
+          typeof course.credits === "number" &&
+          Number.isFinite(course.credits) &&
+          course.credits >= 0 &&
+          course.credits <= 20
+      )
+      .map((course) => [course.id, course])
+  );
+
+  return {
+    ...plan,
+    courses: plan.courses.map((course) => {
+      const fact = factsByCourseId.get(course.id);
+
+      if (!fact) {
+        return course;
+      }
+
+      const officialName = normalizeYearbookName(fact.name);
+      const hasHebrewName = /[\u0590-\u05ff]/.test(officialName);
+
+      return {
+        ...course,
+        name: hasHebrewName ? officialName : course.name,
+        credits: fact.credits > 0 ? fact.credits : course.credits,
+      };
+    }),
+  };
 }
 
 function execSchema(db) {
@@ -235,34 +328,16 @@ function execSchema(db) {
       tokenize = 'unicode61'
     );
 
-    CREATE TABLE IF NOT EXISTS course_sections (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      program_id TEXT NOT NULL,
-      course_id TEXT NOT NULL,
-      academic_year TEXT NOT NULL,
-      semester_period TEXT NOT NULL,
-      section_type TEXT NOT NULL,
-      group_code TEXT NOT NULL,
-      track_note TEXT,
-      lecturer_name TEXT,
-      is_full INTEGER NOT NULL DEFAULT 0,
-      teaching_language TEXT,
-      day_of_week TEXT NOT NULL,
-      start_time TEXT NOT NULL,
-      end_time TEXT NOT NULL,
-      room TEXT,
-      sort_order INTEGER NOT NULL DEFAULT 0
+    CREATE TABLE IF NOT EXISTS yedion_code_aliases (
+      course_id TEXT PRIMARY KEY,
+      yedion_course_code TEXT NOT NULL,
+      note TEXT
     );
 
-    CREATE INDEX IF NOT EXISTS idx_sections_program_course ON course_sections(program_id, course_id);
-    CREATE INDEX IF NOT EXISTS idx_sections_program_semester ON course_sections(program_id, semester_period);
-
-    CREATE TABLE IF NOT EXISTS course_syllabi (
-      program_id TEXT NOT NULL,
-      course_id TEXT NOT NULL,
-      body TEXT NOT NULL,
-      PRIMARY KEY (program_id, course_id)
-    );
+    -- Legacy schedule tables (course_sections/course_syllabi) were superseded by the
+    -- yedion_* catalog; drop them if this DB predates the unification.
+    DROP TABLE IF EXISTS course_sections;
+    DROP TABLE IF EXISTS course_syllabi;
   `);
 }
 
@@ -325,24 +400,10 @@ function seed(db, plan) {
     INSERT INTO course_search (program_id, course_id, name, type, cluster_name)
     VALUES (?, ?, ?, ?, ?)
   `);
-  const insertSection = db.prepare(`
-    INSERT INTO course_sections (
-      program_id, course_id, academic_year, semester_period, section_type, group_code,
-      track_note, lecturer_name, is_full, teaching_language, day_of_week, start_time, end_time,
-      room, sort_order
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-  `);
-  const insertSyllabus = db.prepare(`
-    INSERT INTO course_syllabi (program_id, course_id, body)
-    VALUES (?, ?, ?)
-  `);
-
   db.exec("BEGIN IMMEDIATE");
 
   try {
     db.prepare("DELETE FROM course_search WHERE program_id = ?").run(programId);
-    db.prepare("DELETE FROM course_sections WHERE program_id = ?").run(programId);
-    db.prepare("DELETE FROM course_syllabi WHERE program_id = ?").run(programId);
     db.prepare("DELETE FROM programs WHERE id = ?").run(programId);
 
     insertProgram.run(
@@ -352,7 +413,12 @@ function seed(db, plan) {
       plan.source.fileName,
       plan.source.pages,
       plan.source.extractedAt,
-      stringify({ sourceKind: "pdf-extraction", version: 1 })
+      stringify({
+        sourceKind: "pdf-extraction",
+        version: 1,
+        catalogYear: plan.catalogYear ?? null,
+        status: plan.status ?? "active",
+      })
     );
 
     plan.courseTypes.forEach((type, index) => {
@@ -459,32 +525,6 @@ function seed(db, plan) {
       );
     });
 
-    if (programId === "braude-software-2020") {
-      readScheduleSections().forEach((section, index) => {
-        insertSection.run(
-          programId,
-          section.courseId,
-          section.academicYear,
-          section.semesterPeriod,
-          section.sectionType,
-          section.groupCode,
-          section.trackNote ?? null,
-          section.lecturerName ?? null,
-          section.isFull ? 1 : 0,
-          section.teachingLanguage ?? null,
-          section.dayOfWeek,
-          section.startTime,
-          section.endTime,
-          section.room ?? null,
-          index
-        );
-      });
-
-      readCourseSyllabi().forEach((entry) => {
-        insertSyllabus.run(programId, entry.courseId, entry.body);
-      });
-    }
-
     db.exec("COMMIT");
   } catch (error) {
     db.exec("ROLLBACK");
@@ -501,8 +541,9 @@ if (shouldReset && fs.existsSync(dbPath)) {
 }
 
 const sourcePaths = listProgramSourcePaths();
+const yearbook2026Extraction = readYearbook2026Extraction();
 const plans = sourcePaths.map((sourcePath) => {
-  const plan = readSeedPlan(sourcePath);
+  const plan = applyYearbook2026Facts(readSeedPlan(sourcePath), yearbook2026Extraction);
 
   if (!plan) {
     throw new Error(`No "degreePlan" export found in ${sourcePath}`);
@@ -515,6 +556,25 @@ const db = new DatabaseSync(dbPath);
 
 execSchema(db);
 plans.forEach((plan) => seed(db, plan));
+
+const codeAliases = readYedionCodeAliases();
+const insertAlias = db.prepare(`
+  INSERT INTO yedion_code_aliases (course_id, yedion_course_code, note)
+  VALUES (?, ?, ?)
+`);
+
+db.exec("BEGIN IMMEDIATE");
+try {
+  db.prepare("DELETE FROM yedion_code_aliases").run();
+  codeAliases.forEach((alias) => {
+    insertAlias.run(alias.courseId, alias.yedionCourseCode, alias.note ?? null);
+  });
+  db.exec("COMMIT");
+} catch (error) {
+  db.exec("ROLLBACK");
+  throw error;
+}
+
 db.close();
 
 console.log(

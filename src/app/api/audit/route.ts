@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 import { getDegreePlan } from "@/lib/db/degree-repository";
 import { createDegreeAudit } from "@/lib/degree-audit";
+import { FREE_TIMETABLE_PROGRAM_ID, getFreeTimetablePlan } from "@/lib/db/yedion-repository";
 
 type AuditRequest = {
   selectedCourseIds?: unknown;
@@ -16,6 +17,7 @@ export async function POST(request: Request) {
     ? body.selectedCourseIds.filter((id): id is string => typeof id === "string")
     : [];
   const programId = new URL(request.url).searchParams.get("programId") ?? undefined;
+  const plan = programId === FREE_TIMETABLE_PROGRAM_ID ? getFreeTimetablePlan() : getDegreePlan(programId);
 
-  return NextResponse.json(createDegreeAudit(selectedCourseIds, getDegreePlan(programId)));
+  return NextResponse.json(createDegreeAudit(selectedCourseIds, plan));
 }

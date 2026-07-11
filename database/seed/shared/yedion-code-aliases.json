@@ -1,0 +1,24 @@
+{
+  "description": "Maps curriculum course ids (from the yearbook seed files) to the course code the live Yedion catalog actually uses, for courses that were renumbered or are cross-listed under a different department's code. Verified by exact Hebrew name match between the curriculum entry and yedion_courses. Without an alias here, a mismatched course silently shows no schedule offerings.",
+  "aliases": [
+    { "courseId": "201178", "yedionCourseCode": "65005", "note": "מבוא לאופטימיזציה — applied-math code; Yedion lists under the SW-eng code" },
+    { "courseId": "201198", "yedionCourseCode": "61957", "note": "תורת המשחקים — yearbook marks 201198/61957 as equivalents (only one may be taken)" },
+    { "courseId": "391419", "yedionCourseCode": "31906", "note": "תכן רכיבים ומערכות אופטיות (זימקס) — renumbered" },
+    { "courseId": "41225", "yedionCourseCode": "41231", "note": "מיקרוביולוגיה — renumbered" },
+    { "courseId": "421111", "yedionCourseCode": "421108", "note": "עיקרי תכן אדריכלי 1 — renumbered" },
+    { "courseId": "51022", "yedionCourseCode": "53231", "note": "חקר סיבתיות בביצועים — cross-listed" },
+    { "courseId": "51212", "yedionCourseCode": "51213", "note": "ניהול איכות סטטיסטי — renumbered" },
+    { "courseId": "53413", "yedionCourseCode": "61831", "note": "ניהול ידע — cross-listed under the SW/IS-eng code" },
+    { "courseId": "61964", "yedionCourseCode": "51027", "note": "ויזואליזציה של המידע — SW elective taught under the IE data-science code" },
+    { "courseId": "81352", "yedionCourseCode": "11352", "note": "פילוסופיה של המדע — teaching-unit code; Yedion uses the general-studies code" },
+    { "courseId": "81395", "yedionCourseCode": "11337", "note": "יחסים בין קבוצות בחברה — teaching-unit code; Yedion uses the general-studies code" },
+    { "courseId": "81565", "yedionCourseCode": "11565", "note": "רעיונות יסוד במחשבת היהדות — teaching-unit code; Yedion uses the general-studies code" },
+    { "courseId": "81567", "yedionCourseCode": "11348", "note": "משפחה והולדה בעידן טכנולוגי — teaching-unit code; Yedion uses the general-studies code" },
+    { "courseId": "81568", "yedionCourseCode": "11568", "note": "עולמם של חכמים במסכת אבות — teaching-unit code; Yedion uses the general-studies code" },
+    { "courseId": "81575", "yedionCourseCode": "11575", "note": "מובילי אורח חיים בריא — teaching-unit code; Yedion uses the general-studies code" },
+    { "courseId": "85386", "yedionCourseCode": "11386", "note": "אחריות מקצועית - דילמות וחוק — teaching-unit code; Yedion uses the general-studies code" }
+  ],
+  "excluded": [
+    { "courseId": "23273", "candidate": "22930", "reason": "שם גנרי (פרויקט מסכם 2) בין תואר שני לתואר ראשון — סיכון גבוה להתאמה שגויה" }
+  ]
+}

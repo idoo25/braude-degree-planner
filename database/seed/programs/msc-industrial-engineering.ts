@@ -268,6 +268,8 @@ export const degreePlan: DegreePlan = {
   id: "msc-industrial-engineering",
   title: "תואר שני בהנדסת תעשייה וניהול",
   subtitle: "המכללה האקדמית להנדסה בראודה - תואר שני .M.Sc (לימודי מוסמך במדעים)",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName: "שנתון תשפ\"ד 2024-2023 - בראודה.pdf",
     pages: "216-220",

@@ -664,6 +664,7 @@ export async function scrapeYedionCatalog({
   refreshSections = false,
   startAfterCourseCode = null,
   maxDetailPages = null,
+  retryDetailErrors = false,
   saveEveryCourses = 5,
   saveEveryDetails = 10,
   requestDelayMs = DEFAULT_REQUEST_DELAY_MS,
@@ -714,6 +715,7 @@ export async function scrapeYedionCatalog({
         refreshSections,
         startAfterCourseCode,
         maxDetailPages,
+        retryDetailErrors,
         saveEveryCourses,
         requestDelayMs,
         requestJitterMs,
@@ -898,7 +900,7 @@ export async function scrapeYedionCatalog({
       const courseSemesterMode = isCourseSemesterDetailMode(detailMode);
       const detailedEquivalentKeys = new Set(
         availableSections
-          .filter((section) => section.details || section.detailError)
+          .filter((section) => section.details || (!retryDetailErrors && section.detailError))
           .map((section) => detailEquivalenceKey(course, section))
       );
       const sectionsToDetail = detailMode === "first" ? availableSections.slice(0, 1) : availableSections;
@@ -910,7 +912,7 @@ export async function scrapeYedionCatalog({
         const equivalentKey = detailEquivalenceKey(course, section);
         if (
           section.details ||
-          section.detailError ||
+          (!retryDetailErrors && section.detailError) ||
           !section.detailUrl ||
           !section.rawArguments ||
           seenDetailUrls.has(section.detailUrl)

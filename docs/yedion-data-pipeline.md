@@ -9,20 +9,16 @@ The timetable app should not be built directly from live Yedion pages. First we 
 - Yedion schema: `database/schema/yedion-catalog.sql`
 - Future raw page snapshots: `data/yedion/page-cache/`
 
-Current imported data after the targeted course-semester enrichment:
+Current imported data after the complete catalog and course-semester enrichment:
 
-- 362 courses
-- 585 course sections
-- 739 section meetings
-- 232 sections with captured "additional details"
-- 179 / 179 course-semester groups covered by at least one detail page
-- 0 missing course-semester detail groups
-- 238 exam rows
-- 96 syllabus rows
-- 129 lecturers
-- 68 rooms
-- 631 course dependency rows
-- 316 section link rows
+- 583 courses
+- 2,520 course sections
+- 2,796 section meetings
+- 893 / 893 course-semester groups with at least one captured detail page
+- 930 raw detail exam rows and 1,109 canonical exam slots after duplicate merging
+- 488 syllabus rows
+- 626 section link rows: 591 resolved and 35 currently unresolved because the linked group is absent
+- 2,547 raw course dependency relations; these are retained as source metadata, while the degree-plan rules remain the authority for legal course selection
 
 ## What happened
 
@@ -46,6 +42,14 @@ Derived views make those relationships queryable in both directions:
 - `yedion_section_required_options`: source section to required section options, including matched timetable rows when the linked section is already imported.
 - `yedion_course_required_component_types`: compact summary such as lecture -> exercise or exercise -> lab.
 - `yedion_room_busy_windows` and `yedion_lecturer_busy_windows`: normalized day/time windows for reverse availability searches.
+- `yedion_section_schedule_quality`: distinguishes usable schedules from sections with no published time or no meetings.
+- `yedion_section_link_resolution`: reports whether a required linked component can be matched locally.
+- `yedion_exam_slots`: deduplicates equivalent exam rows and aggregates lecturers into one canonical exam slot.
+- `yedion_dependency_resolution`: makes source dependency parsing quality visible without treating it as degree-law data.
+
+The timetable app reads these views through `src/lib/db/yedion-repository.ts` and
+`src/lib/timetable-generator.ts`. Its endpoints are `/api/offerings` and
+`/api/timetable`; the page is `/p/<programId>/timetable`.
 
 The first broad crawl did not save raw HTML snapshots. Future crawls do save raw
 page snapshots by default, so parser misses can be fixed offline without asking
@@ -81,7 +85,12 @@ Print DB coverage and the next missing detail rows:
 
 ```powershell
 npm run yedion:report
+npm run yedion:audit
 ```
+
+`npm run yedion:audit` writes `data/yedion/quality-report.json`, including detail-page
+coverage, schedule-status totals, link resolution, dependency parsing quality, and
+degree-plan offering coverage.
 
 ## Current enrichment run
 

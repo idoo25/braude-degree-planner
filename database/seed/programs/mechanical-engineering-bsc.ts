@@ -1,9 +1,5 @@
 import type { Course, DegreePlan, ElectiveCluster } from "@/types/degree";
-
-const generalAndSportCourses = require("../shared/general-and-sport-courses.json") as {
-  general: { id: string; name: string; credits: number }[];
-  sport: { id: string; name: string; credits: number }[];
-};
+import generalAndSportCourses from "../shared/general-and-sport-courses.json";
 
 const generalStudiesCourses: Course[] = generalAndSportCourses.general.map((course) => ({
   ...course,
@@ -64,7 +60,7 @@ const courses: Course[] = [
   },
   {
     id: "11063",
-    name: "אנגלית בסיסי 1",
+    name: "אנגלית בסיסי",
     credits: 0,
     type: "english",
     semester: 1,
@@ -74,7 +70,7 @@ const courses: Course[] = [
   },
   {
     id: "11064",
-    name: "אנגלית מתקדמים א' 1",
+    name: "אנגלית מתקדמים א'",
     credits: 0,
     type: "english",
     semester: 1,
@@ -1452,6 +1448,8 @@ export const degreePlan: DegreePlan = {
   id: "mechanical-engineering-bsc",
   title: "מפת תואר הנדסת מכונות",
   subtitle: "המכללה האקדמית להנדסה בראודה - שנתון תשפ\"ד 2023-2024",
+  catalogYear: 'תשפ"ד (2023-2024)',
+  status: "archived",
   source: {
     fileName: "ידיעונים, שנתונים ולוח שנה אקדמית - בראודה.pdf",
     pages: "105-121",

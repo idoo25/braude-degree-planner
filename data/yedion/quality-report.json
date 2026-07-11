@@ -1,0 +1,329 @@
+{
+  "generatedAt": "2026-07-11T20:10:22.465Z",
+  "dbPath": "C:\\school\\braude-degree-planner\\data\\degree-planner.sqlite",
+  "summary": {
+    "courses": 583,
+    "sections": 2520,
+    "meetings": 2796,
+    "detail_exam_rows": 930,
+    "canonical_exam_slots": 1109,
+    "syllabi": 488,
+    "section_links": 626,
+    "raw_relations": 2547
+  },
+  "courseSemesterDetails": {
+    "groups": 893,
+    "groups_with_details": 893,
+    "groups_missing_details": 0
+  },
+  "scheduleQuality": [
+    {
+      "schedule_status": "no-meetings",
+      "sections": 74
+    },
+    {
+      "schedule_status": "scheduled",
+      "sections": 2344
+    },
+    {
+      "schedule_status": "time-unpublished",
+      "sections": 102
+    }
+  ],
+  "linkQuality": [
+    {
+      "resolution_status": "resolved",
+      "links": 591
+    },
+    {
+      "resolution_status": "unresolved",
+      "links": 35
+    }
+  ],
+  "dependencyQuality": [
+    {
+      "dependency_kind": "corequisite",
+      "relations": 359,
+      "unresolved_codes": 0,
+      "label_only_relations": 359
+    },
+    {
+      "dependency_kind": "prerequisite",
+      "relations": 2188,
+      "unresolved_codes": 0,
+      "label_only_relations": 2188
+    }
+  ],
+  "programOfferingCoverage": {
+    "program_course_records": 4065,
+    "offered_course_records": 1761,
+    "not_offered_course_records": 2304
+  },
+  "samples": {
+    "missingDetails": [],
+    "unpublishedTimes": [
+      {
+        "course_code": "11023",
+        "course_name": "פיזיקה 1ב",
+        "section_type": "מעבדה",
+        "group_code": "261041110",
+        "group_number": "4"
+      },
+      {
+        "course_code": "11023",
+        "course_name": "פיזיקה 1ב",
+        "section_type": "מעבדה",
+        "group_code": "261041242",
+        "group_number": "3"
+      },
+      {
+        "course_code": "11026",
+        "course_name": "פיזיקה 2ב",
+        "section_type": "מעבדה",
+        "group_code": "261041210",
+        "group_number": "4"
+      },
+      {
+        "course_code": "11026",
+        "course_name": "פיזיקה 2ב",
+        "section_type": "מעבדה",
+        "group_code": "261041342",
+        "group_number": "4"
+      },
+      {
+        "course_code": "11027",
+        "course_name": "פיזיקה 3ב",
+        "section_type": "מעבדה",
+        "group_code": "261041310",
+        "group_number": "3"
+      },
+      {
+        "course_code": "11027",
+        "course_name": "פיזיקה 3ב",
+        "section_type": "מעבדה",
+        "group_code": "261041442",
+        "group_number": "3"
+      },
+      {
+        "course_code": "11064",
+        "course_name": "אנגלית מתקדמים א'",
+        "section_type": "שו\"ת",
+        "group_code": "261240130",
+        "group_number": null
+      },
+      {
+        "course_code": "11209",
+        "course_name": "פיזיקה 1 IE",
+        "section_type": "מעבדה",
+        "group_code": "261050110",
+        "group_number": "5"
+      },
+      {
+        "course_code": "11209",
+        "course_name": "פיזיקה 1 IE",
+        "section_type": "מעבדה",
+        "group_code": "261050232",
+        "group_number": "2"
+      },
+      {
+        "course_code": "11212",
+        "course_name": "פיזיקה 2 מכ'",
+        "section_type": "מעבדה",
+        "group_code": "261020210",
+        "group_number": "1"
+      },
+      {
+        "course_code": "11212",
+        "course_name": "פיזיקה 2 מכ'",
+        "section_type": "מעבדה",
+        "group_code": "261020230",
+        "group_number": "5"
+      },
+      {
+        "course_code": "11213",
+        "course_name": "פיזיקה 3 מכ'",
+        "section_type": "מעבדה",
+        "group_code": "261020410",
+        "group_number": "3"
+      },
+      {
+        "course_code": "11213",
+        "course_name": "פיזיקה 3 מכ'",
+        "section_type": "מעבדה",
+        "group_code": "261020410",
+        "group_number": "4"
+      },
+      {
+        "course_code": "11228",
+        "course_name": "מלחמת חרבות ברזל-2 מוסמכים",
+        "section_type": "הרצאה",
+        "group_code": "263510200",
+        "group_number": null
+      },
+      {
+        "course_code": "11228",
+        "course_name": "מלחמת חרבות ברזל-2 מוסמכים",
+        "section_type": "הרצאה",
+        "group_code": "263510200",
+        "group_number": null
+      },
+      {
+        "course_code": "11229",
+        "course_name": "מלחמת חרבות ברזל-3 מוסמכים",
+        "section_type": "הרצאה",
+        "group_code": "263510200",
+        "group_number": null
+      },
+      {
+        "course_code": "11231",
+        "course_name": "פיזיקה 1 מ'",
+        "section_type": "מעבדה",
+        "group_code": "261030110",
+        "group_number": "9"
+      },
+      {
+        "course_code": "11231",
+        "course_name": "פיזיקה 1 מ'",
+        "section_type": "מעבדה",
+        "group_code": "261030232",
+        "group_number": "6"
+      },
+      {
+        "course_code": "11232",
+        "course_name": "פיזיקה 2 מ'",
+        "section_type": "מעבדה",
+        "group_code": "261030210",
+        "group_number": "8"
+      },
+      {
+        "course_code": "11232",
+        "course_name": "פיזיקה 2 מ'",
+        "section_type": "מעבדה",
+        "group_code": "261030232",
+        "group_number": "5"
+      }
+    ],
+    "unresolvedLinks": [
+      {
+        "course_code": "11001",
+        "required_course_code": "11001",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11001,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11001",
+        "required_course_code": "11001",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11001,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11001",
+        "required_course_code": "11001",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11001,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11001",
+        "required_course_code": "11001",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11001,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11001",
+        "required_course_code": "11001",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11001,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11003",
+        "required_course_code": "11003",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11003,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11003",
+        "required_course_code": "11003",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11003,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11003",
+        "required_course_code": "11003",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11003,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11003",
+        "required_course_code": "11003",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11003,-N1,-N9,-N261200111,-N8"
+      },
+      {
+        "course_code": "11006",
+        "required_course_code": "11006",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N11006,-N1,-N9,-N261200112,-N5"
+      },
+      {
+        "course_code": "11027",
+        "required_course_code": "11027",
+        "required_section_type": "מעבדה",
+        "detail_arguments": "-N11027,-N2,-N8,-N261041310,-N0"
+      },
+      {
+        "course_code": "11027",
+        "required_course_code": "11027",
+        "required_section_type": "מעבדה",
+        "detail_arguments": "-N11027,-N2,-N8,-N261041310,-N1"
+      },
+      {
+        "course_code": "11027",
+        "required_course_code": "11027",
+        "required_section_type": "מעבדה",
+        "detail_arguments": "-N11027,-N2,-N8,-N261041310,-N2"
+      },
+      {
+        "course_code": "201163",
+        "required_course_code": "201163",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N201163,-N2,-N9,-N261200310,-N0"
+      },
+      {
+        "course_code": "22112",
+        "required_course_code": "22112",
+        "required_section_type": "מעבדה",
+        "detail_arguments": "-N22112,-N1,-N8,-N261020110,-N0"
+      },
+      {
+        "course_code": "22112",
+        "required_course_code": "22112",
+        "required_section_type": "מעבדה",
+        "detail_arguments": "-N22112,-N2,-N8,-N261020130,-N0"
+      },
+      {
+        "course_code": "22114",
+        "required_course_code": "22114",
+        "required_section_type": "מעבדה",
+        "detail_arguments": "-N22114,-N1,-N8,-N261020210,-N0"
+      },
+      {
+        "course_code": "22305",
+        "required_course_code": "22305",
+        "required_section_type": "תרגיל",
+        "detail_arguments": "-N22305,-N1,-N9,-N261020130,-N0"
+      },
+      {
+        "course_code": "22735",
+        "required_course_code": "22735",
+        "required_section_type": "מעבדה",
+        "detail_arguments": "-N22735,-N1,-N8,-N261020310,-N0"
+      },
+      {
+        "course_code": "22735",
+        "required_course_code": "22735",
+        "required_section_type": "מעבדה",
+        "detail_arguments": "-N22735,-N2,-N8,-N261020330,-N0"
+      }
+    ]
+  }
+}

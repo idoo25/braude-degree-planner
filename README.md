@@ -9,9 +9,10 @@ Live app: https://braude-degree-planner.vercel.app
 
 ## What's here
 
-- **15 degree programs** seeded from the official yearbook (שנתון): all undergraduate
-  (B.Sc.) engineering/math programs plus the M.Sc. programs. Each program has its own
-  course list, prerequisites, corequisites, elective clusters, and credit requirements.
+- **13 active 2025-2026 degree-program editions** seeded from the official yearbook,
+  with older editions preserved in the archive for students who started under those
+  rules. Each program has its own course list, prerequisites, corequisites, elective
+  clusters, and credit requirements.
 - **Program picker** at `/` — choose a program, then plan at `/p/[programId]`.
 - **Corequisite-aware audit**: a corequisite never hard-blocks a course. It's satisfied
   either by prior completion or by taking it the same semester; if unmet, the UI shows
@@ -56,13 +57,29 @@ it's picked up automatically, no registration needed elsewhere.
 Edit (or add) a file under `database/seed/programs/`, matching the existing files'
 shape, then `npm run db:seed`. No other file needs to change.
 
+For a new yearbook, first generate `data/yearbook/shnaton-2026-extraction.json` with
+`scripts/extract-yearbook-pdf.py`, then create a new edition file rather than editing
+the older one. The detailed process is in `docs/refresh-runbooks.md`.
+
+The checked 2025-2026 curriculum evidence is written to
+`data/yearbook/2026-curriculum-audit.json`. Run the audit against the official PDF
+after every curriculum edit; it exits non-zero for a missing course, different
+semester, credits, prerequisite/corequisite, or stale course in an active edition.
+
+The new Computer Science B.Sc. curriculum is published separately on Braude's public
+website for תשפ"ז (2026-2027). After reseeding it, run
+`python scripts/audit-computer-science-2027.py --fail-on-mismatch`; it compares all
+eight source tables against the SQLite plan and writes
+`data/yearbook/computer-science-2027-audit.json`.
+
 ## The Yedion data pipeline
 
 Separately from the curriculum data above, there's a scraper for
 info.braude.ac.il/yedion that pulls real schedule sections, lecturers, rooms, and
 exam dates — imported into `yedion_*` tables in the same SQLite file (distinct from
-the `courses`/`course_sections` tables the app currently reads). Full details, current
-coverage stats, and resume instructions are in `docs/yedion-data-pipeline.md`.
+the degree-program tables). The timetable screen joins Yedion offerings with the
+degree rules, so it only proposes legal courses. Full collection, quality, and resume
+details are in `docs/yedion-data-pipeline.md`.
 
 Quick reference:
 
@@ -70,12 +87,15 @@ Quick reference:
 npm run yedion:merge          # merge saved catalog fragments into catalog-current.json
 npm run yedion:import:reset -- --input=data\yedion\catalog-current.json
 npm run yedion:report         # print current DB coverage
+npm run yedion:audit          # write data/yedion/quality-report.json
 ```
 
 The site is rate-limited and blocks non-browser HTTP clients — scraping must run
 from an authenticated in-app browser session, serially, with request spacing. See
-`docs/yedion-data-pipeline.md` for the working method and current coverage (583
-courses, 1417 sections, 494 exams, 1354 prerequisite relations as of the last run).
+`docs/yedion-data-pipeline.md` for the working method. The current local catalog has
+583 courses, 2,520 sections, 2,796 meetings, 1,109 deduplicated exam slots, and 488
+syllabi. All 893 course-semester groups now have at least one captured detail page.
+Do not probe or bypass a cooldown when refreshing the catalog.
 
 ## Other commands
 

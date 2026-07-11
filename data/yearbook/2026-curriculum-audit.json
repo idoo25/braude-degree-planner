@@ -1,0 +1,635 @@
+{
+  "catalogYear": "תשפ\"ו (2025-2026)",
+  "source": "shnaton_2026_toweb-1.pdf",
+  "summary": {
+    "auditedPrograms": 13,
+    "bscTablePrograms": 8,
+    "masterPrograms": 4,
+    "catalogPrograms": 1,
+    "manualReviewPrograms": 0,
+    "mismatches": 0
+  },
+  "programs": {
+    "civil-engineering-2026": {
+      "sourcePages": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "sourceCourseRows": 59,
+      "distinctSourceCourseIds": 59,
+      "duplicateSourceRows": {},
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": []
+    },
+    "biotechnology-engineering-2026": {
+      "sourcePages": [
+        71,
+        72,
+        73,
+        74
+      ],
+      "sourceCourseRows": 56,
+      "distinctSourceCourseIds": 56,
+      "duplicateSourceRows": {},
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": []
+    },
+    "electrical-engineering-2026": {
+      "sourcePages": [
+        82,
+        83,
+        84
+      ],
+      "sourceCourseRows": 38,
+      "distinctSourceCourseIds": 38,
+      "duplicateSourceRows": {},
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [
+        {
+          "courseId": "31700",
+          "name": "שדות ותמסורת גלים",
+          "semester": 4
+        },
+        {
+          "courseId": "31891",
+          "name": "מידול וסימולציה של מערכות דינאמיות",
+          "semester": 4
+        }
+      ],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": []
+    },
+    "mechanical-engineering-bsc-2026": {
+      "sourcePages": [
+        96,
+        97,
+        98,
+        99
+      ],
+      "sourceCourseRows": 44,
+      "distinctSourceCourseIds": 40,
+      "duplicateSourceRows": {
+        "11064": [
+          {
+            "course_id": "11064",
+            "semester": 1,
+            "page": 96,
+            "top": 231.66559999999993,
+            "credits": null,
+            "prerequisite_ids": [
+              "11063"
+            ],
+            "corequisite_candidates": [
+              "11063"
+            ]
+          },
+          {
+            "course_id": "11064",
+            "semester": 2,
+            "page": 96,
+            "top": 607.5856,
+            "credits": null,
+            "prerequisite_ids": [
+              "11063",
+              "11179"
+            ],
+            "corequisite_candidates": [
+              "11063",
+              "11179"
+            ]
+          }
+        ],
+        "11360": [
+          {
+            "course_id": "11360",
+            "semester": 1,
+            "page": 96,
+            "top": 344.49559999999997,
+            "credits": null,
+            "prerequisite_ids": [],
+            "corequisite_candidates": []
+          },
+          {
+            "course_id": "11360",
+            "semester": 2,
+            "page": 96,
+            "top": 720.8656,
+            "credits": null,
+            "prerequisite_ids": [],
+            "corequisite_candidates": []
+          }
+        ],
+        "11361": [
+          {
+            "course_id": "11361",
+            "semester": 1,
+            "page": 96,
+            "top": 362.6893999999999,
+            "credits": null,
+            "prerequisite_ids": [
+              "11360"
+            ],
+            "corequisite_candidates": []
+          },
+          {
+            "course_id": "11361",
+            "semester": 2,
+            "page": 97,
+            "top": 79.93939999999998,
+            "credits": null,
+            "prerequisite_ids": [
+              "11360"
+            ],
+            "corequisite_candidates": []
+          }
+        ],
+        "22705": [
+          {
+            "course_id": "22705",
+            "semester": 1,
+            "page": 96,
+            "top": 301.0555999999999,
+            "credits": 2.5,
+            "prerequisite_ids": [
+              "11179"
+            ],
+            "corequisite_candidates": []
+          },
+          {
+            "course_id": "22705",
+            "semester": 2,
+            "page": 96,
+            "top": 707.4256,
+            "credits": 2.5,
+            "prerequisite_ids": [],
+            "corequisite_candidates": []
+          }
+        ]
+      },
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [
+        {
+          "courseId": "22251",
+          "name": "תהליכי עיבוד שבבי",
+          "semester": 6
+        },
+        {
+          "courseId": "22267",
+          "name": "הנדסת חומרים מתקדמת",
+          "semester": 6
+        },
+        {
+          "courseId": "22268",
+          "name": "חוזק מתקדם",
+          "semester": 7
+        },
+        {
+          "courseId": "22467",
+          "name": "מבוא לביומכניקה",
+          "semester": 5
+        },
+        {
+          "courseId": "22471",
+          "name": "ניתוח הנדסי של מערכות פיזיולוגיות",
+          "semester": 7
+        },
+        {
+          "courseId": "22472",
+          "name": "פולימרים בביומכניקה",
+          "semester": 6
+        },
+        {
+          "courseId": "22720",
+          "name": "תכן רכיבים מכניים",
+          "semester": 5
+        },
+        {
+          "courseId": "22855",
+          "name": "גוף האדם כמערכת הנדסית",
+          "semester": 6
+        },
+        {
+          "courseId": "22861",
+          "name": "מבוא למערכות מכטרוניות",
+          "semester": 5
+        },
+        {
+          "courseId": "22862",
+          "name": "מעבדה במכטרוניקה",
+          "semester": 6
+        },
+        {
+          "courseId": "22863",
+          "name": "תכן מערכות משולבות",
+          "semester": 7
+        },
+        {
+          "courseId": "22864",
+          "name": "בקרה מודרנית",
+          "semester": 6
+        },
+        {
+          "courseId": "22900",
+          "name": "התנסות בתעשייה",
+          "semester": 7
+        },
+        {
+          "courseId": "22921",
+          "name": "פרויקט מסכם שלב א'",
+          "semester": 7
+        },
+        {
+          "courseId": "22930",
+          "name": "פרויקט מסכם שלב ב'",
+          "semester": 8
+        },
+        {
+          "courseId": "22992",
+          "name": "מבוא לרובוטים אוטונומיים",
+          "semester": 6
+        },
+        {
+          "courseId": "22994",
+          "name": "תכן ותפעול שרשרת אספקה",
+          "semester": 7
+        }
+      ],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": []
+    },
+    "applied-mathematics-2026": {
+      "sourcePages": [
+        111,
+        112,
+        113
+      ],
+      "sourceCourseRows": 31,
+      "distinctSourceCourseIds": 30,
+      "duplicateSourceRows": {
+        "11121": [
+          {
+            "course_id": "11121",
+            "semester": 2,
+            "page": 112,
+            "top": 215.7793999999999,
+            "credits": 3.0,
+            "prerequisite_ids": [
+              "11004",
+              "11102"
+            ],
+            "corequisite_candidates": [
+              "11004",
+              "11102"
+            ]
+          },
+          {
+            "course_id": "11121",
+            "semester": 2,
+            "page": 112,
+            "top": 274.72939999999994,
+            "credits": null,
+            "prerequisite_ids": [],
+            "corequisite_candidates": []
+          }
+        ]
+      },
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [
+        {
+          "courseId": "11002",
+          "name": "אלגברה מ",
+          "semester": 1
+        },
+        {
+          "courseId": "11210",
+          "name": "פיזיקה 2 IE",
+          "semester": 3
+        },
+        {
+          "courseId": "201005",
+          "name": "משוואות דיפרנציאליות רגילות מש",
+          "semester": 2
+        },
+        {
+          "courseId": "201007",
+          "name": "פונקציות מרוכבות מש",
+          "semester": 4
+        },
+        {
+          "courseId": "201100",
+          "name": "פרויקט מסכם",
+          "semester": 6
+        },
+        {
+          "courseId": "201154",
+          "name": "סמינר בנושאים במתמטיקה",
+          "semester": 1
+        },
+        {
+          "courseId": "201180",
+          "name": "מערכות דינמיות מרוכבות",
+          "semester": 5
+        },
+        {
+          "courseId": "251961",
+          "name": "מיומנויות יסוד הנדסיות",
+          "semester": 1
+        },
+        {
+          "courseId": "51901",
+          "name": "תהליכים אקראיים מש",
+          "semester": 4
+        }
+      ],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": []
+    },
+    "braude-software-2026": {
+      "sourcePages": [
+        120,
+        121,
+        122,
+        123
+      ],
+      "sourceCourseRows": 44,
+      "distinctSourceCourseIds": 44,
+      "duplicateSourceRows": {},
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": []
+    },
+    "information-systems-engineering-2026": {
+      "sourcePages": [
+        130,
+        131,
+        132,
+        133
+      ],
+      "sourceCourseRows": 45,
+      "distinctSourceCourseIds": 45,
+      "duplicateSourceRows": {},
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [
+        {
+          "courseId": "11158",
+          "name": "מכניקה להנדסת תוכנה",
+          "semester": 6
+        },
+        {
+          "courseId": "51617",
+          "name": "חשבונאות פיננסית",
+          "semester": 6
+        },
+        {
+          "courseId": "51702",
+          "name": "מודלים דטרמיניסטים בחקב\"צ",
+          "semester": 5
+        },
+        {
+          "courseId": "51703",
+          "name": "מודלים סטוכסטיים בחקב\"צ",
+          "semester": 5
+        },
+        {
+          "courseId": "51709",
+          "name": "הסתברות",
+          "semester": 3
+        },
+        {
+          "courseId": "51955",
+          "name": "חשבונאות ניהולית ומימון",
+          "semester": 7
+        },
+        {
+          "courseId": "51958",
+          "name": "סטטיסטיקה למערכות מידע",
+          "semester": 5
+        },
+        {
+          "courseId": "61831",
+          "name": "ניהול ידע",
+          "semester": 7
+        },
+        {
+          "courseId": "61912",
+          "name": "ארכיטקטורת מערכות תוכנה",
+          "semester": 3
+        }
+      ],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": []
+    },
+    "industrial-engineering-bsc-2026": {
+      "sourcePages": [
+        140,
+        141,
+        142,
+        143
+      ],
+      "sourceCourseRows": 44,
+      "distinctSourceCourseIds": 44,
+      "duplicateSourceRows": {},
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [
+        {
+          "courseId": "21214",
+          "name": "תהליכי עיבוד לתעו\"נ",
+          "semester": 3
+        },
+        {
+          "courseId": "31323",
+          "name": "הנדסת חשמל לתעו\"ן",
+          "semester": 7
+        },
+        {
+          "courseId": "51013",
+          "name": "תכן הנדסי",
+          "semester": 5
+        },
+        {
+          "courseId": "51014",
+          "name": "התמחות בתעשייה שלב א'",
+          "semester": 7
+        },
+        {
+          "courseId": "51020",
+          "name": "התמחות בתעשייה שלב ב'",
+          "semester": 8
+        },
+        {
+          "courseId": "51022",
+          "name": "חקר סיבתיות בביצועים",
+          "semester": 6
+        },
+        {
+          "courseId": "51138",
+          "name": "הנדסת אנוש",
+          "semester": 6
+        },
+        {
+          "courseId": "51228",
+          "name": "פרויקט גמר שלב א'",
+          "semester": 7
+        },
+        {
+          "courseId": "51229",
+          "name": "פרויקט גמר שלב ב'",
+          "semester": 8
+        },
+        {
+          "courseId": "51310",
+          "name": "משוואות דיפרנציאליות ומערכות בקרה",
+          "semester": 4
+        },
+        {
+          "courseId": "51432",
+          "name": "תכן וניהול של מערכות ארגוניות",
+          "semester": 4
+        },
+        {
+          "courseId": "51608",
+          "name": "ניהול פיננסי",
+          "semester": 6
+        },
+        {
+          "courseId": "51618",
+          "name": "חשבונאות ניהולית",
+          "semester": 5
+        },
+        {
+          "courseId": "61738",
+          "name": "מבנים אלגבריים להנדסת תוכנה",
+          "semester": 3
+        },
+        {
+          "courseId": "61739",
+          "name": "מבני נתונים ומבוא לאלגוריתמים",
+          "semester": 5
+        },
+        {
+          "courseId": "61745",
+          "name": "מבוא לתכנות מערכות",
+          "semester": 4
+        },
+        {
+          "courseId": "61753",
+          "name": "אלגוריתמים",
+          "semester": 6
+        },
+        {
+          "courseId": "61761",
+          "name": "כריית נתונים ומערכות לומדות",
+          "semester": 7
+        },
+        {
+          "courseId": "61775",
+          "name": "מבוא לבינה מלאכותית",
+          "semester": 7
+        },
+        {
+          "courseId": "61778",
+          "name": "לוגיקה להנדסת תוכנה",
+          "semester": 5
+        }
+      ],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": []
+    },
+    "msc-biotechnology-2026": {
+      "sourcePages": [
+        174,
+        175
+      ],
+      "sourceCourseRows": 14,
+      "distinctSourceCourseIds": 14,
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": [],
+      "unexpectedPlanCourses": []
+    },
+    "msc-systems-engineering-2026": {
+      "sourcePages": [
+        179,
+        180
+      ],
+      "sourceCourseRows": 14,
+      "distinctSourceCourseIds": 14,
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": [],
+      "unexpectedPlanCourses": []
+    },
+    "msc-software-engineering-2026": {
+      "sourcePages": [
+        183,
+        184
+      ],
+      "sourceCourseRows": 10,
+      "distinctSourceCourseIds": 10,
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": [],
+      "unexpectedPlanCourses": []
+    },
+    "msc-industrial-engineering-2026": {
+      "sourcePages": [
+        187
+      ],
+      "sourceCourseRows": 11,
+      "distinctSourceCourseIds": 11,
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": [],
+      "unexpectedPlanCourses": []
+    },
+    "teaching-general-studies-2026": {
+      "sourcePages": [
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169
+      ],
+      "sourceCourseRows": 62,
+      "distinctSourceCourseIds": 62,
+      "catalogProgram": true,
+      "missingFromPlan": [],
+      "unverifiedPlanSemesterCourses": [],
+      "semesterMismatches": [],
+      "creditMismatches": [],
+      "prerequisiteMismatches": [],
+      "unexpectedPlanCourses": []
+    }
+  },
+  "manualReviewPrograms": {}
+}

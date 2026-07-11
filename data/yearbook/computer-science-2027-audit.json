@@ -1,0 +1,12 @@
+{
+  "programId": "computer-science-2027",
+  "sourceUrl": "https://w3.braude.ac.il/comp-sci-plan/",
+  "sourceCourseCount": 61,
+  "mismatchCount": 0,
+  "mismatches": [],
+  "sourcePrerequisiteCorrections": {
+    "61751": {
+      "65003": "65004"
+    }
+  }
+}

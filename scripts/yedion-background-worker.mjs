@@ -119,7 +119,7 @@ function courseNeedsDetails(course) {
       normalizeSemester(section.semesterCode || section.semesterPeriod),
     ].join(":");
     const group = semesterGroups.get(key) || { hasDetails: false };
-    group.hasDetails ||= Boolean(section.details || section.detailError);
+    group.hasDetails ||= Boolean(section.details);
     semesterGroups.set(key, group);
   }
 
@@ -432,6 +432,7 @@ try {
       outputPath,
       courseCodes: pendingCourseCodes,
       detailMode: "course-semester",
+      retryDetailErrors: true,
       refreshSections: false,
       requestDelayMs,
       requestJitterMs: 0,
