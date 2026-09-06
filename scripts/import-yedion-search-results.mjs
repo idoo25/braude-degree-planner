@@ -49,17 +49,29 @@ function relativeToRoot(filePath) {
 const schedulePath = path.resolve(readArg("--schedule", defaultSchedulePath));
 const examPath = path.resolve(readArg("--exams", defaultExamPath));
 const shouldReset = process.argv.includes("--reset-search");
+const onlyExams = process.argv.includes("--only-exams");
+const onlySchedules = process.argv.includes("--only-schedules");
+const shouldImportSchedules = !onlyExams;
+const shouldImportExams = !onlySchedules;
 
-if (!fs.existsSync(schedulePath)) {
+if (onlyExams && onlySchedules) {
+  throw new Error("Use either --only-exams or --only-schedules, not both.");
+}
+
+if (shouldImportSchedules && !fs.existsSync(schedulePath)) {
   throw new Error(`Yedion day/hour search JSON was not found: ${schedulePath}`);
 }
 
-if (!fs.existsSync(examPath)) {
+if (shouldImportExams && !fs.existsSync(examPath)) {
   throw new Error(`Yedion exam search JSON was not found: ${examPath}`);
 }
 
-const scheduleData = JSON.parse(fs.readFileSync(schedulePath, "utf8"));
-const examData = JSON.parse(fs.readFileSync(examPath, "utf8"));
+const scheduleData = shouldImportSchedules
+  ? JSON.parse(fs.readFileSync(schedulePath, "utf8"))
+  : { query: null, stats: null, rows: [] };
+const examData = shouldImportExams
+  ? JSON.parse(fs.readFileSync(examPath, "utf8"))
+  : { query: null, stats: null, exams: [] };
 const db = new Database(dbPath);
 
 db.pragma("foreign_keys = ON");
@@ -89,25 +101,27 @@ const importSearchResults = db.transaction(() => {
 
   const runId = Number(
     insertRun.run(
-      "2026",
+      examData.query?.academicYearValue ?? scheduleData.query?.academicYearValue ?? "unknown",
       "https://info.braude.ac.il/yedion/fireflyweb.aspx",
       new Date().toISOString(),
       new Date().toISOString(),
       "search-imported",
       stringify({
         resetSearch: shouldReset,
-        schedulePath: relativeToRoot(schedulePath),
-        examPath: relativeToRoot(examPath),
+        onlyExams,
+        onlySchedules,
+        schedulePath: shouldImportSchedules ? relativeToRoot(schedulePath) : null,
+        examPath: shouldImportExams ? relativeToRoot(examPath) : null,
       }),
       stringify({
-        schedule: scheduleData.stats,
-        exams: examData.stats,
+        schedule: shouldImportSchedules ? scheduleData.stats : null,
+        exams: shouldImportExams ? examData.stats : null,
       })
     ).lastInsertRowid
   );
 
-  const scheduleSourceFile = relativeToRoot(schedulePath);
-  const examSourceFile = relativeToRoot(examPath);
+  const scheduleSourceFile = shouldImportSchedules ? relativeToRoot(schedulePath) : null;
+  const examSourceFile = shouldImportExams ? relativeToRoot(examPath) : null;
 
   const insertSchedule = db.prepare(`
     INSERT INTO yedion_search_schedule_rows (
@@ -164,7 +178,7 @@ const importSearchResults = db.transaction(() => {
   `);
 
   let scheduleRows = 0;
-  for (const row of scheduleData.rows ?? []) {
+  for (const row of shouldImportSchedules ? scheduleData.rows ?? [] : []) {
     insertSchedule.run(
       scheduleData.query?.academicYearValue ?? "2026",
       row.searchSemesterValue ?? null,
@@ -190,7 +204,7 @@ const importSearchResults = db.transaction(() => {
   }
 
   let examRows = 0;
-  for (const exam of examData.exams ?? []) {
+  for (const exam of shouldImportExams ? examData.exams ?? [] : []) {
     insertExam.run(
       exam.academicYearValue ?? "2026",
       exam.courseCode,

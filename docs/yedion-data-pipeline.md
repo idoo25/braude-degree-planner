@@ -130,3 +130,52 @@ immediately if Yedion shows any delay/rate-limit page. `yedion:report` may still
 show individual sections without details; that is expected when another section
 in the same course-semester already supplied the shared syllabus, exams, and
 relationship data.
+
+## Incremental exam refresh
+
+The Yedion exam search is a separate source from course detail pages. For a newly
+published academic year, choose that year in `Enter_Search`, leave the major empty,
+select all semesters and all academic years, and save the result as a dated JSON
+snapshot under `data/yedion/search/`. Normalize the raw snapshot before import so
+equivalent exams are deduplicated by course, semester, date, and time and different
+lecturers are aggregated into the same row.
+
+Import an exam snapshot without changing the saved day/hour schedule rows:
+
+```powershell
+npm run yedion:normalize-exams -- --input=data\yedion\search\exams-2027-empty-major-all-semesters.json --output=data\yedion\search\exams-2027-empty-major-all-semesters-deduped.json
+npm run yedion:import-search -- --only-exams --exams=data\yedion\search\exams-2027-empty-major-all-semesters-deduped.json
+```
+
+`npm run yedion:import-search:reset` is reserved for a full replacement of both
+search datasets. It must not be used for an exam-only refresh because it clears the
+existing day/hour rows before importing.
+
+## Incremental schedule and program-offering refresh
+
+The Excel output from Yedion's day/hour search is useful as an official, current
+schedule index. Normalize it before import and keep its academic year separate from
+older results:
+
+```powershell
+python scripts/convert-yedion-day-hour-xlsx.py --academic-year=2027 --input=C:\path\to\day-hour.xlsx --output=data/yedion/search/day-hour-2027-all-days-0830.json
+npm run yedion:import-search -- --only-schedules --schedule=data/yedion/search/day-hour-2027-all-days-0830.json
+```
+
+The day/hour report does not include a Yedion group identifier or room. It therefore
+updates `yedion_search_schedule_rows` as an availability index, but must not be used
+to synthesize selectable lecture/exercise/lab bundles. Those still require a saved
+course-detail page.
+
+Program-course exports are a different source. They state that a course is taught
+for a major in a given academic year, not that it is mandatory in that degree's
+catalog. Preserve the source lists and import them separately:
+
+```powershell
+python scripts/convert-yedion-program-offerings-xlsx.py --academic-year=2027 --major-key=software-engineering --major-name="הנדסת תוכנה" --output=data/yedion/program-offerings/software-engineering-2027.json C:\path\to\program-export-1.xlsx C:\path\to\program-export-2.xlsx
+npm run yedion:import-program-offerings -- --offerings=data/yedion/program-offerings/software-engineering-2027.json
+```
+
+`--reset-program-offerings` replaces only the source exports for the supplied
+academic year and major. Normal imports upsert each export by its Yedion export ID,
+so rerunning a file does not produce duplicates.

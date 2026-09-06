@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-11T20:10:22.465Z",
+  "generatedAt": "2026-09-06T13:51:19.699Z",
   "dbPath": "C:\\school\\braude-degree-planner\\data\\degree-planner.sqlite",
   "summary": {
     "courses": 583,
     "sections": 2520,
     "meetings": 2796,
     "detail_exam_rows": 930,
-    "canonical_exam_slots": 1109,
+    "canonical_exam_slots": 1110,
     "syllabi": 488,
     "section_links": 626,
     "raw_relations": 2547

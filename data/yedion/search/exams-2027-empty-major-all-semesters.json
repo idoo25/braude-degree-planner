@@ -1,0 +1,36 @@
+{
+  "capturedAt": "2026-09-06T00:00:00.000Z",
+  "source": "S_EXAMS",
+  "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_EXAMS&arguments=-N,-N0,-N0",
+  "query": {
+    "academicYearValue": "2027",
+    "majorValue": "",
+    "majorText": "",
+    "semesterValue": "0",
+    "semesterText": "כל הסמסטרים",
+    "academicYearFilterValue": "0",
+    "academicYearFilterText": "כל השנים האקדמיות"
+  },
+  "stats": {
+    "sourceExamRows": 1
+  },
+  "exams": [
+    {
+      "source": "S_EXAMS",
+      "academicYearValue": "2027",
+      "courseCode": "881000",
+      "courseName": "מתמטיקה טרומית",
+      "semester": "א",
+      "examDate": "2026-10-22",
+      "examDateRaw": "22/10/2026",
+      "examTime": "08:30",
+      "examTimeRaw": "08:30:00",
+      "termLabel": "מועד 1",
+      "termNumber": 1,
+      "subjectType": "בחינות אמצע",
+      "lecturerName": "מר גצלטר דמיטריי",
+      "rowIndex": 0,
+      "sourceUrl": "https://info.braude.ac.il/yedion/fireflyweb.aspx?prgname=S_EXAMS&arguments=-N,-N0,-N0"
+    }
+  ]
+}

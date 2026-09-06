@@ -1,0 +1,58 @@
+{
+  "sourceFile": "data\\yedion\\search\\exams-2027-empty-major-all-semesters.json",
+  "normalizedAt": "2026-09-06T13:39:41.203Z",
+  "query": {
+    "academicYearValue": "2027",
+    "majorValue": "",
+    "majorText": "",
+    "semesterValue": "0",
+    "semesterText": "כל הסמסטרים",
+    "academicYearFilterValue": "0",
+    "academicYearFilterText": "כל השנים האקדמיות"
+  },
+  "rawStats": {
+    "sourceExamRows": 1
+  },
+  "stats": {
+    "sourceExamRows": 1,
+    "exams": 1,
+    "duplicateGroups": 0,
+    "duplicateRowsMerged": 0,
+    "groupsWithMultipleLecturers": 0,
+    "uniqueCourses": 1
+  },
+  "rows": [],
+  "exams": [
+    {
+      "source": "S_EXAMS",
+      "academicYearValue": "2027",
+      "courseCode": "881000",
+      "courseName": "מתמטיקה טרומית",
+      "semester": "א",
+      "examDate": "2026-10-22",
+      "examTime": "08:30",
+      "examDateRaw": "22/10/2026",
+      "examTimeRaw": "08:30:00",
+      "termLabel": "מועד 1",
+      "termLabels": [
+        "מועד 1"
+      ],
+      "termNumber": 1,
+      "termNumbers": [
+        1
+      ],
+      "subjectType": "בחינות אמצע",
+      "subjectTypes": [
+        "בחינות אמצע"
+      ],
+      "lecturerName": "מר גצלטר דמיטריי",
+      "lecturerNames": [
+        "מר גצלטר דמיטריי"
+      ],
+      "rowIndexes": [
+        0
+      ],
+      "mergedSourceRows": 1
+    }
+  ]
+}

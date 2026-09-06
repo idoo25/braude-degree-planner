@@ -243,6 +243,40 @@ CREATE TABLE IF NOT EXISTS yedion_search_exams (
   UNIQUE (course_code, semester_period, exam_date, exam_time)
 );
 
+CREATE TABLE IF NOT EXISTS yedion_program_offering_sources (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  academic_year_value TEXT NOT NULL,
+  major_key TEXT NOT NULL,
+  major_name TEXT NOT NULL,
+  export_id TEXT NOT NULL,
+  source_file TEXT,
+  source_sha256 TEXT,
+  source_modified_at TEXT,
+  sheet_name TEXT,
+  raw_json TEXT NOT NULL DEFAULT '{}',
+  import_run_id INTEGER,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (import_run_id) REFERENCES yedion_import_runs(id),
+  UNIQUE (academic_year_value, major_key, export_id)
+);
+
+CREATE TABLE IF NOT EXISTS yedion_program_offerings (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  source_id INTEGER NOT NULL,
+  academic_year_value TEXT NOT NULL,
+  major_key TEXT NOT NULL,
+  course_code TEXT NOT NULL,
+  course_name TEXT,
+  taught_status TEXT,
+  timetable_search_text TEXT,
+  notes TEXT,
+  source_row_index INTEGER,
+  raw_json TEXT NOT NULL DEFAULT '{}',
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (source_id) REFERENCES yedion_program_offering_sources(id) ON DELETE CASCADE,
+  UNIQUE (source_id, source_row_index)
+);
+
 CREATE INDEX IF NOT EXISTS idx_yedion_courses_name ON yedion_courses(name);
 CREATE INDEX IF NOT EXISTS idx_yedion_sections_course ON yedion_course_sections(course_code);
 CREATE INDEX IF NOT EXISTS idx_yedion_sections_semester ON yedion_course_sections(semester_period);
@@ -263,6 +297,8 @@ CREATE INDEX IF NOT EXISTS idx_yedion_search_schedule_time ON yedion_search_sche
 CREATE INDEX IF NOT EXISTS idx_yedion_search_schedule_lecturer_time ON yedion_search_schedule_rows(lecturer_name, semester_period, day_of_week, start_time, end_time);
 CREATE INDEX IF NOT EXISTS idx_yedion_search_exams_course ON yedion_search_exams(course_code);
 CREATE INDEX IF NOT EXISTS idx_yedion_search_exams_date ON yedion_search_exams(exam_date, exam_time);
+CREATE INDEX IF NOT EXISTS idx_yedion_program_offering_sources_year_major ON yedion_program_offering_sources(academic_year_value, major_key);
+CREATE INDEX IF NOT EXISTS idx_yedion_program_offerings_year_major_course ON yedion_program_offerings(academic_year_value, major_key, course_code);
 
 DROP VIEW IF EXISTS yedion_timetable_items;
 CREATE VIEW yedion_timetable_items AS

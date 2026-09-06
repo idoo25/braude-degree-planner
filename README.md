@@ -90,6 +90,38 @@ npm run yedion:report         # print current DB coverage
 npm run yedion:audit          # write data/yedion/quality-report.json
 ```
 
+The separate day/hour and exam-search imports support incremental yearly updates.
+Use the reset form only when replacing both saved search datasets together. To add a
+newly published exam snapshot without touching course schedules, use:
+
+```powershell
+npm run yedion:normalize-exams -- --input=data\yedion\search\exams-2027-empty-major-all-semesters.json --output=data\yedion\search\exams-2027-empty-major-all-semesters-deduped.json
+npm run yedion:import-search -- --only-exams --exams=data\yedion\search\exams-2027-empty-major-all-semesters-deduped.json
+```
+
+`npm run yedion:import-search:reset` is the explicit full replacement command for
+both search datasets. Do not use it for an exam-only refresh.
+
+Program-course Excel exports are a separate source: they state which courses are
+offered by a degree program in an academic year, but do not amend curriculum rules.
+Convert and import them incrementally with:
+
+```powershell
+python scripts/convert-yedion-program-offerings-xlsx.py --academic-year=2027 --major-key=software-engineering --major-name="הנדסת תוכנה" --output=data/yedion/program-offerings/software-engineering-2027.json C:\path\to\export-1.xlsx C:\path\to\export-2.xlsx
+npm run yedion:import-program-offerings -- --offerings=data/yedion/program-offerings/software-engineering-2027.json
+```
+
+Use `--reset-program-offerings` only to replace every program export for that same
+academic year and major.
+
+For a day/hour Excel export, first normalize it and then import schedules without
+touching the exam dataset:
+
+```powershell
+python scripts/convert-yedion-day-hour-xlsx.py --academic-year=2027 --input=C:\path\to\day-hour.xlsx --output=data/yedion/search/day-hour-2027-all-days-0830.json
+npm run yedion:import-search -- --only-schedules --schedule=data/yedion/search/day-hour-2027-all-days-0830.json
+```
+
 The site is rate-limited and blocks non-browser HTTP clients — scraping must run
 from an authenticated in-app browser session, serially, with request spacing. See
 `docs/yedion-data-pipeline.md` for the working method. The current local catalog has
